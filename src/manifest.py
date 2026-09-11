@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data_manifest.json"
-RELEASE = "phase1-v1.0"
+RELEASE = "phase1-v1.1"
 DEFAULT_SEED = 4217
 
 

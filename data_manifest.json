@@ -1,14 +1,14 @@
 {
-  "release": "phase1-v1.0",
+  "release": "phase1-v1.1",
   "created": "2026-09-11",
   "seed": 4217,
   "python": "3.11.12",
   "generator_command": "python3 src/generate.py",
-  "dataset_sha256": "d3a6beaf6319a2bdc155207cfa9781286ef81d3a664259ea36555f849f3506aa",
+  "dataset_sha256": "ae8eeb8d8d90a9436a0b68552f37385532cf9e1173711c8e4c56e3703e838bba",
   "files": {
     "crm/activities.csv": {
-      "sha256": "563eea4ad1bd8407e1330f71905fc2e2a312f1ff3d5af7f83c2d648c607933ad",
-      "bytes": 585628,
+      "sha256": "7dd4756b4b82d40b037cc949f48bc900dc60e65794196d4c5f43db5f828dbf22",
+      "bytes": 585802,
       "rows": 6203
     },
     "crm/companies.csv": {

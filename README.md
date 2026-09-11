@@ -9,7 +9,7 @@ integration here.
 
 ```bash
 python3 src/generate.py    # or: make data        -> writes ./data (deterministic, ~1 s)
-python3 src/validate.py    # or: make validate    -> 104 checks + executive walkthrough; exit 1 on failure
+python3 src/validate.py    # or: make validate    -> 106 checks + executive walkthrough; exit 1 on failure
 python3 src/robustness.py  # or: make robustness  -> all checks across 100 seeds (~15 s); exit 1 on any failure
 ```
 
@@ -227,6 +227,7 @@ import the generator. It runs:
 - **Structure & referential integrity:** files exist, foreign keys resolve, invoice totals equal their lines, dates fall inside the period.
 - **Cross-system identity:** each system's ID formats, no identifier shared across systems, mapping coverage, name divergence.
 - **Realism:** the presence of the imperfections listed above.
+- **Data integrity (added in v1.1):** no recorded event after the extract cutoff (2026-08-31), and every lost-renewal note agrees with the recorded loss reason.
 - **Story checks (54):** each tagged with the questions it supports and the systems it needs, with the tolerances defined in `ground_truth.json`. Five are marked `"invariant": true` and verify the scenario invariants above.
 - **Executive walkthrough:** answers to all ten questions derived from the records (skip with `--quiet`).
 
@@ -238,11 +239,11 @@ decline makes 6 story checks fail.
 
 `python3 src/robustness.py [--seeds N] [--workers W]` regenerates the dataset for
 seeds 1..N (default 100), each into a temporary folder, so `./data` is never
-touched. It runs all 104 checks on every seed and prints, per check, the pass
+touched. It runs all 106 checks on every seed and prints, per check, the pass
 count and the min/median/max value. Any change to the generator reshuffles the
 random draws much like a new seed does, so run this after generator changes.
 
-Current result: **100/100 seeds pass all 104 checks.** Invariant spread across 100 seeds:
+Current result (v1.1): **100/100 seeds pass all 106 checks.** Invariant spread across 100 seeds:
 
 | Invariant check | Band | min / median / max |
 |---|---|---|
@@ -282,11 +283,22 @@ Current result: **100/100 seeds pass all 104 checks.** Invariant spread across 1
 - The counterfactual in Q9 is an upper bound. It assumes the extra wins would have been invoiced within H1 2026 and ignores commission.
 - All company and person names are fictional. Any resemblance to real entities is coincidental.
 
-## 8. Release: Phase 1 v1.0 (frozen)
+## 8. Releases (frozen)
 
-This version is tagged **`phase1-v1.0`** in Git. `data_manifest.json` records the
-SHA-256, byte size and row count of every default generated file (seed 4217,
-Python 3.11.12), plus a combined dataset hash.
+| Tag | Dataset sha256 | Notes |
+|---|---|---|
+| `phase1-v1.0` | `d3a6beaf…06aa` | Initial release. The Phase 2B evaluation baseline (`phase2b-baseline-v1.0`) ran on this data. |
+| **`phase1-v1.1`** (current) | `ae8eeb8d…8bba` | Patch release fixing two data defects found during Phase 2. |
+
+**v1.1 changes.** Only `crm/activities.csv` changed (41 rows). Every other file is byte-identical to v1.0 and the business story is unchanged.
+
+1. **An activity was logged after the extract cutoff.** One CRM activity was timestamped 2026-09-01, because a deal created on the cutoff day could log an activity a day later. Deal activities are now clamped to the deal's window.
+2. **Lost-renewal notes contradicted their loss reason.** The salesperson note on lost Danish renewals was picked independently of `loss_reason`, so 22 of 27 notes contradicted it (for example, reason "Customer insourced maintenance" with the note "Customer found cheaper service partner"). Each note now follows the recorded reason.
+
+The original random draw is kept, so the random stream, and therefore every other record, is unchanged. Two regression checks were added to `validate.py` (**Data integrity**). Both fail on v1.0 data and pass on v1.1.
+
+`data_manifest.json` records the SHA-256, byte size and row count of every
+default generated file (seed 4217, Python 3.11.12), plus a combined dataset hash.
 
 ```bash
 python3 src/manifest.py               # or: make verify        -> ./data matches the manifest
