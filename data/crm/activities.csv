@@ -766,7 +766,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51034905497,2024-12-03T15:00:00,MEETING,usr_823192,cmp_30106,9229208134,Vor-Ort-Termin,Purchasing wants better payment terms.
 51034944937,2024-12-03T15:50:00,CALL,usr_707012,cmp_48515,9237905647,Opfølgning på tilbud,
 51034982995,2024-12-03T16:05:00,MEETING,usr_681988,cmp_58374,9241233287,Kundmöte,"Customer comparing offers, decision expected next month."
-51035002719,2024-12-03T16:15:00,NOTE,usr_313798,cmp_14155,9237264486,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51035002719,2024-12-03T16:15:00,NOTE,usr_313798,cmp_14155,9237264486,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51035057574,2024-12-04T07:00:00,EMAIL,usr_313798,cmp_98759,9225414297,Revised quote,
 51035117885,2024-12-04T07:40:00,EMAIL,usr_491244,cmp_96891,9246706196,Tilbud fremsendt,
 51035138029,2024-12-04T07:45:00,CALL,usr_109098,cmp_43010,,Quarterly review,
@@ -775,10 +775,10 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51035214497,2024-12-04T14:00:00,NOTE,usr_313798,cmp_34933,9239478617,Anteckning,Needs updated pump curve before approval.
 51035220113,2024-12-04T14:15:00,CALL,usr_491244,cmp_88720,9215716880,Uppföljning offert,
 51035291346,2024-12-04T15:00:00,EMAIL,usr_313798,cmp_11075,9235223293,Technical datasheet,
-51035318845,2024-12-04T15:15:00,NOTE,usr_313798,cmp_49633,9221621292,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
+51035318845,2024-12-04T15:15:00,NOTE,usr_313798,cmp_49633,9221621292,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51035332193,2024-12-04T15:45:00,CALL,usr_348972,cmp_61708,9244194628,Opfølgning på tilbud,
 51035366456,2024-12-04T16:40:00,MEETING,usr_313798,cmp_88180,9229984596,Technical workshop,Technical approval received; waiting for purchasing.
-51035406001,2024-12-05T07:10:00,NOTE,usr_313798,cmp_93770,9226012717,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51035406001,2024-12-05T07:10:00,NOTE,usr_313798,cmp_93770,9226012717,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51035495503,2024-12-05T08:05:00,EMAIL,usr_313798,cmp_15058,9229011411,Technical datasheet,
 51035540080,2024-12-05T08:20:00,CALL,usr_195557,cmp_91445,9240359640,Status on quote,
 51035620917,2024-12-05T10:05:00,NOTE,usr_313798,cmp_63297,9231104534,Notiz,Needs updated pump curve before approval.
@@ -821,7 +821,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51037331113,2024-12-08T13:40:00,MEETING,usr_313798,cmp_58298,9229356967,Site visit,
 51037407924,2024-12-08T13:50:00,EMAIL,usr_313798,cmp_15058,9229011411,Technical datasheet,
 51037494170,2024-12-08T14:45:00,CALL,usr_250616,cmp_67619,9218178786,Telefonat Angebot,
-51037537957,2024-12-09T07:10:00,NOTE,usr_313798,cmp_31676,9236429334,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51037537957,2024-12-09T07:10:00,NOTE,usr_313798,cmp_31676,9236429334,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51037566257,2024-12-09T07:20:00,EMAIL,usr_195557,cmp_83221,9245301485,Technical datasheet,
 51037603649,2024-12-09T08:10:00,MEETING,usr_335144,cmp_55789,9247999517,Quarterly review,Budget confirmed for this year.
 51037635403,2024-12-09T08:10:00,EMAIL,usr_912432,cmp_82705,,Uppföljning,
@@ -883,7 +883,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51040191616,2024-12-13T13:00:00,MEETING,usr_462710,cmp_35432,9223542829,Kundmöte,
 51040246882,2024-12-13T13:45:00,CALL,usr_707012,cmp_46518,9236805708,Telefonat Angebot,
 51040260269,2024-12-13T14:30:00,EMAIL,usr_149178,cmp_74466,9243696510,Offert skickad,
-51040347122,2024-12-13T15:10:00,NOTE,usr_313798,cmp_80548,9230380260,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51040347122,2024-12-13T15:10:00,NOTE,usr_313798,cmp_80548,9230380260,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51040414202,2024-12-13T16:15:00,EMAIL,usr_348972,cmp_71526,,Quarterly review,
 51040453357,2024-12-13T16:50:00,MEETING,usr_335144,cmp_66927,,Kundenbesuch,
 51040538867,2024-12-14T07:45:00,EMAIL,usr_195557,cmp_91445,9240359640,Offert skickad,
@@ -898,7 +898,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51040949039,2024-12-15T16:00:00,MEETING,usr_585289,cmp_75867,9223211005,Besøg på anlæg,Purchasing wants better payment terms.
 51041034823,2024-12-16T07:00:00,MEETING,usr_585289,cmp_75867,9223211005,Quarterly review,Technical approval received; waiting for purchasing.
 51041063842,2024-12-16T09:20:00,CALL,usr_313798,cmp_47171,9233560309,Discovery call,
-51041128506,2024-12-16T11:05:00,NOTE,usr_313798,cmp_54074,9225672209,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51041128506,2024-12-16T11:05:00,NOTE,usr_313798,cmp_54074,9225672209,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51041207680,2024-12-16T12:10:00,MEETING,usr_231673,cmp_87755,9250395664,Quarterly review,Purchasing wants better payment terms.
 51041243497,2024-12-16T14:10:00,CALL,usr_585289,cmp_23088,9247316624,Opfølgning på tilbud,
 51041299683,2024-12-17T08:20:00,MEETING,usr_912432,cmp_69858,9242320287,Technical workshop,Needs updated pump curve before approval.
@@ -909,7 +909,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51041520915,2024-12-17T14:20:00,CALL,usr_912432,cmp_89999,9237624098,Uppföljning offert,
 51041597392,2024-12-17T14:50:00,MEETING,usr_491244,cmp_73940,,Quarterly review,
 51041669484,2024-12-17T16:05:00,CALL,usr_348972,cmp_15266,9243861174,Opfølgning på tilbud,
-51041740595,2024-12-18T07:20:00,NOTE,usr_313798,cmp_47171,9233560309,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
+51041740595,2024-12-18T07:20:00,NOTE,usr_313798,cmp_47171,9233560309,Fornyelse tabt,Renewal declined; the customer gave no specific reason.
 51041784740,2024-12-18T08:45:00,CALL,usr_722128,cmp_67619,9247509889,Discovery call,
 51041873924,2024-12-18T09:20:00,CALL,usr_912432,cmp_53230,9227255425,Uppföljning offert,
 51041923720,2024-12-18T13:45:00,EMAIL,usr_722128,cmp_38410,,Opfølgning,
@@ -2277,7 +2277,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51102304786,2025-06-10T16:10:00,EMAIL,usr_348972,cmp_82561,,Quarterly review,
 51102324764,2025-06-11T07:50:00,NOTE,usr_722128,cmp_24434,9300844759,Note,Budget confirmed for this year.
 51102329711,2025-06-11T10:50:00,CALL,usr_313798,cmp_90281,9289766975,Status on quote,
-51102369265,2025-06-11T14:00:00,NOTE,usr_313798,cmp_90281,9289766975,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
+51102369265,2025-06-11T14:00:00,NOTE,usr_313798,cmp_90281,9289766975,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51102383080,2025-06-11T14:05:00,NOTE,usr_335144,cmp_99160,9293236812,Anteckning,Purchasing wants better payment terms.
 51102434268,2025-06-11T14:20:00,MEETING,usr_912432,cmp_32328,9285573188,Kundmöte,
 51102466312,2025-06-11T14:30:00,MEETING,usr_231673,cmp_18462,,Kvartalsmøde,
@@ -2339,7 +2339,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51105585620,2025-06-18T13:05:00,NOTE,usr_912432,cmp_22449,9304784588,Intern note,Budget confirmed for this year.
 51105620604,2025-06-18T15:30:00,NOTE,usr_160964,cmp_85923,9296112239,Notiz,Technical approval received; waiting for purchasing.
 51105646359,2025-06-19T08:15:00,CALL,usr_348972,cmp_82561,,Opfølgning,
-51105692486,2025-06-19T09:30:00,NOTE,usr_313798,cmp_70580,9287797536,Fornyelse tabt,Customer found cheaper service partner.
+51105692486,2025-06-19T09:30:00,NOTE,usr_313798,cmp_70580,9287797536,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51105768016,2025-06-19T09:40:00,CALL,usr_585289,cmp_87886,9300768834,Uppföljning offert,
 51105812418,2025-06-19T11:00:00,NOTE,usr_585289,cmp_23088,9294072818,Anteckning,Technical approval received; waiting for purchasing.
 51105856162,2025-06-19T11:30:00,CALL,usr_823192,cmp_83221,,Kundenbesuch,
@@ -3847,11 +3847,11 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51173720647,2025-12-07T15:30:00,NOTE,usr_160964,cmp_85070,9348974020,Note,Technical approval received; waiting for purchasing.
 51173791207,2025-12-07T16:30:00,EMAIL,usr_707012,cmp_73691,9357949373,Technical datasheet,
 51173875437,2025-12-07T16:45:00,EMAIL,usr_313798,cmp_58374,9343385629,Offert skickad,
-51173880479,2025-12-08T07:40:00,NOTE,usr_313798,cmp_91398,9338458552,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51173880479,2025-12-08T07:40:00,NOTE,usr_313798,cmp_91398,9338458552,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51173957536,2025-12-08T08:10:00,EMAIL,usr_160964,cmp_85070,9348974020,Revised quote,
 51173996858,2025-12-08T09:00:00,MEETING,usr_313798,cmp_89999,9351146016,Site visit,Budget confirmed for this year.
 51174009034,2025-12-08T09:10:00,CALL,usr_912432,cmp_70161,9354374718,Status on quote,
-51174029039,2025-12-08T10:10:00,NOTE,usr_313798,cmp_40928,9351632157,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
+51174029039,2025-12-08T10:10:00,NOTE,usr_313798,cmp_40928,9351632157,Fornyelse tabt,Customer found a cheaper service partner.
 51174041880,2025-12-08T10:20:00,CALL,usr_231673,cmp_78867,,Account follow-up,
 51174093842,2025-12-08T11:00:00,CALL,usr_313798,cmp_40928,9351632157,Follow-up call,
 51174107686,2025-12-08T11:30:00,EMAIL,usr_313798,cmp_71480,9335358015,Quote sent,
@@ -3874,7 +3874,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51175064129,2025-12-09T15:50:00,EMAIL,usr_313798,cmp_53689,9340060365,Revised quote,
 51175149018,2025-12-10T07:20:00,CALL,usr_335144,cmp_94770,9338079035,Follow-up call,
 51175223779,2025-12-10T07:40:00,EMAIL,usr_160964,cmp_92875,,Kundenbesuch,
-51175269500,2025-12-10T08:20:00,NOTE,usr_313798,cmp_70588,9346176902,Fornyelse tabt,Customer found cheaper service partner.
+51175269500,2025-12-10T08:20:00,NOTE,usr_313798,cmp_70588,9346176902,Fornyelse tabt,Renewal declined; the customer gave no specific reason.
 51175357571,2025-12-10T08:45:00,MEETING,usr_707012,cmp_41740,9353389855,Kundmöte,Needs updated pump curve before approval.
 51175395756,2025-12-10T09:20:00,CALL,usr_149178,cmp_68280,9332866569,Uppföljning offert,
 51175451704,2025-12-10T11:40:00,MEETING,usr_722128,cmp_66236,9312790790,Kundmöte,"Customer comparing offers, decision expected next month."
@@ -3929,7 +3929,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51177938258,2025-12-14T16:15:00,CALL,usr_313798,cmp_88479,9349783739,Uppföljning offert,
 51178022949,2025-12-15T07:05:00,CALL,usr_681988,cmp_19804,9354391506,Opfølgning på tilbud,
 51178031891,2025-12-15T07:15:00,CALL,usr_313798,cmp_76122,9341453265,Opfølgning på tilbud,
-51178110409,2025-12-15T08:30:00,NOTE,usr_313798,cmp_53689,9340060365,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
+51178110409,2025-12-15T08:30:00,NOTE,usr_313798,cmp_53689,9340060365,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
 51178141225,2025-12-15T09:00:00,CALL,usr_412007,cmp_31688,9329722183,Uppföljning offert,
 51178229449,2025-12-15T09:00:00,CALL,usr_722128,cmp_60635,9353097029,Status on quote,
 51178263028,2025-12-15T09:15:00,CALL,usr_313798,cmp_63297,9337487782,Opfølgning på tilbud,
@@ -3964,10 +3964,10 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51179429165,2025-12-16T16:40:00,MEETING,usr_335144,cmp_11075,,Kundenbesuch,
 51179483668,2025-12-16T16:50:00,CALL,usr_367478,cmp_50471,9347944705,Status on quote,
 51179568289,2025-12-17T08:00:00,EMAIL,usr_160964,cmp_92875,9331779612,Quote sent,
-51179626710,2025-12-17T08:05:00,NOTE,usr_313798,cmp_40840,9350795743,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51179626710,2025-12-17T08:05:00,NOTE,usr_313798,cmp_40840,9350795743,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51179700599,2025-12-17T08:10:00,EMAIL,usr_335144,cmp_32543,,Kundenbesuch,
 51179729797,2025-12-17T08:50:00,EMAIL,usr_681988,cmp_66215,9356256454,Tilbud fremsendt,
-51179768787,2025-12-17T10:20:00,NOTE,usr_313798,cmp_50414,9344919991,Fornyelse tabt,Customer found cheaper service partner.
+51179768787,2025-12-17T10:20:00,NOTE,usr_313798,cmp_50414,9344919991,Fornyelse tabt,Customer found a cheaper service partner.
 51179785779,2025-12-17T10:45:00,EMAIL,usr_912432,cmp_45367,9351356765,Technical datasheet,
 51179840125,2025-12-17T10:45:00,EMAIL,usr_681988,cmp_97511,9357271447,Revised quote,
 51179860746,2025-12-17T10:45:00,CALL,usr_823192,cmp_24036,,Uppföljning,
@@ -4004,22 +4004,22 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51181332266,2025-12-21T14:00:00,EMAIL,usr_313798,cmp_11075,9350051835,Revised quote,
 51181417736,2025-12-21T14:10:00,EMAIL,usr_149178,cmp_26791,9345062971,Revised quote,
 51181475623,2025-12-21T16:30:00,EMAIL,usr_491244,cmp_58374,9364622097,Tilbud fremsendt,
-51181565077,2025-12-22T07:20:00,NOTE,usr_313798,cmp_53038,9332797485,Fornyelse tabt,Customer found cheaper service partner.
+51181565077,2025-12-22T07:20:00,NOTE,usr_313798,cmp_53038,9332797485,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51181589563,2025-12-22T08:10:00,EMAIL,usr_734861,cmp_65158,9355310297,Technical datasheet,
 51181615741,2025-12-22T08:15:00,CALL,usr_681988,cmp_97511,9343748952,Discovery call,
 51181628346,2025-12-22T09:10:00,CALL,usr_681988,cmp_97511,9357271447,Opfølgning på tilbud,
 51181692938,2025-12-22T09:20:00,MEETING,usr_412007,cmp_14656,9363601827,Technical workshop,Technical approval received; waiting for purchasing.
 51181781691,2025-12-22T09:45:00,CALL,usr_160964,cmp_21575,9354029652,Telefonat Angebot,
 51181840650,2025-12-22T12:05:00,EMAIL,usr_491244,cmp_66435,9342395992,Angebot versendet,
-51181858370,2025-12-22T12:10:00,NOTE,usr_313798,cmp_98759,9351102378,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51181858370,2025-12-22T12:10:00,NOTE,usr_313798,cmp_98759,9351102378,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51181941809,2025-12-22T12:15:00,NOTE,usr_335144,cmp_35386,9353788559,Anteckning,
-51181973187,2025-12-22T14:00:00,NOTE,usr_313798,cmp_38894,9332701829,Fornyelse tabt,Customer found cheaper service partner.
+51181973187,2025-12-22T14:00:00,NOTE,usr_313798,cmp_38894,9332701829,Fornyelse tabt,Renewal declined; the customer gave no specific reason.
 51182058932,2025-12-22T14:15:00,EMAIL,usr_250616,cmp_93823,9362975703,Technical datasheet,
 51182068498,2025-12-22T14:40:00,CALL,usr_618438,cmp_52669,,Kundenbesuch,
-51182125520,2025-12-22T16:15:00,NOTE,usr_313798,cmp_83179,9344133626,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51182125520,2025-12-22T16:15:00,NOTE,usr_313798,cmp_83179,9344133626,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51182209323,2025-12-22T16:40:00,EMAIL,usr_722128,cmp_22455,9339675965,Quote sent,
 51182212584,2025-12-23T09:10:00,CALL,usr_348972,cmp_56552,,Account follow-up,
-51182234220,2025-12-23T09:50:00,NOTE,usr_313798,cmp_39035,9347667054,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51182234220,2025-12-23T09:50:00,NOTE,usr_313798,cmp_39035,9347667054,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51182283572,2025-12-23T09:50:00,CALL,usr_912432,cmp_32328,9363355707,Telefonat Angebot,
 51182321100,2025-12-23T10:15:00,MEETING,usr_707012,cmp_52972,9351590647,Besøg på anlæg,Technical approval received; waiting for purchasing.
 51182384977,2025-12-23T11:45:00,EMAIL,usr_912432,cmp_87927,9358936103,Technical datasheet,
@@ -4047,13 +4047,13 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51183407235,2025-12-25T14:15:00,MEETING,usr_160964,cmp_92875,9339228107,Quarterly review,Purchasing wants better payment terms.
 51183491433,2025-12-25T14:45:00,CALL,usr_491244,cmp_88479,9361662104,Status on quote,
 51183545895,2025-12-25T15:15:00,EMAIL,usr_491244,cmp_88479,9361662104,Angebot versendet,
-51183632074,2025-12-25T15:50:00,NOTE,usr_313798,cmp_10473,9343725155,Fornyelse tabt,Customer found cheaper service partner.
+51183632074,2025-12-25T15:50:00,NOTE,usr_313798,cmp_10473,9343725155,Fornyelse tabt,Customer is taking maintenance in-house with own technicians.
 51183710414,2025-12-25T15:50:00,EMAIL,usr_348972,cmp_10538,9359806630,Technical datasheet,
 51183772417,2025-12-25T16:10:00,CALL,usr_585289,cmp_23088,9342165489,Opfølgning på tilbud,
 51183823509,2025-12-25T16:15:00,CALL,usr_823192,cmp_84468,,Account follow-up,
 51183850569,2025-12-26T08:10:00,MEETING,usr_149178,cmp_15794,9356790198,Vor-Ort-Termin,
 51183897906,2025-12-26T08:15:00,CALL,usr_618438,cmp_97086,9362100408,Opfølgning på tilbud,
-51183927519,2025-12-26T08:50:00,NOTE,usr_313798,cmp_74247,9348582852,Fornyelse tabt,Customer found cheaper service partner.
+51183927519,2025-12-26T08:50:00,NOTE,usr_313798,cmp_74247,9348582852,Fornyelse tabt,Customer moved the service agreement to a competitor.
 51184014281,2025-12-26T10:05:00,NOTE,usr_160964,cmp_80311,9357913470,Notiz,Purchasing wants better payment terms.
 51184025196,2025-12-26T10:40:00,MEETING,usr_491244,cmp_99583,,Uppföljning,
 51184081468,2025-12-26T11:30:00,CALL,usr_823192,cmp_59936,9338793676,Discovery call,
@@ -5409,7 +5409,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51244866738,2026-06-08T10:05:00,CALL,usr_734861,cmp_99197,9404798429,Opfølgning på tilbud,
 51244896629,2026-06-08T12:40:00,EMAIL,usr_707012,cmp_43127,9402826484,Revised quote,
 51244924121,2026-06-08T13:45:00,EMAIL,usr_618438,cmp_78239,9415362525,Offert skickad,
-51244982833,2026-06-08T13:50:00,NOTE,usr_313798,cmp_38266,9407131517,Fornyelse tabt,Customer found cheaper service partner.
+51244982833,2026-06-08T13:50:00,NOTE,usr_313798,cmp_38266,9407131517,Fornyelse tabt,Customer found a cheaper service partner.
 51245021973,2026-06-08T14:00:00,NOTE,usr_335144,cmp_55789,9421184095,Note,"Customer comparing offers, decision expected next month."
 51245030979,2026-06-08T16:30:00,CALL,usr_149178,cmp_76213,9405080987,Status on quote,
 51245102165,2026-06-09T08:20:00,EMAIL,usr_335144,cmp_55789,9408552843,Offert skickad,
@@ -5544,7 +5544,7 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51250917779,2026-06-23T15:00:00,NOTE,usr_823192,cmp_30106,9402002947,Intern note,"Customer comparing offers, decision expected next month."
 51250998049,2026-06-23T15:15:00,NOTE,usr_160964,cmp_67736,9404400047,Notiz,
 51251027649,2026-06-23T16:30:00,MEETING,usr_250616,cmp_35496,9415241553,Kundmöte,
-51251046940,2026-06-24T07:30:00,NOTE,usr_313798,cmp_53432,9399950529,Fornyelse tabt,Budget cut - service reduced to ad hoc calls.
+51251046940,2026-06-24T07:30:00,NOTE,usr_313798,cmp_53432,9399950529,Fornyelse tabt,Customer found a cheaper service partner.
 51251052068,2026-06-24T08:05:00,EMAIL,usr_149178,cmp_74466,9411505607,Revised quote,
 51251131186,2026-06-24T08:05:00,EMAIL,usr_401629,cmp_36409,9413284779,Tilbud fremsendt,
 51251209170,2026-06-24T08:30:00,MEETING,usr_160964,cmp_67736,9404400047,Quarterly review,Needs updated pump curve before approval.
@@ -6185,20 +6185,20 @@ activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
 51279970070,2026-08-31T09:10:00,MEETING,usr_401629,cmp_15266,,Kundenbesuch,
 51280007156,2026-08-31T10:20:00,MEETING,usr_734861,cmp_70338,9423738510,Site visit,
 51280066687,2026-08-31T11:10:00,EMAIL,usr_912432,cmp_15058,9440739782,Angebot versendet,
-51280105614,2026-08-31T12:00:00,NOTE,usr_681988,cmp_66215,9447759595,Intern note,Budget confirmed for this year.
-51280175542,2026-08-31T12:45:00,EMAIL,usr_681988,cmp_72300,,Kvartalsmøde,
-51280198311,2026-08-31T13:10:00,EMAIL,usr_412007,cmp_76876,9442618070,Offert skickad,
-51280221235,2026-08-31T13:10:00,CALL,usr_681988,cmp_50414,,Account follow-up,
-51280254786,2026-08-31T13:40:00,MEETING,usr_681988,cmp_17797,9447392883,Quarterly review,
-51280305680,2026-08-31T14:20:00,EMAIL,usr_585289,cmp_39739,9428089012,Tilbud fremsendt,
-51280372192,2026-08-31T15:05:00,CALL,usr_195557,cmp_87940,9431749799,Opfølgning på tilbud,
-51280389255,2026-08-31T15:10:00,EMAIL,usr_342003,cmp_84468,9446271070,Quote sent,
-51280438421,2026-08-31T15:30:00,NOTE,usr_367478,cmp_41677,9436145887,Anteckning,Needs updated pump curve before approval.
-51280455825,2026-08-31T15:30:00,EMAIL,usr_195557,cmp_23088,9440297425,Revised quote,
-51280507454,2026-08-31T15:50:00,EMAIL,usr_342003,cmp_84468,9446271070,Tilbud fremsendt,
-51280572181,2026-08-31T16:00:00,EMAIL,usr_149178,cmp_74466,,Kundenbesuch,
-51280637383,2026-08-31T16:10:00,CALL,usr_585289,cmp_22531,9442998500,Follow-up call,
-51280678388,2026-08-31T16:40:00,EMAIL,usr_412007,cmp_80975,9442370727,Revised quote,
-51280710250,2026-08-31T16:50:00,CALL,usr_348972,cmp_56552,9424903461,Opfølgning på tilbud,
-51280776850,2026-08-31T16:50:00,EMAIL,usr_160964,cmp_71850,9444946022,Angebot versendet,
-51280811052,2026-09-01T11:30:00,MEETING,usr_681988,cmp_66215,9447759595,Besøg på anlæg,
+51280105614,2026-08-31T11:30:00,MEETING,usr_681988,cmp_66215,9447759595,Besøg på anlæg,
+51280175542,2026-08-31T12:00:00,NOTE,usr_681988,cmp_66215,9447759595,Intern note,Budget confirmed for this year.
+51280198311,2026-08-31T12:45:00,EMAIL,usr_681988,cmp_72300,,Kvartalsmøde,
+51280221235,2026-08-31T13:10:00,EMAIL,usr_412007,cmp_76876,9442618070,Offert skickad,
+51280254786,2026-08-31T13:10:00,CALL,usr_681988,cmp_50414,,Account follow-up,
+51280305680,2026-08-31T13:40:00,MEETING,usr_681988,cmp_17797,9447392883,Quarterly review,
+51280372192,2026-08-31T14:20:00,EMAIL,usr_585289,cmp_39739,9428089012,Tilbud fremsendt,
+51280389255,2026-08-31T15:05:00,CALL,usr_195557,cmp_87940,9431749799,Opfølgning på tilbud,
+51280438421,2026-08-31T15:10:00,EMAIL,usr_342003,cmp_84468,9446271070,Quote sent,
+51280455825,2026-08-31T15:30:00,NOTE,usr_367478,cmp_41677,9436145887,Anteckning,Needs updated pump curve before approval.
+51280507454,2026-08-31T15:30:00,EMAIL,usr_195557,cmp_23088,9440297425,Revised quote,
+51280572181,2026-08-31T15:50:00,EMAIL,usr_342003,cmp_84468,9446271070,Tilbud fremsendt,
+51280637383,2026-08-31T16:00:00,EMAIL,usr_149178,cmp_74466,,Kundenbesuch,
+51280678388,2026-08-31T16:10:00,CALL,usr_585289,cmp_22531,9442998500,Follow-up call,
+51280710250,2026-08-31T16:40:00,EMAIL,usr_412007,cmp_80975,9442370727,Revised quote,
+51280776850,2026-08-31T16:50:00,CALL,usr_348972,cmp_56552,9424903461,Opfølgning på tilbud,
+51280811052,2026-08-31T16:50:00,EMAIL,usr_160964,cmp_71850,9444946022,Angebot versendet,

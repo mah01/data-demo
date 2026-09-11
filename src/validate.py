@@ -146,6 +146,34 @@ def structural_checks(data, rep):
         months[r["pay_period"]] += num(r["commission"]) > 0
     rep.add(g, "commission varies by month", len(set(months.values())) > 3, len(set(months.values())), "> 3 distinct")
 
+    # Regression checks added in v1.1 for the two v1.0 data defects.
+    g = "Data integrity (v1.1 regression checks)"
+    cutoff = "2026-08-31"
+    events = ([("crm activity", a["timestamp"]) for a in data.crm_activities] +
+              [("crm history", h["changed_at"]) for h in data.crm_property_history] +
+              [("crm deal created", d["created_at"]) for d in data.crm_deals] +
+              [("crm deal closed", d["closed_at"]) for d in data.crm_deals if d["closed_at"]] +
+              [("erp invoice", i["invoice_date"]) for i in data.erp_invoices] +
+              [("erp ledger", e["date"]) for e in data.erp_ledger_entries] +
+              [("payroll", r["pay_period"] + "-01") for r in data.payroll_payroll_entries])
+    late = [(k, t) for k, t in events if t[:10] > cutoff]
+    rep.add(g, "no recorded event after the extract cutoff", not late, f"{len(late)} late" + (f" ({late[0][0]} {late[0][1][:10]})" if late else ""),
+            f"<= {cutoff}")
+    reason_of_note = [("in-house", "Customer insourced maintenance"), ("insourc", "Customer insourced maintenance"),
+                      ("cheaper", "Price too high"), ("price", "Price too high"), ("competitor", "Lost to competitor"),
+                      ("budget", "Budget cuts")]
+    deals_by_id = {d["deal_id"]: d for d in data.crm_deals}
+    mismatched = 0
+    notes = [a for a in data.crm_activities if a["type"] == "NOTE" and a["subject"] == "Fornyelse tabt" and a["deal_id"] in deals_by_id
+             and deals_by_id[a["deal_id"]]["deal_type"] == "Renewal" and deals_by_id[a["deal_id"]]["outcome"] == "lost"]
+    for a in notes:
+        implied = next((reason for key, reason in reason_of_note if key in (a["body"] or "").lower()), None)
+        recorded = deals_by_id[a["deal_id"]]["loss_reason"] or None
+        if implied is not None and implied != recorded:
+            mismatched += 1
+    rep.add(g, "lost-renewal notes agree with the recorded loss reason", mismatched == 0 and len(notes) > 0,
+            f"{mismatched} of {len(notes)} inconsistent", "0 inconsistent")
+
 
 # ---------------------------------------------------------------------------
 # Story checks

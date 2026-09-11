@@ -50,6 +50,14 @@ NOTE_BODIES = {
 }
 
 
+RENEWAL_LOSS_NOTES = {  # salesperson note written when a Danish renewal is lost (v1.1: consistent with loss_reason)
+    "Customer insourced maintenance": "Customer is taking maintenance in-house with own technicians.",
+    "Price too high": "Customer found a cheaper service partner.",
+    "Lost to competitor": "Customer moved the service agreement to a competitor.",
+    "Budget cuts": "Budget cut - service reduced to ad hoc calls.",
+}
+
+
 def _ts(r, d):
     return datetime.combine(d, time(r.randint(7, 16), r.choice([0, 5, 10, 15, 20, 30, 40, 45, 50])))
 
@@ -186,9 +194,13 @@ def build_activities(gen, uid):
             body = None
             if typ in ("NOTE", "MEETING"):
                 body = r.choice(NOTE_BODIES["de_new" if de_new else "normal"])
-            add(d.created + timedelta(days=r.randint(0, span)), d.owner, cid, typ, d.deal_id, body=body or None)
+            # v1.1: clamp to the deal's window (v1.0 let a deal created on the cutoff day log an activity a day later)
+            add(min(d.created + timedelta(days=r.randint(0, span)), end), d.owner, cid, typ, d.deal_id, body=body or None)
         if d.deal_type == "Renewal" and d.outcome == "lost" and d.market == "DK":
-            add(d.close_date, d.owner, cid, "NOTE", d.deal_id, "Fornyelse tabt", r.choice(NOTE_BODIES["renewal_lost_dk"]))
+            r.choice(NOTE_BODIES["renewal_lost_dk"])  # v1.0 draw kept so the random stream, and every other record, is unchanged
+            # v1.1: the note now follows the recorded loss reason (v1.0 picked it independently, so they could contradict)
+            add(d.close_date, d.owner, cid, "NOTE", d.deal_id, "Fornyelse tabt",
+                RENEWAL_LOSS_NOTES.get(d.loss_reason, "Renewal declined; the customer gave no specific reason."))
 
     for c in gen.customers.values():
         if not c.crm_id or c.prospect:
