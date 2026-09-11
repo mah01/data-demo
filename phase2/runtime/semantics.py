@@ -169,7 +169,7 @@ CONCEPTS = {
         "Archived CRM users can still own old records.",
         "Open deals may have expected_close_date in the past.",
         "Date coverage differs slightly between systems (see meta_describe_sources); the CRM holds pipeline "
-        "history before the ERP/payroll period and its extract can include records a day past their cut-off.",
+        "history before the ERP/payroll period.",
     ],
 }
 

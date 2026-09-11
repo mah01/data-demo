@@ -4,6 +4,8 @@ This experiment asks whether a general-purpose LLM, given **only** the read-only
 
 **Baseline results:** [`reports/baseline_report.md`](reports/baseline_report.md).
 
+The baseline is preserved at tag `phase2b-baseline-v1.0`. It ran on Phase 1 v1.0 data and on the Phase 2A code before the post-baseline fixes. Those fixes are the comparison crash, single-date periods, and the Phase 1 v1.1 data patch, all made on the `phase3-demo` line. Its results are kept unchanged. Rerunning it today would be a new experiment.
+
 ```
 evaluation/
   runner/       agent side: frozen protocol, isolated runs, traced MCP entrypoint

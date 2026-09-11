@@ -2,6 +2,7 @@
 Period parsing and calendar dimensions.
 
 Accepted period strings (inclusive boundaries):
+    "2026-08-31"                single day
     "2026"                      calendar year
     "2026-H1", "H1 2026"        half year
     "2026-Q2", "Q2 2026"        quarter
@@ -38,6 +39,9 @@ def parse_period(text):
     if not text or not isinstance(text, str):
         raise ValueError("period is required, e.g. '2026-H1', '2026-Q2', '2026-03', '2026' or '2025-01-01..2025-06-30'")
     t = text.strip().upper().replace(" ", "")
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", t):  # a single day
+        day = date.fromisoformat(t)
+        return Period(day.isoformat(), day, day)
     if ".." in t:
         a, z = t.split("..", 1)
         start = date.fromisoformat(a) if len(a) == 10 else date(int(a[:4]), int(a[5:7]), 1)
@@ -61,7 +65,7 @@ def parse_period(text):
     if m:
         y = int(m.group(1))
         return Period(str(y), date(y, 1, 1), date(y, 12, 31))
-    raise ValueError(f"Unrecognised period '{text}'. Use e.g. '2026-H1', 'Q2 2026', '2026-03', '2026', "
+    raise ValueError(f"Unrecognised period '{text}'. Use e.g. '2026-H1', 'Q2 2026', '2026-03', '2026', '2026-08-31', "
                      "'2026-01..2026-08' or '2025-01-01..2025-06-30'.")
 
 

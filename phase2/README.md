@@ -14,7 +14,7 @@ this branch changes no Phase 1 files.
 ```bash
 python3 -m venv phase2/.venv && phase2/.venv/bin/pip install -r phase2/requirements.txt
 
-phase2/.venv/bin/python -m pytest phase2/tests    # 90 tests (runtime + MCP)
+phase2/.venv/bin/python -m pytest phase2/tests    # 97 tests (runtime + MCP)
 python3 -m pytest phase2/tests                    # runtime tests with the stdlib only; MCP tests skip
 phase2/.venv/bin/python -m phase2.mcp.server      # MCP server on stdio (run from the repo root)
 python3 -m phase2.gen_tool_docs                   # regenerate TOOLS.md from the code
@@ -82,7 +82,7 @@ The full reference (parameters, types, defaults, descriptions) is in [`TOOLS.md`
 
 | Parameter | Meaning |
 |---|---|
-| `period`, `compare_to` | `"2026"`, `"2026-H1"` / `"H1 2026"`, `"2026-Q2"`, `"2026-03"`, `"2026-01..2026-08"`, `"2025-01-01..2025-06-30"`. Boundaries are inclusive. |
+| `period`, `compare_to` | `"2026"`, `"2026-H1"` / `"H1 2026"`, `"2026-Q2"`, `"2026-03"`, `"2026-08-31"` (single day), `"2026-01..2026-08"`, `"2025-01-01..2025-06-30"`. Boundaries are inclusive. |
 | `group_by` | A list of dimensions valid for that tool, e.g. `["market", "category"]`, `["owner"]`, `["month"]`. Unknown dimensions raise an error listing the allowed ones. |
 | `market` | `DK`/`SE`/`DE`, or any known label (`Germany`, `Tyskland`, …), case- and accent-insensitive. |
 | `category` / `product_category` | `Equipment`, `Components`, `Service`, or a system label (`Pumps & Systems`, `10`, …). |
@@ -159,6 +159,7 @@ These are the definitions used by the runtime (`meta_get_semantics` returns them
 | `test_boundary.py` | No Phase 1 imports or answer-key references; only system CSVs are opened; every operation documented |
 | `test_real_data.py` | On the frozen dataset: reconciliation across groupings, payroll = ERP journal, full fallback coverage, mappings resolve both ways, every operation returns JSON |
 | `test_mcp.py` | 33 tools = runtime operations, all read-only, calls, list parameters, readable errors, real stdio subprocess |
+| `test_regressions.py` | Defects found by the Phase 2B evaluation: a comparison crash when a nullable measure (e.g. average won value) is null in the current period, and single dates (`2025-09-01`) rejected as periods |
 
 Expected values in the unit tests are worked out by hand from the small fixture dataset in `tests/fixtures/data/`. It has the same schemas as the real exports, with deliberate edge cases.
 
@@ -175,5 +176,5 @@ The server speaks MCP over stdio. A typical client entry, not configured by this
 
 ## 6. Known data notes
 
-- The frozen CRM export contains one activity timestamped 2026-09-01, one day after the other systems' cut-off. It is left unchanged (Phase 1 is frozen), shows up in `meta_describe_sources` coverage, and does not affect any aggregate over the business periods.
+- The runtime reads the Phase 1 **v1.1** dataset. v1.1 fixed two data defects found during Phase 2: an activity dated after the extract cutoff, and lost-renewal notes that contradicted their loss reason. The Phase 2B baseline (`phase2b-baseline-v1.0`) ran on v1.0.
 - Open deals can have an `expected_close_date` in the past, as exported.

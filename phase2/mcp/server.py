@@ -19,7 +19,7 @@ INSTRUCTIONS = (
     "Read-only access to NordFlow A/S business systems: ERP (finance), CRM (sales), payroll (people) and the "
     "identity mappings that link them. Systems use different ids and names for the same entities; use the "
     "identity_* tools to cross between them. Money is DKK unless a field says otherwise. Periods: '2026-H1', "
-    "'2026-Q2', '2026-03', '2026', '2026-01..2026-08' or '2025-01-01..2025-06-30'. Start with "
+    "'2026-Q2', '2026-03', '2026', '2026-08-31', '2026-01..2026-08' or '2025-01-01..2025-06-30'. Start with "
     "meta_describe_sources and meta_get_semantics for definitions."
 )
 READ_ONLY = ToolAnnotations(read_only_hint=True, destructive_hint=False, idempotent_hint=True, open_world_hint=False)

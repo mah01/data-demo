@@ -71,7 +71,8 @@ def compare_rows(current, previous, group_by, measures, finish=None):
             row[f"{m}_compare"] = b
             row[f"{m}_change"] = (a - b) if a is not None and b is not None else None
             if not is_ratio(m):
-                row[f"{m}_change_pct"] = ((a - b) / abs(b)) if b else None
+                # a can be None too (e.g. avg_won_value_dkk for a group with no wins in the current period)
+                row[f"{m}_change_pct"] = ((a - b) / abs(b)) if a is not None and b else None
         out.append(row)
     return out
 
