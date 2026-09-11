@@ -1,0 +1,324 @@
+customer_number,name,customer_group_number,customer_group_name,country,city,currency,vat_number,payment_terms,created_date,barred
+10157,Viborg Slagteri A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK29198642,Netto 30 dage,2006-12-04,false
+10416,Esbjerg Energi ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK37240742,Lb. md. + 30 dage,2023-10-16,false
+10659,Limfjords Akvakultur ApS,1,Kunder Danmark,Danmark,Holstebro,DKK,DK10290023,Netto 30 dage,2020-04-26,false
+11142,Viborg VVS ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK25871660,Netto 30 dage,2009-07-04,false
+11243,Nordjysk Spildevand ApS,1,Kunder Danmark,Danmark,Kolding,DKK,DK34995286,Netto 30 dage,2022-05-11,false
+11805,Hjørring Rensningsanlæg A/S,1,Kunder Danmark,Danmark,Esbjerg,DKK,DK26972611,Lb. md. + 30 dage,2016-10-22,false
+11832,Østjysk Varmeværk A/S,1,Kunder Danmark,Danmark,Køge,DKK,DK38964229,Netto 14 dage,2012-07-16,false
+12100,Esbjerg Kemi A/S,1,Kunder Danmark,Danmark,Aalborg,DKK,DK26031999,Netto 30 dage,2023-12-03,false
+12149,Himmerlands Spildevand ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK36349238,Netto 14 dage,2011-04-06,false
+12559,Horsens Fødevarer ApS,1,Kunder Danmark,Danmark,Næstved,DKK,DK31067844,Netto 30 dage,2022-06-22,false
+12671,Bornholms Maskinfabrik ApS,1,Kunder Danmark,Danmark,Vejle,DKK,DK39608404,Netto 14 dage,2015-08-28,false
+13686,Himmerlands Plast A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK24817969,Netto 14 dage,2021-01-21,false
+14035,Gävle Energi AB,2,Kunder Sverige,Sverige,Karlstad,SEK,SE555479965801,Lb. md. + 30 dage,2007-01-18,false
+14120,Kalmar Kemi AB,2,Kunder Sverige,Sverige,Jönköping,SEK,SE553943219901,Netto 14 dage,2010-11-18,false
+14544,Vogtland Anlagenbau GmbH,3,Kunder Tyskland,Tyskland,Köln,EUR,DE254191913,Netto 30 dage,2018-12-10,true
+14578,Örebro Mejeri AB,2,Kunder Sverige,Sverige,Norrköping,SEK,SE552761302801,Netto 30 dage,2019-09-23,false
+14613,Dalarnas Kyl AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE554798648801,Netto 14 dage,2014-11-17,false
+14959,Brandauer Papierwerke AG,3,Kunder Tyskland,Tyskland,Aschaffenburg,EUR,DE270785003,Lb. md. + 30 dage,2016-03-11,false
+15169,Esbjerg VVS ApS,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK44993796,Netto 30 dage,2021-03-07,false
+15435,Isartal Gebäudetechnik GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Magdeburg,EUR,DE287950762,Netto 30 dage,2022-04-21,false
+15522,Silkeborg Energi ApS,1,Kunder Danmark,Danmark,Skive,DKK,DK38740030,Netto 14 dage,2021-05-24,false
+15733,Vestjysk Fjernvarme ApS,1,Kunder Danmark,Danmark,Roskilde,DKK,DK43390124,Netto 14 dage,2023-12-23,false
+16153,Värmlands Kyl AB,2,Kunder Sverige,Sverige,Örebro,SEK,SE555282134201,Netto 14 dage,2017-08-07,false
+16260,Bornholms VVS ApS,1,Kunder Danmark,Danmark,Næstved,DKK,,Netto 30 dage,2015-03-11,false
+16288,Värmlands Fjärrvärme AB,2,Kunder Sverige,Sverige,Gävle,SEK,SE551293019201,Lb. md. + 30 dage,2016-06-10,false
+16700,Örebro Vatten AB,2,Kunder Sverige,Sverige,Linköping,SEK,SE551561919901,Netto 30 dage,2007-05-04,false
+16908,Galvanik Saarland GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Paderborn,EUR,DE230836522,Netto 30 dage,2016-10-15,false
+17130,Aabenraa Energi A/S,1,Kunder Danmark,Danmark,Fredericia,DKK,DK39716166,Lb. md. + 30 dage,2010-12-18,false
+17601,Emsland Wasserwerke GmbH,3,Kunder Tyskland,Tyskland,Magdeburg,EUR,DE231428109,Lb. md. + 30 dage,2024-06-16,false
+18179,Mälardalens Vatten AB,2,Kunder Sverige,Sverige,Norrköping,SEK,,Netto 14 dage,2022-12-15,false
+18406,Lausitz Chemie GmbH,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE272321156,Lb. md. + 30 dage,2024-05-15,false
+18721,Aabenraa Vand A.m.b.a.,1,Kunder Danmark,Danmark,Odense,DKK,DK36557496,Netto 30 dage,2006-06-10,false
+18829,Göteborgs Fjärrvärme AB,2,Kunder Sverige,Sverige,Halmstad,SEK,SE553055817901,Netto 30 dage,2015-09-14,false
+19164,Randers Maskinfabrik A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK18841718,Netto 14 dage,2009-06-22,false
+19381,Viborg Bygningsservice ApS,1,Kunder Danmark,Danmark,Aalborg,DKK,DK13619094,Netto 30 dage,2011-06-22,false
+19734,Isartal Fleischwaren GmbH,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE110737381,Netto 14 dage,2009-11-14,false
+19738,Lolland Kemi A.m.b.a.,1,Kunder Danmark,Danmark,Næstved,DKK,DK43534165,Netto 30 dage,2008-08-04,false
+19887,Hjørring Spildevand ApS,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK43700635,Netto 30 dage,2006-01-01,false
+19904,Anlagenbau Havelland GmbH,3,Kunder Tyskland,Tyskland,Ulm,EUR,DE320541673,Netto 30 dage,2011-03-05,false
+20305,Aabenraa VVS ApS,1,Kunder Danmark,Danmark,Holstebro,DKK,DK12300398,Netto 14 dage,2023-08-21,false
+20321,Djurs Køleteknik A/S,1,Kunder Danmark,Danmark,Randers,DKK,,Netto 30 dage,2011-11-01,false
+20456,Vestjysk Akvakultur A/S,1,Kunder Danmark,Danmark,Herning,DKK,DK18295318,Netto 30 dage,2009-01-17,false
+20588,Kraichgau Anlagenbau AG,3,Kunder Tyskland,Tyskland,Stuttgart,EUR,DE251558393,Netto 14 dage,2016-01-01,false
+20875,Horsens Rensningsanlæg ApS,1,Kunder Danmark,Danmark,Skive,DKK,DK33690151,Netto 30 dage,2012-08-14,false
+21231,Spreewald Fleischwaren GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Köln,EUR,DE189196629,Netto 30 dage,2008-07-26,false
+21242,Svendborg Plast ApS,1,Kunder Danmark,Danmark,Viborg,DKK,DK31412065,Netto 30 dage,2022-07-14,false
+21690,Lebensmittel Vogtland GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Köln,EUR,DE253287258,Netto 30 dage,2024-07-22,false
+22241,Kalundborg Foder A.m.b.a.,1,Kunder Danmark,Danmark,Odense,DKK,DK21848159,Netto 30 dage,2009-09-02,false
+22628,Thy Bryggeri ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK30748354,Lb. md. + 30 dage,2011-08-13,false
+22658,Östgöta Industriservice AB,2,Kunder Sverige,Sverige,Halmstad,SEK,SE556696015401,Netto 30 dage,2009-01-16,false
+22714,Bornholms Emballage A.m.b.a.,1,Kunder Danmark,Danmark,Odense,DKK,DK38139988,Netto 14 dage,2023-07-05,false
+22805,Oderland Brauerei AG,3,Kunder Tyskland,Tyskland,Dortmund,EUR,DE295519415,Netto 30 dage,2024-03-12,false
+22948,Dalarnas Mejeri AB,2,Kunder Sverige,Sverige,Norrköping,SEK,SE554167273201,Lb. md. + 30 dage,2019-05-09,false
+22982,Kyst Bygningsservice A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK38562834,Netto 30 dage,2006-06-04,false
+23262,Hjørring Vand A.m.b.a.,1,Kunder Danmark,Danmark,Odense,DKK,DK11696934,Netto 14 dage,2011-05-28,false
+23307,Djurs Kemi ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK19032881,Netto 30 dage,2007-07-22,false
+23332,Aabenraa Maskinfabrik ApS,1,Kunder Danmark,Danmark,Skive,DKK,DK43436238,Netto 14 dage,2011-04-22,false
+23838,Svendborg Energi ApS,1,Kunder Danmark,Danmark,Aalborg,DKK,DK37457475,Netto 30 dage,2006-08-01,false
+23900,Silkeborg Vand A.m.b.a.,1,Kunder Danmark,Danmark,Køge,DKK,DK10290244,Netto 30 dage,2015-01-23,false
+24021,Upplands Vatten AB,2,Kunder Sverige,Sverige,Kalmar,SEK,SE552314809701,Netto 30 dage,2022-10-04,false
+24232,Aabenraa Foder ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,,Netto 14 dage,2007-08-01,false
+24315,Fredericia Akvakultur A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK26453987,Netto 30 dage,2011-03-26,false
+24495,Gebäudetechnik Eifel AG,3,Kunder Tyskland,Tyskland,Essen,EUR,DE202717521,Netto 14 dage,2011-08-06,false
+24649,Bornholms Mejeri A/S,1,Kunder Danmark,Danmark,Aalborg,DKK,DK35859965,Lb. md. + 30 dage,2023-03-23,false
+24773,Roskilde Bygningsservice ApS,1,Kunder Danmark,Danmark,Roskilde,DKK,,Netto 30 dage,2022-02-24,false
+24836,Vestjysk Spildevand A/S,1,Kunder Danmark,Danmark,Næstved,DKK,DK31853488,Netto 30 dage,2019-12-10,false
+24970,Skånska Livsmedel AB,2,Kunder Sverige,Sverige,Norrköping,SEK,SE556594669501,Netto 30 dage,2024-12-22,false
+25155,Brauerei Kraichgau GmbH,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,DE258529507,Netto 14 dage,2014-11-17,false
+25661,Nordjysk Fødevarer A.m.b.a.,1,Kunder Danmark,Danmark,Aarhus,DKK,DK38725627,Netto 30 dage,2015-02-07,false
+26094,Hjørring Slagteri ApS,1,Kunder Danmark,Danmark,Odense,DKK,,Netto 30 dage,2006-04-17,false
+26315,Altmark Fleischwaren GmbH,3,Kunder Tyskland,Tyskland,Leipzig,EUR,DE225997320,Netto 14 dage,2018-12-24,false
+26322,Vogtland Lebensmittel GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Bremen,EUR,DE230977015,Netto 30 dage,2012-01-05,false
+26783,Svendborg Fjernvarme A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK14969423,Netto 14 dage,2016-07-23,false
+27030,Østjysk Emballage A.m.b.a.,1,Kunder Danmark,Danmark,Roskilde,DKK,DK27415461,Netto 30 dage,2014-01-17,false
+27767,Blekinge Industriservice AB,2,Kunder Sverige,Sverige,Helsingborg,SEK,SE552809509501,Netto 30 dage,2014-11-06,false
+27844,Örebro Livsmedel AB,2,Kunder Sverige,Sverige,Jönköping,SEK,SE552751314401,Lb. md. + 30 dage,2023-11-13,false
+27913,Aabenraa Varmeværk A/S,1,Kunder Danmark,Danmark,Viborg,DKK,DK35076537,Netto 30 dage,2010-08-22,false
+28312,Anlagenbau Ostalb GmbH,3,Kunder Tyskland,Tyskland,Leipzig,EUR,DE151697977,Lb. md. + 30 dage,2021-12-06,false
+28467,Aabenraa Kemi A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK31259943,Netto 30 dage,2016-06-03,false
+29065,Viborg Spildevand A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK33393366,Netto 30 dage,2017-12-22,false
+29446,Sauerland Kältetechnik AG,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,DE215474521,Netto 14 dage,2009-08-25,false
+29543,Kalmar Reningsverk AB,2,Kunder Sverige,Sverige,Jönköping,SEK,SE552096329501,Lb. md. + 30 dage,2012-11-24,false
+30303,Skive Rensningsanlæg ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK34380165,Lb. md. + 30 dage,2012-06-14,false
+30439,Køge Rensningsanlæg ApS,1,Kunder Danmark,Danmark,Aalborg,DKK,DK27511292,Netto 14 dage,2014-10-04,false
+30454,Nordjysk Bryggeri A.m.b.a.,1,Kunder Danmark,Danmark,Holstebro,DKK,DK23715310,Netto 14 dage,2021-07-12,false
+30840,Wetterau Kältetechnik AG,3,Kunder Tyskland,Tyskland,Osnabrück,EUR,DE131658620,Netto 14 dage,2009-07-06,false
+30968,Westerwald Kunststoffe AG,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE182806797,Netto 30 dage,2014-07-06,false
+31461,Göteborgs Livsmedel AB,2,Kunder Sverige,Sverige,Norrköping,SEK,SE556605686301,Netto 14 dage,2012-02-14,false
+31881,Kalmar Kyl AB,2,Kunder Sverige,Sverige,Sundsvall,SEK,SE554648185001,Lb. md. + 30 dage,2007-06-19,false
+31957,Ruhrtal Kunststoffe GmbH,3,Kunder Tyskland,Tyskland,Ulm,EUR,DE262993932,Netto 30 dage,2018-06-19,false
+32386,Klärtechnik Allgäu GmbH,3,Kunder Tyskland,Tyskland,Nürnberg,EUR,DE347085638,Netto 30 dage,2010-07-26,false
+32400,Jönköpings Reningsverk AB,2,Kunder Sverige,Sverige,Gävle,SEK,,Netto 30 dage,2012-05-04,false
+32531,Odense Energi A/S,1,Kunder Danmark,Danmark,Holstebro,DKK,DK28361605,Netto 30 dage,2021-04-05,false
+32763,Nordjysk Rensningsanlæg A.m.b.a.,1,Kunder Danmark,Danmark,Aarhus,DKK,DK36569650,Lb. md. + 30 dage,2010-01-27,false
+32938,Sydfyns Maskinfabrik ApS,1,Kunder Danmark,Danmark,Vejle,DKK,DK11475876,Netto 14 dage,2006-04-01,false
+33255,Galvanik Eifel GmbH,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,,Netto 30 dage,2015-10-19,false
+33346,Ruhrtal Stahl GmbH,3,Kunder Tyskland,Tyskland,Würzburg,EUR,DE113026618,Netto 14 dage,2012-07-23,false
+33399,Thy Bygningsservice A.m.b.a.,1,Kunder Danmark,Danmark,Aarhus,DKK,DK33285492,Lb. md. + 30 dage,2017-10-26,false
+33433,Skive Fjernvarme A/S,1,Kunder Danmark,Danmark,Næstved,DKK,DK38399047,Netto 30 dage,2009-02-03,false
+33570,Lebensmittel Donautal GmbH,3,Kunder Tyskland,Tyskland,Stuttgart,EUR,,Lb. md. + 30 dage,2012-09-15,false
+33622,Smålands Livsmedel AB,2,Kunder Sverige,Sverige,Örebro,SEK,SE551667966001,Netto 30 dage,2007-11-12,false
+33634,Fuldatal Molkerei GmbH,3,Kunder Tyskland,Tyskland,Nürnberg,EUR,,Netto 30 dage,2012-02-25,false
+33684,Upplands Kyl AB,2,Kunder Sverige,Sverige,Sundsvall,SEK,SE556196975601,Netto 30 dage,2006-04-19,false
+33724,Vejle Foder A.m.b.a.,1,Kunder Danmark,Danmark,Randers,DKK,DK11316787,Lb. md. + 30 dage,2009-09-15,false
+33811,Skive Bryggeri A/S,1,Kunder Danmark,Danmark,Næstved,DKK,,Netto 14 dage,2016-02-16,false
+34443,Donautal Gebäudetechnik GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Leipzig,EUR,DE183416222,Netto 30 dage,2021-08-28,false
+34725,Spreewald Umwelttechnik GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Essen,EUR,DE106793904,Netto 30 dage,2013-02-14,false
+35106,Blekinge Kemi AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE552319048701,Netto 30 dage,2024-07-26,false
+35117,Bornholms Vand A.m.b.a.,1,Kunder Danmark,Danmark,Randers,DKK,DK13377795,Netto 30 dage,2011-12-11,false
+35232,Dalarnas Massa AB,2,Kunder Sverige,Sverige,Västerås,SEK,SE552766535201,Lb. md. + 30 dage,2013-10-20,false
+35611,Dalarnas Fjärrvärme AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE552253680001,Lb. md. + 30 dage,2022-02-04,false
+35855,Hallands Livsmedel AB,2,Kunder Sverige,Sverige,Helsingborg,SEK,SE556592521401,Netto 14 dage,2023-07-23,false
+36118,Fjord Fødevarer A/S,1,Kunder Danmark,Danmark,Køge,DKK,DK37924469,Netto 30 dage,2014-11-02,false
+36586,Lausitz Anlagenbau GmbH,3,Kunder Tyskland,Tyskland,Osnabrück,EUR,,Lb. md. + 30 dage,2017-03-27,false
+36739,Himmerlands VVS A.m.b.a.,1,Kunder Danmark,Danmark,Aalborg,DKK,DK38300175,Netto 30 dage,2006-10-18,false
+36868,Østjysk Stålindustri A.m.b.a.,1,Kunder Danmark,Danmark,Kolding,DKK,DK21739959,Netto 30 dage,2008-01-12,false
+36928,Vestjysk Varmeværk A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK12522078,Lb. md. + 30 dage,2010-09-20,false
+37181,Svendborg Varmeværk A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK29316875,Netto 30 dage,2021-09-20,false
+37464,Mainfranken Kunststoffe GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,DE115839254,Netto 30 dage,2006-01-12,false
+37485,Sjællands Slagteri A/S,1,Kunder Danmark,Danmark,Randers,DKK,DK12759287,Netto 14 dage,2024-02-17,false
+37695,Vejle Spildevand ApS,1,Kunder Danmark,Danmark,Roskilde,DKK,DK33782969,Lb. md. + 30 dage,2021-06-27,false
+37746,Køge Kemi A.m.b.a.,1,Kunder Danmark,Danmark,Kolding,DKK,DK16334326,Netto 14 dage,2015-11-08,false
+37821,Sydfyns Varmeværk A.m.b.a.,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK17281286,Netto 14 dage,2007-06-14,false
+38253,Vestjysk Bygningsservice A.m.b.a.,1,Kunder Danmark,Danmark,Randers,DKK,,Lb. md. + 30 dage,2007-03-09,false
+38500,Horsens Plast A/S,1,Kunder Danmark,Danmark,Aalborg,DKK,DK37614230,Netto 30 dage,2018-01-13,false
+38520,Dalarnas Vatten AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE553290989101,Netto 30 dage,2011-07-14,false
+38529,Skånska Vatten AB,2,Kunder Sverige,Sverige,Linköping,SEK,SE551843511801,Netto 30 dage,2014-01-05,false
+39146,Lahntal Gebäudetechnik GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Regensburg,EUR,,Netto 30 dage,2024-12-03,false
+39161,Vestjysk Foder ApS,1,Kunder Danmark,Danmark,Herning,DKK,DK41695763,Netto 30 dage,2018-11-10,false
+39495,Sjællands Maskinfabrik A/S,1,Kunder Danmark,Danmark,Kolding,DKK,DK44401289,Netto 30 dage,2020-12-06,false
+39862,Oderland Gebäudetechnik GmbH,3,Kunder Tyskland,Tyskland,Nürnberg,EUR,DE333389918,Lb. md. + 30 dage,2007-03-05,false
+40012,Jönköpings Kemi AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE555562147401,Netto 14 dage,2021-05-25,false
+40096,Jönköpings Livsmedel AB,2,Kunder Sverige,Sverige,Kalmar,SEK,SE552131837601,Netto 30 dage,2023-02-20,false
+40621,Roskilde Vand A/S,1,Kunder Danmark,Danmark,Odense,DKK,DK34733511,Netto 30 dage,2006-01-28,false
+40698,Lausitz Molkerei GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Köln,EUR,DE254117718,Lb. md. + 30 dage,2012-01-27,false
+40925,Køge Akvakultur A/S,1,Kunder Danmark,Danmark,Herning,DKK,DK17998157,Lb. md. + 30 dage,2024-11-24,false
+41195,Herning Bygningsservice A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK18479660,Netto 30 dage,2015-12-18,false
+41318,Göteborgs Pappersbruk AB,2,Kunder Sverige,Sverige,Kalmar,SEK,SE556199700501,Lb. md. + 30 dage,2012-08-16,false
+41333,Neckartal Wasserwerke GmbH,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE279703795,Netto 30 dage,2008-03-16,false
+41443,Kyst Rensningsanlæg A.m.b.a.,1,Kunder Danmark,Danmark,Esbjerg,DKK,DK38700011,Netto 14 dage,2009-01-09,false
+41458,Gebäudetechnik Emsland GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Regensburg,EUR,DE304858872,Netto 30 dage,2014-10-13,false
+42451,Hunsrück Molkerei GmbH,3,Kunder Tyskland,Tyskland,Osnabrück,EUR,DE114130738,Netto 14 dage,2015-03-20,false
+42801,Køge Mejeri A.m.b.a.,1,Kunder Danmark,Danmark,Herning,DKK,DK31865298,Netto 30 dage,2020-09-22,false
+43485,Spreewald Wasserwerke GmbH,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,DE171373625,Lb. md. + 30 dage,2018-03-23,false
+43887,Hjørring Bygningsservice A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK23781576,Netto 30 dage,2022-01-27,false
+43966,Skive Slagteri A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK29359496,Netto 30 dage,2010-02-02,false
+44255,Donautal Kältetechnik GmbH,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,DE138926575,Netto 30 dage,2017-07-04,false
+44513,Kältetechnik Wetterau AG,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,DE223542714,Netto 30 dage,2008-02-06,false
+44592,Fuldatal Papier GmbH,3,Kunder Tyskland,Tyskland,Osnabrück,EUR,DE302486578,Netto 30 dage,2015-03-22,false
+44633,Westerwald Chemie GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Ulm,EUR,DE156803999,Lb. md. + 30 dage,2016-06-17,false
+44987,Werratal Gebäudetechnik GmbH,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE132759133,Netto 14 dage,2021-07-12,false
+44994,Svendborg Foder ApS,1,Kunder Danmark,Danmark,Aalborg,DKK,DK28100935,Netto 30 dage,2020-12-01,false
+45730,Isartal Brauerei GmbH,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE134378832,Lb. md. + 30 dage,2019-01-21,false
+46050,Kalundborg Energi A/S,1,Kunder Danmark,Danmark,Kolding,DKK,DK40195836,Netto 14 dage,2015-05-18,false
+46322,Brauerei Weserland GmbH,3,Kunder Tyskland,Tyskland,Essen,EUR,DE258856888,Netto 30 dage,2023-09-28,false
+46485,Svendborg Spildevand A/S,1,Kunder Danmark,Danmark,Viborg,DKK,DK25280723,Netto 30 dage,2009-09-19,false
+46808,Chemie Werratal GmbH,3,Kunder Tyskland,Tyskland,Dortmund,EUR,DE168982712,Netto 14 dage,2008-06-13,false
+47037,Lolland Rensningsanlæg ApS,1,Kunder Danmark,Danmark,Esbjerg,DKK,DK37023929,Netto 14 dage,2020-10-11,false
+47088,Uckermark Energie GmbH,3,Kunder Tyskland,Tyskland,Würzburg,EUR,DE103405515,Netto 14 dage,2014-07-13,false
+47308,Neckartal Fleischwaren GmbH,3,Kunder Tyskland,Tyskland,Augsburg,EUR,DE214348461,Netto 14 dage,2015-04-21,false
+47657,Kalundborg Akvakultur ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK11057453,Netto 30 dage,2009-02-26,false
+48130,Norrlands Livsmedel AB,2,Kunder Sverige,Sverige,Halmstad,SEK,SE555615212501,Netto 14 dage,2009-12-14,false
+48735,Roskilde Varmeværk A.m.b.a.,1,Kunder Danmark,Danmark,Odense,DKK,DK30863682,Netto 14 dage,2007-10-04,false
+48905,Hallands Energi AB,2,Kunder Sverige,Sverige,Sundsvall,SEK,SE555106397801,Lb. md. + 30 dage,2019-08-23,false
+49552,Norrlands Kyl AB,2,Kunder Sverige,Sverige,Linköping,SEK,SE553120440501,Netto 30 dage,2006-04-20,false
+49669,Næstved Akvakultur A/S,1,Kunder Danmark,Danmark,Køge,DKK,,Netto 30 dage,2014-03-20,false
+49831,Värmlands Livsmedel AB,2,Kunder Sverige,Sverige,Karlstad,SEK,SE554872215301,Netto 30 dage,2008-09-10,false
+50267,Østjysk Energi A/S,1,Kunder Danmark,Danmark,Vejle,DKK,DK13430976,Netto 30 dage,2009-11-21,false
+50467,Vestjysk VVS A/S,1,Kunder Danmark,Danmark,Vejle,DKK,DK28194462,Netto 14 dage,2010-10-10,false
+50584,Fredericia Slagteri A.m.b.a.,1,Kunder Danmark,Danmark,Køge,DKK,DK10650524,Netto 30 dage,2011-10-26,false
+51025,Viborg Køleteknik ApS,1,Kunder Danmark,Danmark,Odense,DKK,DK14794882,Netto 30 dage,2022-12-10,false
+51161,Westerwald Fleischwaren AG,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,DE271787090,Netto 14 dage,2017-09-18,false
+51222,Odense Bygningsservice A/S,1,Kunder Danmark,Danmark,Viborg,DKK,DK28476559,Netto 14 dage,2016-07-02,false
+51369,Fjord Energi ApS,1,Kunder Danmark,Danmark,Fredericia,DKK,DK27889628,Netto 30 dage,2006-12-06,false
+51415,Havelland Molkerei AG,3,Kunder Tyskland,Tyskland,Hannover,EUR,DE168474874,Netto 30 dage,2023-09-23,false
+51507,Fjord VVS ApS,1,Kunder Danmark,Danmark,Vejle,DKK,DK22914163,Netto 30 dage,2023-08-16,false
+51525,Randers Kemi A.m.b.a.,1,Kunder Danmark,Danmark,Odense,DKK,,Netto 30 dage,2019-07-13,false
+51845,Svendborg Bryggeri A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK16549049,Netto 30 dage,2011-12-09,false
+51979,Östgöta Fjärrvärme AB,2,Kunder Sverige,Sverige,Göteborg,SEK,SE556516947601,Netto 30 dage,2013-01-18,false
+52902,Rheinmark Chemie GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Ludwigshafen,EUR,DE289925152,Netto 30 dage,2014-03-11,false
+52904,Gävle Massa AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE555397770301,Netto 30 dage,2013-01-28,false
+53068,Molkerei Wetterau GmbH,3,Kunder Tyskland,Tyskland,Dortmund,EUR,DE156406822,Netto 30 dage,2021-02-13,false
+53846,Oderland Umwelttechnik GmbH,3,Kunder Tyskland,Tyskland,Köln,EUR,,Netto 14 dage,2019-04-03,false
+54117,Isartal Chemie GmbH,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,DE214974272,Lb. md. + 30 dage,2018-06-02,false
+54318,Energie Havelland AG,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,DE167373945,Netto 30 dage,2018-10-07,false
+54412,Allgäu Klärtechnik AG,3,Kunder Tyskland,Tyskland,Köln,EUR,DE213365435,Netto 30 dage,2007-08-12,false
+54954,Hallands Pappersbruk AB,2,Kunder Sverige,Sverige,Halmstad,SEK,SE556937909301,Netto 30 dage,2012-07-13,false
+55046,Östgöta Energi AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE554933781801,Netto 14 dage,2021-08-01,false
+55081,Norrlands Fjärrvärme AB,2,Kunder Sverige,Sverige,Örebro,SEK,SE555458585301,Lb. md. + 30 dage,2006-01-07,false
+55257,Randers Bryggeri A/S,1,Kunder Danmark,Danmark,Herning,DKK,DK23817023,Lb. md. + 30 dage,2007-02-05,false
+55325,Næstved Slagteri A/S,1,Kunder Danmark,Danmark,Roskilde,DKK,DK30210026,Netto 30 dage,2014-06-02,false
+55415,Himmerlands Rensningsanlæg A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK29119433,Netto 30 dage,2021-07-16,false
+55467,Viborg Bryggeri A/S,1,Kunder Danmark,Danmark,Esbjerg,DKK,DK29299638,Netto 30 dage,2006-10-02,false
+55507,Gävle Mejeri AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE553435254901,Netto 30 dage,2015-11-17,false
+56067,Midtjysk Slagteri ApS,1,Kunder Danmark,Danmark,Herning,DKK,DK19938594,Netto 30 dage,2006-12-26,false
+56208,Kältetechnik Hunsrück GmbH,3,Kunder Tyskland,Tyskland,Augsburg,EUR,DE180370517,Netto 30 dage,2022-01-08,false
+56302,Västerbottens Industriservice AB,2,Kunder Sverige,Sverige,Kalmar,SEK,,Netto 30 dage,2006-12-21,false
+56599,Herning Rensningsanlæg ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK26949457,Lb. md. + 30 dage,2006-10-14,false
+56955,Lolland Plast A/S,1,Kunder Danmark,Danmark,Vejle,DKK,DK16818371,Netto 30 dage,2023-03-11,false
+57054,Mälardalens Kemi AB,2,Kunder Sverige,Sverige,Kalmar,SEK,SE551925268301,Lb. md. + 30 dage,2011-10-24,false
+57368,Fuldatal Kältetechnik GmbH,3,Kunder Tyskland,Tyskland,Dortmund,EUR,DE291836896,Netto 30 dage,2013-09-05,false
+57894,Lolland Emballage A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK39673236,Lb. md. + 30 dage,2016-12-16,false
+58058,Smålands Massa AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE553181434701,Netto 30 dage,2023-09-02,false
+58507,Blekinge Fjärrvärme AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE552752601401,Netto 30 dage,2008-01-17,false
+58689,Næstved Bygningsservice A/S,1,Kunder Danmark,Danmark,Viborg,DKK,DK24764196,Netto 14 dage,2019-05-21,false
+59038,Saarland Wasserwerke GmbH,3,Kunder Tyskland,Tyskland,Nürnberg,EUR,DE132669912,Lb. md. + 30 dage,2007-11-02,false
+59254,Thy Vand ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK35248543,Netto 30 dage,2021-09-12,false
+60135,Kyst Stålindustri ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK41818537,Netto 30 dage,2007-12-12,false
+60490,Neckartal Brauerei GmbH,3,Kunder Tyskland,Tyskland,Freiburg,EUR,DE216618188,Netto 30 dage,2012-09-07,false
+60698,Mainfranken Galvanik GmbH,3,Kunder Tyskland,Tyskland,Stuttgart,EUR,DE166369800,Netto 30 dage,2019-03-03,false
+60752,Anlagenbau Neckartal AG,3,Kunder Tyskland,Tyskland,Stuttgart,EUR,DE229140497,Netto 30 dage,2012-04-15,false
+60970,Kraichgau Fleischwaren GmbH,3,Kunder Tyskland,Tyskland,Würzburg,EUR,DE232627429,Netto 30 dage,2016-07-12,false
+60979,Spreewald Stahl GmbH,3,Kunder Tyskland,Tyskland,Hamburg,EUR,DE144102731,Netto 14 dage,2011-11-19,false
+61813,Vejle Varmeværk A/S,1,Kunder Danmark,Danmark,Skive,DKK,DK42385257,Netto 30 dage,2018-02-24,false
+62399,Skive Foder A/S,1,Kunder Danmark,Danmark,Aalborg,DKK,DK14172347,Netto 30 dage,2023-09-15,false
+62672,Värmlands Energi AB,2,Kunder Sverige,Sverige,Norrköping,SEK,,Netto 30 dage,2021-11-12,false
+62839,Fuldatal Anlagenbau GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Karlsruhe,EUR,,Netto 30 dage,2010-06-10,false
+63514,Värmlands Vatten AB,2,Kunder Sverige,Sverige,Karlstad,SEK,SE555929778301,Netto 30 dage,2017-07-10,false
+64729,Örebro Kemi AB,2,Kunder Sverige,Sverige,Kalmar,SEK,SE556981429701,Netto 30 dage,2010-09-19,false
+64767,Fjord Køleteknik A.m.b.a.,1,Kunder Danmark,Danmark,Roskilde,DKK,DK22159275,Lb. md. + 30 dage,2023-01-24,false
+65308,Chemie Westerwald GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Köln,EUR,DE266930502,Lb. md. + 30 dage,2018-03-04,false
+65372,Svendborg VVS ApS,1,Kunder Danmark,Danmark,Skive,DKK,,Netto 30 dage,2008-05-17,false
+65426,Mainfranken Stahl AG,3,Kunder Tyskland,Tyskland,Osnabrück,EUR,DE149809380,Netto 30 dage,2022-04-08,false
+65883,Limfjords Bryggeri A/S,1,Kunder Danmark,Danmark,Holstebro,DKK,DK44334046,Netto 30 dage,2009-06-23,false
+65919,Silkeborg Rensningsanlæg ApS,1,Kunder Danmark,Danmark,Horsens,DKK,DK39720031,Netto 30 dage,2010-04-27,false
+65977,Vestjysk Mejeri A/S,1,Kunder Danmark,Danmark,Holstebro,DKK,DK28871394,Lb. md. + 30 dage,2010-09-19,false
+66018,Østjysk Foder A.m.b.a.,1,Kunder Danmark,Danmark,Silkeborg,DKK,,Netto 30 dage,2008-11-17,false
+66979,Lolland Spildevand ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK27140686,Netto 30 dage,2012-08-07,false
+67059,Odense Fjernvarme A/S,1,Kunder Danmark,Danmark,Odense,DKK,DK25054685,Netto 30 dage,2021-10-21,false
+67203,Wetterau Anlagenbau GmbH,3,Kunder Tyskland,Tyskland,Ulm,EUR,DE114135634,Netto 14 dage,2018-05-18,false
+67334,Galvanik Mainfranken AG,3,Kunder Tyskland,Tyskland,Leipzig,EUR,DE178497171,Netto 30 dage,2019-04-14,false
+68176,Mosel Umwelttechnik GmbH,3,Kunder Tyskland,Tyskland,Hannover,EUR,DE210654714,Netto 30 dage,2019-03-04,false
+68443,Dalarnas Energi AB,2,Kunder Sverige,Sverige,Sundsvall,SEK,SE553529448501,Netto 30 dage,2016-05-12,false
+68475,Randers Foder A/S,1,Kunder Danmark,Danmark,Køge,DKK,DK34413587,Netto 14 dage,2007-01-15,false
+68523,Hallands Fjärrvärme AB,2,Kunder Sverige,Sverige,Örebro,SEK,SE554507156701,Lb. md. + 30 dage,2018-06-22,false
+68578,Aabenraa Mejeri ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK32598922,Lb. md. + 30 dage,2024-07-16,false
+68986,Herning Foder ApS,1,Kunder Danmark,Danmark,Holstebro,DKK,DK38245513,Lb. md. + 30 dage,2010-05-24,false
+68988,Horsens Varmeværk A/S,1,Kunder Danmark,Danmark,Randers,DKK,DK27312796,Netto 14 dage,2022-05-10,false
+69020,Bornholms Energi A/S,1,Kunder Danmark,Danmark,Skive,DKK,DK13079679,Netto 30 dage,2010-12-28,false
+69070,Roskilde Fødevarer A.m.b.a.,1,Kunder Danmark,Danmark,Horsens,DKK,DK26546983,Lb. md. + 30 dage,2008-01-25,false
+69315,Weserland Umwelttechnik GmbH,3,Kunder Tyskland,Tyskland,Essen,EUR,DE147890144,Netto 30 dage,2007-09-24,false
+69481,Saarland Molkerei GmbH,3,Kunder Tyskland,Tyskland,Paderborn,EUR,,Netto 30 dage,2014-03-03,false
+69675,Horsens Vand A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK24173384,Netto 14 dage,2022-10-09,false
+69684,Smålands Kemi AB,2,Kunder Sverige,Sverige,Västerås,SEK,SE556888232001,Netto 30 dage,2008-02-04,false
+69695,Køge Bygningsservice A/S,1,Kunder Danmark,Danmark,Kolding,DKK,DK29019004,Netto 30 dage,2007-04-02,false
+69870,Herning Slagteri A.m.b.a.,1,Kunder Danmark,Danmark,Skive,DKK,,Netto 14 dage,2008-10-04,false
+69956,Oderland Galvanik GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Nürnberg,EUR,DE121345328,Lb. md. + 30 dage,2010-10-02,false
+70011,Sydfyns Bryggeri A/S,1,Kunder Danmark,Danmark,Fredericia,DKK,DK27720687,Lb. md. + 30 dage,2024-11-20,false
+70012,Køge Foder A/S,1,Kunder Danmark,Danmark,Herning,DKK,DK10481598,Netto 14 dage,2024-11-20,false
+70013,Esbjerg Emballage A/S,1,Kunder Danmark,Danmark,Fredericia,DKK,DK37606136,Netto 14 dage,2024-12-29,false
+70014,Bornholms Slagteri A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK45403998,Lb. md. + 30 dage,2025-01-10,false
+70015,Uckermark Lebensmittel GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,DE102386450,Netto 30 dage,2025-01-12,false
+70016,Kältetechnik Oderland GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Magdeburg,EUR,,Netto 14 dage,2025-01-13,false
+70017,Ruhrtal Papier GmbH,3,Kunder Tyskland,Tyskland,Hannover,EUR,DE176986548,Netto 30 dage,2025-01-14,false
+70018,Nordjysk Maskinfabrik A.m.b.a.,1,Kunder Danmark,Danmark,Kolding,DKK,DK12503465,Netto 30 dage,2025-01-23,false
+70021,Fuldatal Kunststoffe GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Magdeburg,EUR,DE130609922,Netto 30 dage,2025-02-07,false
+70022,Randers Spildevand A/S,1,Kunder Danmark,Danmark,Fredericia,DKK,DK38912169,Netto 14 dage,2025-02-07,false
+70024,Lebensmittel Kraichgau GmbH,3,Kunder Tyskland,Tyskland,Essen,EUR,DE274408467,Netto 14 dage,2025-02-16,false
+70027,Kalmar Mejeri AB,2,Kunder Sverige,Sverige,Gävle,SEK,,Netto 30 dage,2025-02-23,false
+70028,Roskilde Emballage A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK29060607,Netto 30 dage,2025-02-27,false
+70031,Silkeborg Spildevand A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK30653237,Netto 30 dage,2025-03-02,false
+70033,Östgöta Massa AB,2,Kunder Sverige,Sverige,Örebro,SEK,SE555024218701,Netto 30 dage,2025-03-09,false
+70036,Isartal Molkerei GmbH,3,Kunder Tyskland,Tyskland,Paderborn,EUR,DE300987214,Netto 30 dage,2025-03-17,false
+70039,Havelland Anlagenbau GmbH,3,Kunder Tyskland,Tyskland,Mannheim,EUR,DE296251066,Lb. md. + 30 dage,2025-04-22,false
+70041,Östgöta Kemi AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE554968374701,Netto 14 dage,2025-04-28,false
+70042,Werratal Lebensmittel AG,3,Kunder Tyskland,Tyskland,Magdeburg,EUR,DE160345299,Netto 30 dage,2025-05-07,false
+70043,Sydfyns Vand A.m.b.a.,1,Kunder Danmark,Danmark,Kolding,DKK,,Lb. md. + 30 dage,2025-05-21,false
+70044,Midtjysk Spildevand ApS,1,Kunder Danmark,Danmark,Vejle,DKK,DK31742008,Lb. md. + 30 dage,2025-05-24,false
+70047,Roskilde Energi A/S,1,Kunder Danmark,Danmark,Randers,DKK,DK45554883,Netto 14 dage,2025-05-29,false
+70048,Sydfyns Foder A/S,1,Kunder Danmark,Danmark,Odense,DKK,DK26202816,Netto 30 dage,2025-06-07,false
+70050,Gävle Industriservice AB,2,Kunder Sverige,Sverige,Umeå,SEK,,Netto 30 dage,2025-06-09,false
+70053,Nordjysk Køleteknik ApS,1,Kunder Danmark,Danmark,Randers,DKK,DK10269401,Lb. md. + 30 dage,2025-06-14,false
+70056,Oderland Lebensmittel GmbH,3,Kunder Tyskland,Tyskland,Münster,EUR,DE140824055,Lb. md. + 30 dage,2025-06-21,false
+70058,Norrlands Mejeri AB,2,Kunder Sverige,Sverige,Jönköping,SEK,SE553993061801,Netto 30 dage,2025-06-25,false
+70060,Smålands Energi AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE553878025401,Netto 30 dage,2025-06-26,false
+70061,Sydfyns Stålindustri A/S,1,Kunder Danmark,Danmark,Skive,DKK,DK17684800,Lb. md. + 30 dage,2025-07-15,false
+70062,Jönköpings Kyl AB,2,Kunder Sverige,Sverige,Gävle,SEK,SE556312208401,Lb. md. + 30 dage,2025-07-19,false
+70063,Umwelttechnik Weserland AG,3,Kunder Tyskland,Tyskland,Köln,EUR,DE190900348,Netto 30 dage,2025-08-11,false
+70064,Fleischwaren Isartal GmbH,3,Kunder Tyskland,Tyskland,Essen,EUR,DE205375130,Netto 14 dage,2025-08-16,false
+70065,Eifel Wasserwerke GmbH,3,Kunder Tyskland,Tyskland,Köln,EUR,DE202537140,Netto 30 dage,2025-08-25,false
+70068,Aabenraa Bygningsservice A.m.b.a.,1,Kunder Danmark,Danmark,Horsens,DKK,DK41028511,Netto 30 dage,2025-09-03,false
+70069,Skive Vand ApS,1,Kunder Danmark,Danmark,Aarhus,DKK,DK26502853,Lb. md. + 30 dage,2025-09-19,false
+70071,Lahntal Chemie GmbH,3,Kunder Tyskland,Tyskland,Regensburg,EUR,DE285962705,Netto 30 dage,2025-09-22,false
+70072,Eifel Umwelttechnik GmbH,3,Kunder Tyskland,Tyskland,Essen,EUR,DE235648902,Lb. md. + 30 dage,2025-09-24,false
+70075,Havelland Brauerei GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Kassel,EUR,DE347211456,Netto 30 dage,2025-09-28,false
+70078,Mälardalens Pappersbruk AB,2,Kunder Sverige,Sverige,Halmstad,SEK,SE552437071101,Netto 30 dage,2025-10-23,false
+70080,Smålands Pappersbruk AB,2,Kunder Sverige,Sverige,Sundsvall,SEK,,Netto 14 dage,2025-10-29,false
+70082,Kyst Emballage A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK14360638,Netto 30 dage,2025-11-22,false
+70085,Havelland Stahl AG,3,Kunder Tyskland,Tyskland,Würzburg,EUR,DE197821685,Netto 30 dage,2025-12-05,false
+70086,Jönköpings Fjärrvärme AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE554377996401,Netto 30 dage,2025-12-05,false
+70087,Kraichgau Klärtechnik GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Ulm,EUR,DE170726943,Netto 30 dage,2025-12-14,false
+70088,Roskilde Spildevand A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK13845115,Netto 30 dage,2026-01-24,false
+70090,Vogtland Stahl GmbH,3,Kunder Tyskland,Tyskland,Regensburg,EUR,DE163944937,Netto 14 dage,2026-01-25,false
+70093,Donautal Klärtechnik AG,3,Kunder Tyskland,Tyskland,Regensburg,EUR,DE156654766,Lb. md. + 30 dage,2026-01-27,false
+70096,Køge Plast A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK34483963,Lb. md. + 30 dage,2026-02-02,false
+70097,Himmerlands Bryggeri A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK27756791,Lb. md. + 30 dage,2026-02-09,false
+70100,Smålands Vatten AB,2,Kunder Sverige,Sverige,Örebro,SEK,SE552387736101,Netto 14 dage,2026-02-17,false
+70102,Kunststoffe Werratal AG,3,Kunder Tyskland,Tyskland,Magdeburg,EUR,,Netto 14 dage,2026-02-20,false
+70105,Dalarnas Industriservice AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE551357373001,Netto 30 dage,2026-02-23,false
+70106,Blekinge Pappersbruk AB,2,Kunder Sverige,Sverige,Umeå,SEK,SE556926170501,Netto 14 dage,2026-02-24,false
+70109,Horsens Energi A/S,1,Kunder Danmark,Danmark,Horsens,DKK,DK40636364,Netto 30 dage,2026-03-14,false
+70111,Elbtal Molkerei AG,3,Kunder Tyskland,Tyskland,Essen,EUR,,Netto 14 dage,2026-03-23,false
+70114,Sauerland Wasserwerke GmbH,3,Kunder Tyskland,Tyskland,Mannheim,EUR,DE271031083,Lb. md. + 30 dage,2026-04-23,false
+70116,Hunsrück Kunststoffe GmbH,3,Kunder Tyskland,Tyskland,Bremen,EUR,DE186920889,Netto 14 dage,2026-04-26,false
+70117,Wasserwerke Wetterau GmbH & Co. KG,3,Kunder Tyskland,Tyskland,Leipzig,EUR,DE176532795,Netto 30 dage,2026-04-26,false
+70118,Ruhrtal Lebensmittel GmbH,3,Kunder Tyskland,Tyskland,Bremen,EUR,DE198045730,Netto 30 dage,2026-04-27,false
+70121,Östgöta Mejeri AB,2,Kunder Sverige,Sverige,Halmstad,SEK,,Lb. md. + 30 dage,2026-04-29,false
+70122,Odense Vand A/S,1,Kunder Danmark,Danmark,Aalborg,DKK,DK32380970,Netto 14 dage,2026-04-30,false
+70123,Blekinge Energi AB,2,Kunder Sverige,Sverige,Halmstad,SEK,SE551581615501,Netto 30 dage,2026-04-30,false
+70124,Kalundborg Fjernvarme ApS,1,Kunder Danmark,Danmark,Næstved,DKK,DK31880616,Netto 14 dage,2026-05-07,false
+70127,Kyst Slagteri A/S,1,Kunder Danmark,Danmark,Fredericia,DKK,DK44603911,Lb. md. + 30 dage,2026-05-20,false
+70128,Hjørring Fødevarer ApS,1,Kunder Danmark,Danmark,Køge,DKK,DK43934971,Lb. md. + 30 dage,2026-05-25,false
+70131,Eifel Anlagenbau AG,3,Kunder Tyskland,Tyskland,Bremen,EUR,,Netto 14 dage,2026-05-29,false
+70132,Sauerland Fleischwaren GmbH,3,Kunder Tyskland,Tyskland,Freiburg,EUR,DE134930459,Netto 30 dage,2026-05-31,false
+70133,Himmerlands Mejeri ApS,1,Kunder Danmark,Danmark,Næstved,DKK,DK12957888,Netto 30 dage,2026-06-29,false
+70136,Kalundborg Bryggeri A/S,1,Kunder Danmark,Danmark,Silkeborg,DKK,DK44188919,Netto 30 dage,2026-07-01,false
+70139,Dalarnas Reningsverk AB,2,Kunder Sverige,Sverige,Örebro,SEK,,Netto 30 dage,2026-07-09,false
+70142,Fjord Bygningsservice ApS,1,Kunder Danmark,Danmark,Esbjerg,DKK,DK34431660,Lb. md. + 30 dage,2026-07-29,false
+70145,Thy Mejeri A/S,1,Kunder Danmark,Danmark,Skive,DKK,DK22180058,Lb. md. + 30 dage,2026-08-11,false
+70148,Elbtal Stahl GmbH,3,Kunder Tyskland,Tyskland,Kassel,EUR,DE144404878,Netto 30 dage,2026-08-23,false
+70149,Vogtland Kältetechnik GmbH,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,DE180282549,Netto 30 dage,2026-08-23,false
+70151,Uckermark Umwelttechnik AG,3,Kunder Tyskland,Tyskland,Bielefeld,EUR,,Lb. md. + 30 dage,2026-08-25,false
+70152,Klärtechnik Harz AG,3,Kunder Tyskland,Tyskland,Paderborn,EUR,DE131711632,Netto 30 dage,2026-09-04,false

@@ -1,0 +1,524 @@
+company_id,name,domain,country,city,industry,lifecycle_stage,owner_id,created_at,num_employees
+cmp_39764,Upplands Vatten,,Sweden,,UTILITIES,customer,usr_412007,2019-01-03,51
+cmp_38728,Vestjysk Spildevand A/S,,,Næstved,UTILITIES,customer,usr_912432,2019-01-07,
+cmp_16094,ISARTAL BRAUEREI GMBH,isartal-brauerei.de,Germany,Hamburg,FOOD_BEVERAGES,customer,usr_109098,2019-01-18,
+cmp_26377,Hjørring Spildevand (HQ),,Denmark,Silkeborg,UTILITIES,customer,usr_335144,2019-02-13,116
+cmp_92184,Fuldatal Papier,fuldatal-papier.de,Germany,Osnabrück,,customer,usr_618438,2019-02-14,51
+cmp_39279,Silkeborg Energi,silkeborg-energi.dk,Denmark,Skive,UTILITIES,customer,usr_335144,2019-02-24,
+cmp_76247,Westerwald Kunststoffe,westerwald-kunststoffe.de,Germany,Hamburg,CHEMICALS,customer,usr_823192,2019-02-28,
+cmp_72300,Thy Bygningsservice A.m.b.a.,thy-bygningsservice.dk,Denmark,Aarhus,BUILDING_MATERIALS,customer,usr_681988,2019-03-10,53
+cmp_28791,Svendborg Foder,svendborg-foder.dk,Denmark,Aalborg,FOOD_BEVERAGES,customer,usr_912432,2019-03-26,73
+cmp_66927,Aabenraa Vand,aabenraa-vand.dk,Denmark,Odense,UTILITIES,customer,usr_335144,2019-04-04,
+cmp_95247,DONAUTAL GEBÄUDETECHNIK GMBH & CO. KG,,Germany,Leipzig,BUILDING_MATERIALS,customer,usr_250616,2019-04-07,64
+cmp_88884,Svendborg Brygger,,Denmark,,FOOD_BEVERAGES,customer,usr_912432,2019-04-18,175
+cmp_57524,Dalarnas Kyl,dalarnas-kyl.se,,Umeå,MACHINERY,customer,usr_160964,2019-04-28,
+cmp_39035,Aabenraa Foder,aabenraa-foder.dk,Denmark,Aarhus,FOOD_BEVERAGES,customer,usr_335144,2019-05-05,96
+cmp_53325,Limfjords Bryggeri,,Denmark,Holstebro,FOOD_BEVERAGES,customer,usr_335144,2019-05-07,92
+cmp_52596,Gävle Mejeri AB,gavle-mejeri.se,Sweden,Umeå,FOOD_BEVERAGES,customer,usr_160964,2019-05-07,
+cmp_31676,Køge Kemi,koge-kemi.dk,Denmark,Kolding,CHEMICALS,customer,usr_912432,2019-05-19,
+cmp_17452,Sydfyns Maskinfabrik ApS,sydfyns-maskinfabrik.dk,Denmark,,MACHINERY,customer,usr_491244,2019-06-13,
+cmp_75867,Mainfranken Galvanik,,Germany,Stuttgart,,customer,usr_585289,2019-06-16,
+cmp_95298,Oderland Gebäudetechnik,oderland-gebaudetechnik.de,Germany,Nürnberg,,customer,usr_734861,2019-07-11,
+cmp_69105,Vogtland Lebensmittel,vogtland-lebensmittel.de,Germany,Bremen,FOOD_BEVERAGES,customer,usr_722128,2019-07-14,76
+cmp_11386,Kyst Rensningsanlæg,kyst-rensningsanlaeg.dk,Denmark,Esbjerg,UTILITIES,customer,usr_681988,2019-07-26,327
+cmp_34151,Kraichgau Fleischwaren,kraichgau-fleischwaren.de,Germany,Würzburg,FOOD_BEVERAGES,customer,usr_722128,2019-08-10,
+cmp_96705,Thy Bryggeri,thy-bryggeri.dk,Denmark,Aarhus,FOOD_BEVERAGES,customer,usr_491244,2019-08-13,41
+cmp_18932,Galvanik Saarland,,Germany,Paderborn,,customer,usr_585289,2019-08-15,
+cmp_25215,Mälardalens Vatten (HQ),,Sweden,Norrköping,UTILITIES,customer,usr_231673,2019-08-20,138
+cmp_56998,Dalarnas Fjärrvärme,dalarnas-fjarrvarme.se,Sweden,,,customer,usr_149178,2019-08-23,
+cmp_27984,Fuldatal Kältetechnik Produktion,,Germany,Dortmund,MACHINERY,customer,usr_722128,2019-08-23,
+cmp_34933,Nordjysk Bryggeri A.m.b.a.,,Denmark,Holstebro,FOOD_BEVERAGES,customer,usr_335144,2019-09-02,55
+cmp_84580,Roskilde Fødevarer,roskilde-fodevarer.dk,,Horsens,FOOD_BEVERAGES,customer,usr_681988,2019-09-18,
+cmp_14059,Orebro Vatten,orebro-vatten.se,Sweden,Linköping,UTILITIES,customer,usr_231673,2019-09-20,96
+cmp_63071,Hjørring Slagteri ApS,hjorring-slagteri.dk,Denmark,Odense,FOOD_BEVERAGES,customer,usr_681988,2019-09-23,
+cmp_32543,Herning Bygningsservice - Hovedkontor,,Denmark,Aarhus,BUILDING_MATERIALS,customer,usr_335144,2019-09-28,2397
+cmp_87084,Dalarnas Vatten AB,,Sweden,Umeå,UTILITIES,customer,usr_412007,2019-10-01,57
+cmp_42745,Neckartal Fleischwaren,,Germany,Augsburg,,customer,usr_823192,2019-10-07,
+cmp_61829,Fjord Køleteknik,fjord-koleteknik.dk,Denmark,Roskilde,,customer,usr_335144,2019-10-22,2877
+cmp_49633,Østjysk Varmevær,,Denmark,Køge,,customer,usr_912432,2019-10-24,80
+cmp_95168,Upplands Kyl,upplands-kyl.se,Sweden,Sundsvall,MACHINERY,customer,usr_412007,2019-10-24,
+cmp_56258,Svendborg Fjernvarme,svendborg-fjernvarme.dk,Denmark,Silkeborg,UTILITIES,customer,usr_367478,2019-11-02,
+cmp_19550,WESERLAND UMWELTTECHNIK GMBH,weserland-umwelttechnik.de,Germany,Essen,,customer,usr_707012,2019-11-11,59
+cmp_13406,Køge Rensningsanlæg ApS,koge-rensningsanlaeg.dk,Denmark,Aalborg,UTILITIES,customer,usr_681988,2019-11-22,103
+cmp_44687,Kältetechnik Wetterau,kaltetechnik-wetterau.de,Germany,Karlsruhe,MACHINERY,customer,usr_707012,2019-11-27,58
+cmp_82561,Brandauer Papier,brandauer-papier.de,Germany,Aschaffenburg,PAPER_FOREST_PRODUCTS,customer,usr_618438,2019-11-28,
+cmp_15266,Lebensmittel Donautal GmbH,,Germany,Stuttgart,,customer,usr_401629,2019-12-06,
+cmp_78867,Blekinge Kemi,blekinge-kemi.se,Sweden,Malmö,,customer,usr_231673,2019-12-23,79
+cmp_78239,Lausitz Chemie,,Germany,Hamburg,CHEMICALS,customer,usr_618438,2019-12-28,
+cmp_35432,Hallands Pappersbruk,hallands-pappersbruk.se,Sweden,Halmstad,PAPER_FOREST_PRODUCTS,customer,usr_412007,2020-01-16,58
+cmp_83179,Sjaellands Maskinfabrik,sjaellands-maskinfabrik.dk,Denmark,Kolding,,customer,usr_335144,2020-01-22,63
+cmp_89999,Viborg Bygningsservice,viborg-bygningsservice.dk,Denmark,Aalborg,BUILDING_MATERIALS,customer,usr_912432,2020-02-21,618
+cmp_17797,Svendborg Plast - Hovedkontor,svendborg-plast.dk,Denmark,Viborg,CHEMICALS,customer,usr_681988,2020-03-03,86
+cmp_98312,Aabenraa VVS,aabenraa-vvs.dk,Denmark,Holstebro,BUILDING_MATERIALS,customer,usr_491244,2020-03-09,46
+cmp_15058,Horsens Varmeværk,horsens-varmevaerk.dk,Denmark,Randers,UTILITIES,customer,usr_912432,2020-03-09,
+cmp_86218,Värmlands Livsmedel AB,varmlands-livsmedel.se,Sweden,Karlstad,FOOD_BEVERAGES,customer,usr_412007,2020-03-12,187
+cmp_40607,Næstved Bygningsservice,naestved-bygningsservice.dk,Denmark,Viborg,BUILDING_MATERIALS,customer,usr_681988,2020-03-23,
+cmp_61708,Westerwald Fleischwaren Produktion,westerwald-fleischwaren.de,Germany,Karlsruhe,,customer,usr_348972,2020-03-24,
+cmp_97544,Odense Energi Produktion,,Denmark,Holstebro,,customer,usr_491244,2020-04-06,
+cmp_89973,Viborg VVS ApS,viborg-vvs.dk,Denmark,Aarhus,BUILDING_MATERIALS,customer,usr_681988,2020-04-07,94
+cmp_88479,Køge Bygningsservice,koge-bygningsservice.dk,Denmark,Kolding,BUILDING_MATERIALS,customer,usr_491244,2020-05-01,
+cmp_58554,Brauerei Kraichgau,brauerei-kraichgau.de,Germany,Bielefeld,FOOD_BEVERAGES,customer,usr_195557,2020-05-01,44
+cmp_80014,Kyst Bygningsservice,kyst-bygningsservice.dk,Denmark,Silkeborg,BUILDING_MATERIALS,customer,usr_681988,2020-05-07,
+cmp_77246,Spreewald Umwelttechnik,spreewald-umwelttechnik.de,Germany,Essen,MACHINERY,customer,usr_195557,2020-05-16,
+cmp_52669,Isartal Fleischwaren GmbH,isartal-fleischwaren.de,Germany,Hamburg,FOOD_BEVERAGES,customer,usr_618438,2020-05-19,
+cmp_76122,Herning Slagteri A.m.b.a.,,Denmark,Skive,FOOD_BEVERAGES,customer,usr_367478,2020-06-07,
+cmp_23906,Herning Rensningsanlaeg,,Denmark,Køge,UTILITIES,customer,usr_912432,2020-06-09,167
+cmp_76644,Østjysk Emballage Produktion,ostjysk-emballage.dk,Denmark,Roskilde,PAPER_FOREST_PRODUCTS,customer,usr_335144,2020-06-11,
+cmp_19871,Svendborg Spildevand,svendborg-spildevand.dk,Denmark,Viborg,UTILITIES,customer,usr_912432,2020-07-03,
+cmp_63297,Skive Bryggeri A/S,,Denmark,Næstved,FOOD_BEVERAGES,customer,usr_912432,2020-09-03,
+cmp_97511,Vestjysk Varmeværk,vestjysk-varmevaerk.dk,Denmark,Silkeborg,UTILITIES,customer,usr_681988,2020-09-11,
+cmp_15794,Hallands Fjärrvärme AB,,Sweden,Örebro,,customer,usr_149178,2020-09-14,
+cmp_53689,Vejle Foder,vejle-foder.dk,Denmark,,FOOD_BEVERAGES,customer,usr_912432,2020-09-28,124
+cmp_98759,Lolland Emballage A/S,lolland-emballage.dk,Denmark,Aarhus,PAPER_FOREST_PRODUCTS,customer,usr_491244,2020-10-18,1271
+cmp_27806,Naestved Slagteri,naestved-slagteri.dk,Denmark,,,customer,usr_335144,2020-10-28,
+cmp_84468,Lebensmittel Vogtland,,Germany,Köln,FOOD_BEVERAGES,customer,usr_823192,2020-11-04,70
+cmp_64005,SMÅLANDS MASSA AB,,Sweden,Umeå,,customer,usr_160964,2020-11-09,
+cmp_84415,Esbjerg VVS,esbjerg-vvs.dk,Denmark,,BUILDING_MATERIALS,customer,usr_491244,2020-11-18,
+cmp_23390,Bornholms Mejeri,,Denmark,,FOOD_BEVERAGES,customer,usr_491244,2020-11-23,37
+cmp_76499,Donautal Kältetechnik,donautal-kaltetechnik.de,Germany,Bielefeld,MACHINERY,customer,usr_823192,2020-12-02,
+cmp_46999,Örebro Livsmedel,orebro-livsmedel.se,Sweden,Jönköping,FOOD_BEVERAGES,customer,usr_231673,2020-12-27,46
+cmp_22449,Vejle Spildevand,,Denmark,,UTILITIES,customer,usr_912432,2021-01-08,
+cmp_45367,Odense Bygningsservice,odense-bygningsservice.dk,Denmark,Viborg,BUILDING_MATERIALS,customer,usr_912432,2021-02-03,122
+cmp_64157,Altmark Fleischwaren Produktion,altmark-fleischwaren.de,Germany,Leipzig,FOOD_BEVERAGES,customer,usr_823192,2021-02-09,
+cmp_87886,Anlagenbau Havelland,anlagenbau-havelland.de,Germany,,MACHINERY,customer,usr_585289,2021-02-12,
+cmp_97594,Dalarnas Mejeri,dalarnas-mejeri.se,Sweden,Norrköping,FOOD_BEVERAGES,customer,usr_231673,2021-02-18,147
+cmp_68280,Blekinge Industriservice AB,blekinge-industriservice.se,Sweden,Helsingborg,MACHINERY,customer,usr_412007,2021-02-28,
+cmp_74466,Skånska Livsmedel,skaanska-livsmedel.se,Sweden,Norrköping,FOOD_BEVERAGES,customer,usr_149178,2021-03-06,
+cmp_92875,Blekinge Fjärrvärme,,Sweden,Malmö,UTILITIES,customer,usr_160964,2021-03-06,1029
+cmp_58374,Fredericia Slagteri,,Denmark,Køge,FOOD_BEVERAGES,customer,usr_681988,2021-03-18,1415
+cmp_42472,DJURS KEMI APS,djurs-kemi.dk,Denmark,Køge,CHEMICALS,customer,usr_335144,2021-04-02,
+cmp_11075,Bornholms Emballage,,Denmark,Odense,,customer,usr_335144,2021-04-11,
+cmp_90687,Horsens Rensningsanlaeg,horsens-rensningsanlaeg.dk,Denmark,Skive,UTILITIES,customer,usr_681988,2021-06-20,94
+cmp_40840,ESBJERG KEMI A/S,,Denmark,Aalborg,CHEMICALS,customer,usr_491244,2021-06-20,
+cmp_70588,Lolland Kemi,,Denmark,Næstved,CHEMICALS,customer,usr_681988,2021-07-02,334
+cmp_26587,Viborg Spildevand,,Denmark,Aarhus,UTILITIES,customer,usr_491244,2021-07-05,81
+cmp_70580,Viborg Slagteri,viborg-slagteri.dk,Denmark,Silkeborg,FOOD_BEVERAGES,customer,usr_491244,2021-07-22,1823
+cmp_96944,Jönköpings Reningsverk,jonkopings-reningsverk.se,Sweden,Gävle,UTILITIES,customer,usr_160964,2021-08-03,84
+cmp_14406,Østjysk Stålindustri A.m.b.a.,ostjysk-staalindustri.dk,Denmark,Kolding,MACHINERY,customer,usr_681988,2021-09-28,102
+cmp_53432,Himmerlands Rensningsanlæg,himmerlands-rensningsanlaeg.dk,Denmark,Aarhus,UTILITIES,customer,usr_491244,2021-10-08,
+cmp_80548,Odense Fjernvarme A/S,,Denmark,Odense,,customer,usr_912432,2021-10-11,
+cmp_74247,Bornholms Energi,,Denmark,Skive,UTILITIES,customer,usr_681988,2021-10-20,87
+cmp_67615,Oderland Galvanik,oderland-galvanik.de,Germany,Nürnberg,CHEMICALS,customer,usr_250616,2021-10-21,
+cmp_27781,NORRLANDS LIVSMEDEL AB,norrlands-livsmedel.se,Sweden,Halmstad,,customer,usr_412007,2021-10-25,71
+cmp_42328,Randers Kemi,randers-kemi.dk,Denmark,,CHEMICALS,customer,usr_335144,2021-11-04,
+cmp_87755,Dalarnas Massa,,Sweden,Västerås,PAPER_FOREST_PRODUCTS,customer,usr_231673,2021-11-18,
+cmp_26791,VÄSTERBOTTENS INDUSTRISERVICE AB,vasterbottens-industriservice.se,Sweden,Kalmar,MACHINERY,customer,usr_412007,2021-11-28,99
+cmp_53230,Vestjysk Fjernvarme,vestjysk-fjernvarme.dk,Denmark,,UTILITIES,customer,usr_912432,2021-12-26,241
+cmp_82705,Kalundborg Foder A.m.b.a.,kalundborg-foder.dk,,,FOOD_BEVERAGES,customer,usr_912432,2022-01-05,57
+cmp_63758,Werratal Gebäudetechnik Group,,Germany,Hamburg,,customer,usr_734861,2022-01-08,618
+cmp_85241,DALARNAS ENERGI AB,dalarnas-energi.se,Sweden,Sundsvall,UTILITIES,customer,usr_231673,2022-01-13,133
+cmp_50414,Fjord Energi,fjord-energi.dk,Denmark,Fredericia,UTILITIES,customer,usr_681988,2022-01-26,
+cmp_60029,Isartal Gebaudetechnik,isartal-gebaudetechnik.de,Germany,Magdeburg,BUILDING_MATERIALS,customer,usr_585289,2022-02-13,
+cmp_30156,Lolland Spildevand,lolland-spildevand.dk,Denmark,Køge,,customer,usr_335144,2022-02-16,79
+cmp_71541,Gävle Massa,gavle-massa.se,Sweden,Umeå,PAPER_FOREST_PRODUCTS,customer,usr_412007,2022-02-27,
+cmp_71526,Rheinmark Chemie,rheinmark-chemie.de,Germany,Ludwigshafen,CHEMICALS,customer,usr_734861,2022-03-05,15
+cmp_16736,Uckermark Energie,uckermark-energie.de,Germany,Würzburg,UTILITIES,customer,usr_722128,2022-03-13,
+cmp_74427,Vestjysk Akvakultur - Hovedkontor,vestjysk-akvakultur.dk,Denmark,Herning,FOOD_BEVERAGES,customer,usr_367478,2022-04-01,
+cmp_67619,Molkerei Wetterau,molkerei-wetterau.de,Germany,Dortmund,,customer,usr_618438,2022-04-04,313
+cmp_39522,Kältetechnik Hunsrück,,Germany,,,customer,usr_707012,2022-04-10,49
+cmp_71480,ROSKILDE VAND A/S,roskilde-vand.dk,Denmark,Odense,UTILITIES,customer,usr_681988,2022-04-14,
+cmp_38894,Fjord Fødevarer,fjord-fodevarer.dk,Denmark,,FOOD_BEVERAGES,customer,usr_335144,2022-05-14,
+cmp_22931,Bornholms Vand Produktion,bornholms-vand.dk,Denmark,Randers,UTILITIES,customer,usr_912432,2022-05-18,83
+cmp_23871,Køge Mejeri Produktion,koge-mejeri.dk,Denmark,Herning,FOOD_BEVERAGES,customer,usr_491244,2022-06-04,39
+cmp_88180,Himmerlands Spildevand,himmerlands-spildevand.dk,Denmark,Aarhus,UTILITIES,customer,usr_335144,2022-06-05,98
+cmp_50404,Aabenraa Varmeværk A/S,,Denmark,Viborg,UTILITIES,customer,usr_491244,2022-06-10,135
+cmp_52777,Spreewald Fleischwaren,,Germany,Köln,FOOD_BEVERAGES,customer,usr_401629,2022-06-20,378
+cmp_83221,Spreewald Stahl GmbH,,Germany,Hamburg,,customer,usr_823192,2022-06-23,254
+cmp_62774,Hjørring Rensningsanlæg,hjorring-rensningsanlaeg.dk,Denmark,Esbjerg,UTILITIES,customer,usr_367478,2022-07-04,192
+cmp_76286,Neckartal Wasserwerke,,Germany,Hamburg,UTILITIES,customer,usr_195557,2022-07-13,74
+cmp_66870,RANDERS MASKINFABRIK A/S,randers-maskinfabrik.dk,Denmark,Horsens,MACHINERY,customer,usr_912432,2022-08-02,110
+cmp_53038,Himmerlands VVS,himmerlands-vvs.dk,Denmark,Aalborg,BUILDING_MATERIALS,customer,usr_335144,2022-08-25,
+cmp_23088,Lausitz Molkerei,,Germany,,FOOD_BEVERAGES,customer,usr_585289,2022-09-05,224
+cmp_87945,Østjysk Foder,ostjysk-foder.dk,,Silkeborg,,customer,usr_912432,2022-09-14,
+cmp_56278,Oderland Brauerei (HQ),oderland-brauerei.de,Germany,Dortmund,FOOD_BEVERAGES,customer,usr_823192,2022-09-21,80
+cmp_82202,Fuldatal Anlagenbau,fuldatal-anlagenbau.de,Germany,Karlsruhe,,customer,usr_195557,2022-10-03,112
+cmp_19804,Sjællands Slagteri,,Denmark,Randers,FOOD_BEVERAGES,customer,usr_681988,2022-10-06,
+cmp_85070,Gävle Energi,gavle-energi.se,Sweden,Karlstad,UTILITIES,customer,usr_160964,2022-10-07,
+cmp_14155,Kalundborg Akvakultur (HQ),kalundborg-akvakultur.dk,Denmark,Køge,,customer,usr_491244,2022-10-14,
+cmp_67871,Silkeborg Rensningsanlæ,silkeborg-rensningsanlaeg.dk,,Horsens,UTILITIES,customer,usr_335144,2022-10-25,44
+cmp_58298,Lolland Rensningsanlæg ApS,lolland-rensningsanlaeg.dk,Denmark,,UTILITIES,customer,usr_491244,2022-10-27,70
+cmp_50997,Aabenraa Maskinfabrik,aabenraa-maskinfabrik.dk,Denmark,Skive,MACHINERY,customer,usr_491244,2022-12-07,179
+cmp_32376,Horsens Fødevarer,horsens-fodevarer.dk,Denmark,Næstved,,customer,usr_681988,2022-12-07,107
+cmp_38324,Norrlands Kyl AB,norrlands-kyl.se,Sweden,Linköping,MACHINERY,customer,usr_412007,2023-01-06,39
+cmp_18462,Smålands Kemi AB,smaalands-kemi.se,Sweden,Västerås,CHEMICALS,customer,usr_231673,2023-01-12,
+cmp_25151,Lausitz Anlagenbau GmbH,,Germany,Osnabrück,MACHINERY,customer,usr_722128,2023-02-07,95
+cmp_80975,Östgöta Industriservice AB,ostgota-industriservice.se,Sweden,Halmstad,MACHINERY,customer,usr_412007,2023-02-12,754
+cmp_93770,Østjysk Energi A/S,,Denmark,Vejle,UTILITIES,customer,usr_335144,2023-02-21,81
+cmp_18398,Skive Slagteri,skive-slagteri.dk,Denmark,Horsens,FOOD_BEVERAGES,customer,usr_912432,2023-03-01,36
+cmp_34723,Havelland Molkerei,havelland-molkerei.de,Germany,Hannover,FOOD_BEVERAGES,customer,usr_722128,2023-03-12,154
+cmp_98138,Neckartal Brauerei,,Germany,Freiburg,FOOD_BEVERAGES,customer,usr_195557,2023-03-17,83
+cmp_91398,SVENDBORG VARMEVÆRK A/S,svendborg-varmevaerk.dk,Denmark,Aarhus,,customer,usr_681988,2023-04-09,
+cmp_67249,Viborg Bryggeri,,Denmark,Esbjerg,FOOD_BEVERAGES,customer,usr_491244,2023-04-28,48
+cmp_52500,Värmlands Vatten,varmlands-vatten.se,Sweden,Karlstad,UTILITIES,customer,usr_231673,2023-05-07,47
+cmp_76876,Hallands Energi,,Sweden,Sundsvall,UTILITIES,customer,usr_412007,2023-05-08,
+cmp_84288,Kraichgau Anlagenba,kraichgau-anlagenbau.de,Germany,Stuttgart,MACHINERY,customer,usr_707012,2023-05-17,
+cmp_30106,GEBÄUDETECHNIK EMSLAND GMBH & CO. KG,,,Regensburg,BUILDING_MATERIALS,customer,usr_823192,2023-06-08,673
+cmp_24742,Mälardalens Kemi,,Sweden,Kalmar,CHEMICALS,customer,usr_412007,2023-06-12,78
+cmp_25642,Ostgota Energi,ostgota-energi.se,Sweden,Malmö,,customer,usr_231673,2023-06-16,
+cmp_21575,Göteborgs Fjärrvärme,goteborgs-fjarrvarme.se,Sweden,Halmstad,UTILITIES,customer,usr_160964,2023-06-18,146
+cmp_56552,Wetterau Kältetechnik,,Germany,Osnabrück,MACHINERY,customer,usr_348972,2023-06-18,143
+cmp_99973,Nordjysk Spildevand,,Denmark,Kolding,UTILITIES,customer,usr_367478,2023-07-14,
+cmp_85923,Hallands Livsmede,hallands-livsmedel.se,Sweden,,FOOD_BEVERAGES,customer,usr_160964,2023-07-23,
+cmp_94473,GÖTEBORGS LIVSMEDEL AB,goteborgs-livsmedel.se,Sweden,,FOOD_BEVERAGES,customer,usr_231673,2023-07-23,74
+cmp_92201,Vestjysk Foder ApS,vestjysk-foder.dk,Denmark,Herning,FOOD_BEVERAGES,customer,usr_681988,2023-07-27,118
+cmp_38410,Ruhrtal Kunststoffe GmbH,,Germany,Ulm,CHEMICALS,customer,usr_734861,2023-08-08,380
+cmp_24326,Vestjysk Mejeri,vestjysk-mejeri.dk,Denmark,,FOOD_BEVERAGES,customer,usr_912432,2023-08-18,67
+cmp_47171,VESTJYSK VVS A/S,vestjysk-vvs.dk,Denmark,Vejle,BUILDING_MATERIALS,customer,usr_491244,2023-08-21,37
+cmp_73940,Bornholms VVS,,Denmark,Næstved,,customer,usr_491244,2023-08-28,
+cmp_20915,Randers Bryggeri Produktion,randers-bryggeri.dk,Denmark,Herning,FOOD_BEVERAGES,customer,usr_912432,2023-09-03,
+cmp_93823,Mosel Umwelttechnik,,Germany,Hannover,,customer,usr_250616,2023-09-11,
+cmp_43010,Galvanik Mainfranken,galvanik-mainfranken.de,Germany,Leipzig,,customer,usr_109098,2023-09-17,48
+cmp_20308,Saarland Wasserwerke GmbH,saarland-wasserwerke.de,Germany,Nürnberg,UTILITIES,customer,usr_722128,2023-10-05,
+cmp_94489,RUHRTAL STAHL GMBH,ruhrtal-stahl.de,Germany,Würzburg,MACHINERY,customer,usr_707012,2023-10-12,47
+cmp_68956,Sydfyns Varmeværk,sydfyns-varmevaerk.dk,Denmark,Silkeborg,,customer,usr_491244,2023-10-16,
+cmp_90716,Örebro Mejer,orebro-mejeri.se,Sweden,Norrköping,FOOD_BEVERAGES,customer,usr_231673,2023-10-21,
+cmp_70161,Svendborg VVS,svendborg-vvs.dk,Denmark,Skive,BUILDING_MATERIALS,customer,usr_335144,2023-11-11,182
+cmp_40928,VEJLE VARMEVÆRK A/S,,Denmark,Skive,UTILITIES,customer,usr_681988,2023-11-18,
+cmp_69088,Jönköpings Kemi AB,,Sweden,Malmö,CHEMICALS,customer,usr_160964,2023-11-20,101
+cmp_42142,Hjørring Bygningsservice,,Denmark,Horsens,BUILDING_MATERIALS,customer,usr_491244,2023-11-21,
+cmp_71716,Chemie Werratal Werk 1,chemie-werratal.de,Germany,Dortmund,CHEMICALS,customer,usr_823192,2023-12-01,
+cmp_88281,Östgöta Fjärrvärme AB,ostgota-fjarrvarme.se,Sweden,,UTILITIES,customer,usr_231673,2023-12-09,64
+cmp_57337,Galvanik Eifel GmbH,galvanik-eifel.de,Germany,Karlsruhe,,customer,usr_707012,2023-12-12,49
+cmp_49606,Allgäu Klärtechni,,Germany,Köln,UTILITIES,customer,usr_109098,2023-12-23,
+cmp_27256,Isartal Chemie,,Germany,Karlsruhe,CHEMICALS,customer,usr_722128,2024-01-08,40
+cmp_65997,Kalmar Kemi,,Sweden,Jönköping,CHEMICALS,customer,usr_412007,2024-01-23,
+cmp_24036,Hunsrück Molkerei Produktion,hunsrueck-molkerei.de,Germany,Osnabrück,FOOD_BEVERAGES,customer,usr_823192,2024-02-05,84
+cmp_31816,Westerwald Chemie GmbH & Co. KG,westerwald-chemie.de,Germany,Ulm,,customer,usr_401629,2024-02-14,162
+cmp_44204,Esbjerg Energi,esbjerg-energi.dk,Denmark,Aarhus,UTILITIES,customer,usr_335144,2024-02-22,49
+cmp_99583,Midtjysk Slagteri ApS,midtjysk-slagteri.dk,Denmark,Herning,,customer,usr_491244,2024-02-24,124
+cmp_10794,Göteborgs Pappersbruk (HQ),goteborgs-pappersbruk.se,Sweden,Kalmar,PAPER_FOREST_PRODUCTS,customer,usr_160964,2024-02-24,68
+cmp_90780,Kalundborg Energi,kalundborg-energi.dk,Denmark,Kolding,,customer,usr_335144,2024-04-02,75
+cmp_68050,ROSKILDE BYGNINGSSERVICE APS,roskilde-bygningsservice.dk,Denmark,Roskilde,,customer,usr_335144,2024-04-04,
+cmp_39739,Saarland Molkerei,saarland-molkerei.de,Germany,,,customer,usr_722128,2024-04-11,
+cmp_72666,Nordjysk Rensningsanlaeg,nordjysk-rensningsanlaeg.dk,Denmark,Aarhus,,customer,usr_491244,2024-04-13,
+cmp_90955,Klärtechnik Allgä,,Germany,Nürnberg,,customer,usr_707012,2024-04-24,
+cmp_22379,Anlagenbau Neckartal AG,,Germany,Stuttgart,MACHINERY,customer,usr_195557,2024-05-01,
+cmp_65768,Fuldatal Molkerei,fuldatal-molkerei.de,Germany,,FOOD_BEVERAGES,customer,usr_195557,2024-05-01,36
+cmp_71512,Djurs Køleteknik,djurs-koleteknik.dk,Denmark,Randers,MACHINERY,customer,usr_335144,2024-05-02,
+cmp_74923,Vestjysk Bygningsservice,vestjysk-bygningsservice.dk,Denmark,Randers,BUILDING_MATERIALS,customer,usr_335144,2024-05-05,113
+cmp_32064,Värmlands Kyl AB,,Sweden,Örebro,MACHINERY,customer,usr_412007,2024-05-24,55
+cmp_24510,Svendborg Energi,svendborg-energi.dk,,Aalborg,UTILITIES,customer,usr_491244,2024-06-12,
+cmp_65432,Anlagenbau Ostalb Werk 1,,Germany,Leipzig,MACHINERY,customer,usr_722128,2024-06-15,
+cmp_90518,Jönköpings Livsmedel,jonkopings-livsmedel.se,Sweden,,FOOD_BEVERAGES,customer,usr_231673,2024-06-18,
+cmp_17429,Aabenraa Mejeri,,Denmark,Køge,FOOD_BEVERAGES,customer,usr_335144,2024-06-26,60
+cmp_30282,Nordjysk Fødevarer,nordjysk-fodevarer.dk,Denmark,Aarhus,FOOD_BEVERAGES,customer,usr_367478,2024-07-13,
+cmp_60398,Skive Fjernvarme,skive-fjernvarme.dk,Denmark,Næstved,,customer,usr_912432,2024-07-17,
+cmp_90281,Viborg Køleteknik ApS,viborg-koleteknik.dk,Denmark,Odense,MACHINERY,customer,usr_681988,2024-07-17,152
+cmp_29222,Emsland Wasserwerke,,Germany,Magdeburg,UTILITIES,customer,usr_823192,2024-07-18,40
+cmp_11427,Kalmar Reningsverk AB,kalmar-reningsverk.se,Sweden,,,customer,usr_231673,2024-07-28,69
+cmp_55789,Skive Rensningsanlaeg,,Denmark,Aarhus,UTILITIES,customer,usr_335144,2024-08-14,
+cmp_20813,Thy Mejeri,,Denmark,Skive,FOOD_BEVERAGES,customer,usr_491244,2024-08-18,43
+cmp_79272,Harz Papier,,Germany,Mannheim,PAPER_FOREST_PRODUCTS,lead,usr_294106,2024-08-21,
+cmp_86052,Roskilde Varmeværk A.m.b.a.,roskilde-varmevaerk.dk,Denmark,Odense,UTILITIES,customer,usr_335144,2024-08-26,
+cmp_54863,Køge Foder A/S,,Denmark,,FOOD_BEVERAGES,customer,usr_335144,2024-08-30,50
+cmp_46632,Saarland Energie,saarland-energie.de,Germany,Mannheim,UTILITIES,lead,usr_294106,2024-08-30,72
+cmp_71982,Eifel Wasserwerk,,Germany,Köln,UTILITIES,customer,usr_250616,2024-08-31,293
+cmp_88720,Odense Vand,odense-vand.dk,Denmark,Aalborg,UTILITIES,customer,usr_491244,2024-09-01,
+cmp_50471,Aabenraa Kemi A/S,,Denmark,Silkeborg,CHEMICALS,customer,usr_367478,2024-09-03,60
+cmp_39537,Horsens Plast,horsens-plast.dk,Denmark,Aalborg,,customer,usr_912432,2024-09-10,
+cmp_98787,Holbæk Fjernvarme,holbaek-fjernvarme.dk,Denmark,Horsens,UTILITIES,lead,usr_491244,2024-09-16,154
+cmp_19408,GÄVLE LIVSMEDEL AB,gavle-livsmedel.se,Sweden,Jönköping,FOOD_BEVERAGES,opportunity,usr_231673,2024-09-16,399
+cmp_59763,Eifel Gebäudetechnik,eifel-gebaudetechnik.de,Germany,Köln,BUILDING_MATERIALS,lead,usr_707012,2024-09-16,87
+cmp_82105,Sydfyns Bryggeri A/S,,Denmark,Fredericia,FOOD_BEVERAGES,customer,usr_912432,2024-09-17,58
+cmp_80889,Uckermark Lebensmittel,,Germany,Bielefeld,FOOD_BEVERAGES,customer,usr_585289,2024-09-19,60
+cmp_80848,Upplands Pappersbruk AB,upplands-pappersbruk.se,Sweden,Kalmar,PAPER_FOREST_PRODUCTS,lead,usr_462710,2024-09-21,98
+cmp_20594,Westerwald Gebäudetechnik,westerwald-gebaudetechnik.de,Germany,Münster,BUILDING_MATERIALS,lead,usr_707012,2024-09-24,81
+cmp_23073,Lausitz Papier GmbH & Co. KG,lausitz-papier.de,Germany,Hamburg,PAPER_FOREST_PRODUCTS,lead,usr_250616,2024-09-26,84
+cmp_43127,Mainfranken Kunststoffe,,Germany,Bielefeld,,customer,usr_707012,2024-09-27,
+cmp_68739,Svendborg Akvakultur Produktion,,Denmark,Skive,FOOD_BEVERAGES,lead,usr_681988,2024-09-30,
+cmp_10538,Oderland Umwelttechnik,oderland-umwelttechnik.de,Germany,Köln,MACHINERY,customer,usr_348972,2024-10-01,
+cmp_19851,Midtjysk Kemi,,Denmark,Kolding,CHEMICALS,lead,usr_912432,2024-10-02,54
+cmp_73454,Silkeborg Vands,,Denmark,Køge,,customer,usr_335144,2024-10-03,188
+cmp_18057,Kalmar Mejeri,kalmar-mejeri.se,Sweden,Gävle,FOOD_BEVERAGES,customer,usr_160964,2024-10-03,1479
+cmp_46518,Weserland Gebäudetechnik GmbH,weserland-gebaudetechnik.de,Germany,Freiburg,BUILDING_MATERIALS,lead,usr_707012,2024-10-03,99
+cmp_48515,Fuldatal Kunststoff,fuldatal-kunststoffe.de,Germany,Magdeburg,CHEMICALS,customer,usr_707012,2024-10-06,
+cmp_22866,Thy Vand ApS,thy-vand.dk,Denmark,Køge,UTILITIES,customer,usr_912432,2024-10-08,75
+cmp_44402,Horsens Vand,horsens-vand.dk,Denmark,Horsens,UTILITIES,customer,usr_912432,2024-10-09,95
+cmp_22829,KUNSTSTOFFE ODERLAND GMBH,kunststoffe-oderland.de,Germany,Regensburg,CHEMICALS,lead,usr_707012,2024-10-10,50
+cmp_38136,Ruhrtal Papier,ruhrtal-papier.de,Germany,Hannover,PAPER_FOREST_PRODUCTS,customer,usr_823192,2024-10-10,67
+cmp_58427,Nordjysk Maskinfabrik,nordjysk-maskinfabrik.dk,Denmark,Kolding,MACHINERY,customer,usr_367478,2024-10-13,
+cmp_81023,Fuldatal Lebensmittel GmbH & Co. KG,fuldatal-lebensmittel.de,Germany,Augsburg,,lead,usr_823192,2024-10-13,76
+cmp_91402,Skånska Vatten,skaanska-vatten.se,Sweden,Linköping,UTILITIES,customer,usr_231673,2024-10-15,64
+cmp_78636,Upplands Mejeri,,Sweden,Kalmar,FOOD_BEVERAGES,lead,usr_462710,2024-10-15,
+cmp_94665,Bornholms Slagteri,bornholms-slagteri.dk,Denmark,Aarhus,,customer,usr_912432,2024-10-18,81
+cmp_66692,Eifel Brauerei,eifel-brauerei.de,Germany,Leipzig,FOOD_BEVERAGES,lead,usr_707012,2024-10-18,
+cmp_29192,Hallands Industriservice,,Sweden,Umeå,MACHINERY,lead,usr_462710,2024-10-20,59
+cmp_91445,Kältetechnik Oderland,kaltetechnik-oderland.de,Germany,,MACHINERY,customer,usr_195557,2024-10-20,180
+cmp_69858,Roskilde Emballage A/S,roskilde-emballage.dk,Denmark,,,customer,usr_912432,2024-10-21,107
+cmp_59859,Djurs Plast,,Denmark,Esbjerg,CHEMICALS,lead,usr_491244,2024-10-23,248
+cmp_68583,Kyst Foder,kyst-foder.dk,Denmark,Køge,,lead,usr_681988,2024-10-29,51
+cmp_63585,Silkeborg Spildevand,silkeborg-spildevand.dk,Denmark,Aarhus,,customer,usr_491244,2024-10-30,
+cmp_11444,Ostalb Chemie GmbH,ostalb-chemie.de,Germany,Regensburg,CHEMICALS,lead,usr_348972,2024-10-30,
+cmp_13317,Blekinge Vatten AB,blekinge-vatten.se,Sweden,Halmstad,UTILITIES,lead,usr_231673,2024-11-03,44
+cmp_66367,Esbjerg Emballag,,Denmark,Fredericia,PAPER_FOREST_PRODUCTS,customer,usr_912432,2024-11-05,
+cmp_32606,Lahntal Gebäudetechnik,lahntal-gebaudetechnik.de,Germany,Regensburg,,customer,usr_722128,2024-11-05,
+cmp_96891,Randers Spildevand Produktion,randers-spildevand.dk,Denmark,Fredericia,UTILITIES,customer,usr_491244,2024-11-08,
+cmp_42793,Himmerlands Bryggeri,himmerlands-bryggeri.dk,Denmark,Aarhus,FOOD_BEVERAGES,customer,usr_681988,2024-11-08,
+cmp_39826,Smålands Livsmedel AB,smaalands-livsmedel.se,Sweden,Örebro,FOOD_BEVERAGES,customer,usr_412007,2024-11-09,
+cmp_41888,Smålands Mejeri,smaalands-mejeri.se,Sweden,Helsingborg,FOOD_BEVERAGES,lead,usr_462710,2024-11-14,
+cmp_14656,Värmlands Energi,,Sweden,Norrköping,UTILITIES,customer,usr_412007,2024-11-15,120
+cmp_76405,ISARTAL MOLKEREI GMBH,isartal-molkerei.de,Germany,Paderborn,FOOD_BEVERAGES,customer,usr_250616,2024-11-15,
+cmp_25177,Lebensmittel Kraichgau GmbH,lebensmittel-kraichgau.de,Germany,Essen,FOOD_BEVERAGES,customer,usr_348972,2024-11-15,
+cmp_31762,Nahetal Fleischware,nahetal-fleischwaren.de,Germany,Bielefeld,FOOD_BEVERAGES,lead,usr_722128,2024-11-17,153
+cmp_10473,Herning Foder,,Denmark,Holstebro,FOOD_BEVERAGES,customer,usr_491244,2024-11-24,
+cmp_88409,Gävle Reningsverk,,Sweden,Helsingborg,UTILITIES,lead,usr_160964,2024-11-25,124
+cmp_56299,Fjord Stålindustri,fjord-staalindustri.dk,Denmark,Viborg,MACHINERY,lead,usr_335144,2024-11-30,
+cmp_33204,Havelland Anlagenbau,,Germany,Mannheim,MACHINERY,customer,usr_823192,2024-12-02,
+cmp_87927,Fjord Bygningsservice ApS,,Denmark,Esbjerg,,customer,usr_912432,2024-12-05,467
+cmp_75052,Nordjysk Køleteknik Group,nordjysk-koleteknik.dk,Denmark,Randers,MACHINERY,customer,usr_335144,2024-12-05,
+cmp_92840,Vestjysk Fødevarer,,Denmark,Aalborg,,lead,usr_335144,2024-12-06,1913
+cmp_50444,Mosel Galvanik,mosel-galvanik.de,Germany,,CHEMICALS,opportunity,usr_722128,2024-12-06,80
+cmp_95308,Horsens Mejeri,horsens-mejeri.dk,Denmark,Aalborg,FOOD_BEVERAGES,lead,usr_912432,2024-12-07,
+cmp_58553,Västerbottens Energi AB,vasterbottens-energi.se,Sweden,Kalmar,UTILITIES,lead,usr_462710,2024-12-07,76
+cmp_77840,Wetterau Gebäudetechnik,wetterau-gebaudetechnik.de,Germany,Magdeburg,BUILDING_MATERIALS,lead,usr_707012,2024-12-08,
+cmp_59936,Wetterau Anlagenbau GmbH,wetterau-anlagenbau.de,Germany,Ulm,MACHINERY,customer,usr_823192,2024-12-10,72
+cmp_59427,Allgau Galvanik,allgau-galvanik.de,Germany,Osnabrück,CHEMICALS,lead,usr_250616,2024-12-12,
+cmp_20868,Lausitz Fleischwaren GmbH & Co. KG,lausitz-fleischwaren.de,Germany,Stuttgart,FOOD_BEVERAGES,lead,usr_195557,2024-12-13,97
+cmp_65121,Östgöta Massa,ostgota-massa.se,Sweden,Örebro,PAPER_FOREST_PRODUCTS,customer,usr_160964,2024-12-14,79
+cmp_60635,Mainfranken Stahl AG,mainfranken-stahl.de,Germany,Osnabrück,MACHINERY,customer,usr_734861,2024-12-14,
+cmp_82327,Roskilde Energi,roskilde-energi.dk,Denmark,Randers,UTILITIES,customer,usr_681988,2024-12-16,
+cmp_54074,Fredericia Akvakultur,fredericia-akvakultur.dk,Denmark,Aarhus,FOOD_BEVERAGES,customer,usr_335144,2024-12-17,53
+cmp_49100,Skånska Industriservice,skaanska-industriservice.se,Sweden,Kalmar,MACHINERY,opportunity,usr_231673,2024-12-20,
+cmp_38266,Skive Foder,,Denmark,Aalborg,FOOD_BEVERAGES,customer,usr_335144,2024-12-22,
+cmp_52479,Gävle Industriservice,gavle-industriservice.se,Sweden,Umeå,MACHINERY,customer,usr_231673,2024-12-23,
+cmp_24130,Vejle Bygningsservice,,Denmark,Silkeborg,BUILDING_MATERIALS,lead,usr_367478,2024-12-24,
+cmp_13219,Vogtland Gebäudetechnik,vogtland-gebaudetechnik.de,Germany,Osnabrück,BUILDING_MATERIALS,lead,usr_250616,2024-12-26,49
+cmp_59997,Hjørring Fødevarer,hjorring-fodevarer.dk,,Køge,FOOD_BEVERAGES,customer,usr_491244,2024-12-27,70
+cmp_31940,Werratal Lebensmittel,werratal-lebensmittel.de,Germany,Magdeburg,,customer,usr_109098,2024-12-27,
+cmp_11769,Kyst Slagteri A/S,kyst-slagteri.dk,Denmark,Fredericia,,customer,usr_681988,2024-12-30,149
+cmp_81663,Limfjords Maskinfabrik,limfjords-maskinfabrik.dk,Denmark,Holstebro,MACHINERY,lead,usr_335144,2025-01-01,36
+cmp_74308,Herning Bryggeri Group,herning-bryggeri.dk,Denmark,Herning,FOOD_BEVERAGES,opportunity,usr_681988,2025-01-03,429
+cmp_22240,Mosel Klärtechni,mosel-klartechnik.de,Germany,Nürnberg,UTILITIES,lead,usr_195557,2025-01-03,59
+cmp_66215,Kalundborg Fjernvarme ApS,,Denmark,,UTILITIES,customer,usr_681988,2025-01-06,1392
+cmp_93430,Østjysk Plast ApS,,Denmark,,CHEMICALS,lead,usr_912432,2025-01-16,999
+cmp_95265,Sjællands Fjernvarme,sjaellands-fjernvarme.dk,,Silkeborg,UTILITIES,lead,usr_681988,2025-01-18,
+cmp_61504,Norrlands Kemi,norrlands-kemi.se,Sweden,Jönköping,CHEMICALS,lead,usr_462710,2025-01-21,110
+cmp_57748,Sydfyns Akvakultur,sydfyns-akvakultur.dk,Denmark,Vejle,FOOD_BEVERAGES,lead,usr_491244,2025-01-24,
+cmp_66748,Östgöta Kemi,ostgota-kemi.se,Sweden,Malmö,CHEMICALS,customer,usr_462710,2025-01-24,
+cmp_22507,Smålands Energi AB,,Sweden,Umeå,UTILITIES,customer,usr_462710,2025-01-25,67
+cmp_40054,Mosel Gebäudetechnik GmbH,mosel-gebaudetechnik.de,Germany,Essen,BUILDING_MATERIALS,lead,usr_585289,2025-01-25,124
+cmp_89236,Jonkopings Pappersbruk,jonkopings-pappersbruk.se,Sweden,Gävle,PAPER_FOREST_PRODUCTS,lead,usr_149178,2025-01-27,
+cmp_91220,Weserland Lebensmittel Group,weserland-lebensmittel.de,Germany,Essen,FOOD_BEVERAGES,lead,usr_109098,2025-01-28,
+cmp_38692,Upplands Reningsver,,Sweden,Västerås,UTILITIES,lead,usr_160964,2025-02-01,
+cmp_23097,Thy VVS,thy-vvs.dk,Denmark,Herning,,lead,usr_912432,2025-02-03,252
+cmp_36176,Limfjords Fødevarer,limfjords-fodevarer.dk,Denmark,Aarhus,FOOD_BEVERAGES,lead,usr_912432,2025-02-05,92
+cmp_87206,Holbæk Spildevand Group,holbaek-spildevand.dk,Denmark,Viborg,UTILITIES,lead,usr_681988,2025-02-06,219
+cmp_54924,Nahetal Brauerei GmbH & Co. KG,nahetal-brauerei.de,Germany,Essen,FOOD_BEVERAGES,lead,usr_707012,2025-02-07,35
+cmp_76540,Stahl Lahntal,stahl-lahntal.de,Germany,Nürnberg,,lead,usr_348972,2025-02-08,
+cmp_98981,Altmark Galvanik,altmark-galvanik.de,Germany,Hannover,CHEMICALS,lead,usr_585289,2025-02-09,
+cmp_15323,Kalundborg Maskinfabrik,kalundborg-maskinfabrik.dk,Denmark,Fredericia,MACHINERY,lead,usr_912432,2025-02-10,272
+cmp_34643,Hunsrück Papier AG,hunsrueck-papier.de,Germany,Augsburg,PAPER_FOREST_PRODUCTS,lead,usr_585289,2025-02-10,83
+cmp_76213,Norrlands Mejeri,,Sweden,Jönköping,,customer,usr_231673,2025-02-13,72
+cmp_82491,Sydfyns Vand,sydfyns-vand.dk,Denmark,Kolding,UTILITIES,customer,usr_491244,2025-02-14,
+cmp_96105,Emsland Kunststoffe,emsland-kunststoffe.de,Germany,Nürnberg,CHEMICALS,lead,usr_250616,2025-02-17,463
+cmp_68578,ISARTAL ANLAGENBAU GMBH,,Germany,Magdeburg,MACHINERY,lead,usr_585289,2025-02-19,137
+cmp_90133,Vejle Fjernvarme,vejle-fjernvarme.dk,Denmark,Aarhus,UTILITIES,lead,usr_681988,2025-02-20,69
+cmp_49427,Horsens Slagteri,horsens-slagteri.dk,Denmark,,FOOD_BEVERAGES,lead,usr_335144,2025-02-20,64
+cmp_18066,Westerwald Energie Produktion,westerwald-energie.de,Germany,,UTILITIES,lead,usr_707012,2025-02-20,
+cmp_55636,Werratal Galvanik,werratal-galvanik.de,Germany,Magdeburg,,lead,usr_722128,2025-02-20,
+cmp_40949,Mainfranken Chemie,,Germany,Kassel,,lead,usr_109098,2025-02-21,132
+cmp_16712,Midtjysk Spildevand,midtjysk-spildevand.dk,Denmark,Vejle,UTILITIES,customer,usr_681988,2025-02-22,80
+cmp_74683,Lebensmittel Saarland,lebensmittel-saarland.de,Germany,,FOOD_BEVERAGES,lead,usr_585289,2025-02-22,70
+cmp_81359,Mosel Kältetechnik,mosel-kaltetechnik.de,Germany,Essen,MACHINERY,opportunity,usr_707012,2025-02-25,89
+cmp_38738,Nahetal Stahl,nahetal-stahl.de,Germany,Regensburg,MACHINERY,lead,usr_823192,2025-02-25,78
+cmp_99463,Mosel Anlagenbau,,Germany,Augsburg,,lead,usr_109098,2025-02-28,
+cmp_28464,Hallands Kyl,hallands-kyl.se,Sweden,Jönköping,MACHINERY,lead,usr_160964,2025-03-07,94
+cmp_98873,Køge Bygningsservice A/S,,Denmark,,,lead,usr_912432,2025-03-10,
+cmp_67737,Mainfranken Lebensmittel,mainfranken-lebensmittel.de,Germany,Würzburg,FOOD_BEVERAGES,lead,usr_109098,2025-03-10,
+cmp_28123,Ostgota Mejeri,,Sweden,,FOOD_BEVERAGES,customer,usr_231673,2025-03-12,
+cmp_99624,Lolland VVS Produktion,,Denmark,Aalborg,BUILDING_MATERIALS,opportunity,usr_491244,2025-03-23,103
+cmp_76566,Sydfyns Foder,sydfyns-foder.dk,Denmark,Odense,,customer,usr_335144,2025-03-23,
+cmp_26581,Werratal Chemie,werratal-chemie.de,,Würzburg,CHEMICALS,lead,usr_585289,2025-03-25,
+cmp_92167,Umwelttechnik Weserlan,umwelttechnik-weserland.de,Germany,Köln,,customer,usr_722128,2025-03-31,102
+cmp_13683,Lahntal Energie,lahntal-energie.de,Germany,Hamburg,UTILITIES,lead,usr_348972,2025-04-03,75
+cmp_65734,Papier Nahetal,,Germany,Dortmund,PAPER_FOREST_PRODUCTS,lead,usr_109098,2025-04-04,31
+cmp_19658,JÖNKÖPINGS KYL AB,jonkopings-kyl.se,Sweden,Gävle,MACHINERY,customer,usr_231673,2025-04-05,78
+cmp_32328,Kalundborg Køleteknik,kalundborg-koleteknik.dk,Denmark,Holstebro,MACHINERY,lead,usr_912432,2025-04-07,
+cmp_40442,Oderland Lebensmittel,oderland-lebensmittel.de,Germany,Münster,FOOD_BEVERAGES,customer,usr_348972,2025-04-07,
+cmp_15136,Mainfranken Umwelttechnik,mainfranken-umwelttechnik.de,Germany,Würzburg,MACHINERY,lead,usr_722128,2025-04-09,61
+cmp_86667,Lahntal Fleischwaren,,Germany,Augsburg,FOOD_BEVERAGES,lead,usr_250616,2025-04-09,65
+cmp_71708,Gävle Vatten,,Sweden,Karlstad,UTILITIES,lead,usr_231673,2025-04-10,250
+cmp_87433,Neckartal Klärtechnik,neckartal-klartechnik.de,Germany,Karlsruhe,UTILITIES,lead,usr_348972,2025-04-10,67
+cmp_83824,Fleischwaren Isartal,,Germany,Essen,FOOD_BEVERAGES,customer,usr_348972,2025-04-11,86
+cmp_67736,Mälardalens Pappersbruk AB,,Sweden,,PAPER_FOREST_PRODUCTS,customer,usr_160964,2025-04-12,55
+cmp_24469,Kaltetechnik Allgau,kaltetechnik-allgau.de,Germany,Ulm,MACHINERY,lead,usr_195557,2025-04-12,270
+cmp_44419,Odense Stålindustri,odense-staalindustri.dk,Denmark,Vejle,MACHINERY,lead,usr_681988,2025-04-13,
+cmp_99160,Aabenraa Bygningsservice,aabenraa-bygningsservice.dk,Denmark,Horsens,BUILDING_MATERIALS,customer,usr_335144,2025-04-14,58
+cmp_65147,Spreewald Chemie GmbH & Co. KG,,Germany,Freiburg,CHEMICALS,lead,usr_348972,2025-04-17,
+cmp_46558,Fredericia Køleteknik,fredericia-koleteknik.dk,Denmark,Fredericia,MACHINERY,opportunity,usr_491244,2025-04-19,
+cmp_19071,Mälardalens Energi,,Sweden,Helsingborg,UTILITIES,opportunity,usr_231673,2025-04-19,231
+cmp_95875,Horsens Energi A/S,horsens-energi.dk,Denmark,Horsens,UTILITIES,customer,usr_335144,2025-04-27,55
+cmp_68817,Lahntal Chemie GmbH,lahntal-chemie.de,Germany,Regensburg,CHEMICALS,customer,usr_823192,2025-04-28,112
+cmp_13669,Wasserwerke Elbtal GmbH,wasserwerke-elbtal.de,Germany,Kassel,UTILITIES,lead,usr_348972,2025-05-01,58
+cmp_50673,LAHNTAL KÄLTETECHNIK GMBH,lahntal-kaltetechnik.de,Germany,Hamburg,MACHINERY,lead,usr_585289,2025-05-05,
+cmp_34107,Sydfyns Stålindustri,,Denmark,Skive,,customer,usr_681988,2025-05-07,37
+cmp_70800,Westerwald Anlagenbau Werk 1,westerwald-anlagenbau.de,Germany,Stuttgart,MACHINERY,lead,usr_722128,2025-05-07,90
+cmp_59872,Havelland Brauerei GmbH & Co. KG,,,Kassel,FOOD_BEVERAGES,customer,usr_707012,2025-05-11,
+cmp_17038,ØSTJYSK VAND APS,,,Vejle,UTILITIES,lead,usr_491244,2025-05-17,45
+cmp_69605,Østjysk Bygningsservice,ostjysk-bygningsservice.dk,Denmark,,BUILDING_MATERIALS,lead,usr_912432,2025-05-18,2770
+cmp_67757,Smålands Pappersbruk,smaalands-pappersbruk.se,Sweden,Sundsvall,PAPER_FOREST_PRODUCTS,customer,usr_412007,2025-05-21,
+cmp_24434,Lahntal Anlagenbau Werk 1,,Germany,Leipzig,MACHINERY,lead,usr_722128,2025-05-21,
+cmp_55723,Westerwald Kältetechnik Produktion,westerwald-kaltetechnik.de,Germany,Leipzig,MACHINERY,lead,usr_585289,2025-05-22,397
+cmp_56396,Skive Vand ApS,skive-vand.dk,Denmark,Aarhus,UTILITIES,customer,usr_491244,2025-05-25,55
+cmp_21089,Eifel Lebensmittel,,Germany,Bremen,FOOD_BEVERAGES,lead,usr_250616,2025-05-26,665
+cmp_10807,Eifel Umwelttechnik GmbH,eifel-umwelttechnik.de,Germany,Essen,,customer,usr_195557,2025-05-27,88
+cmp_86199,Energie Emsland,,Germany,Hamburg,UTILITIES,lead,usr_722128,2025-05-28,
+cmp_48598,Elbtal Kältetechnik,elbtal-kaltetechnik.de,Germany,Hannover,MACHINERY,lead,usr_195557,2025-05-28,
+cmp_42900,Jönköpings Fjärrvärme,,Sweden,Umeå,UTILITIES,customer,usr_231673,2025-05-30,82
+cmp_36388,Wasserwerke Hunsrück,wasserwerke-hunsrueck.de,Germany,Münster,UTILITIES,lead,usr_348972,2025-06-01,719
+cmp_96199,Stahl Isartal,,Germany,,,lead,usr_250616,2025-06-01,31
+cmp_71946,Allgäu Kunststoffe,allgau-kunststoffe.de,Germany,Köln,CHEMICALS,lead,usr_250616,2025-06-06,
+cmp_36429,Viborg Varmevaerk,,Denmark,Randers,,lead,usr_681988,2025-06-12,
+cmp_14503,Hunsrück Energie,hunsrueck-energie.de,Germany,Bielefeld,UTILITIES,lead,usr_250616,2025-06-13,106
+cmp_35549,Norrlands Pappersbruk,norrlands-pappersbruk.se,,Västerås,,lead,usr_412007,2025-06-15,495
+cmp_80311,Blekinge Pappersbruk Werk 1,blekinge-pappersbruk.se,Sweden,Umeå,PAPER_FOREST_PRODUCTS,customer,usr_160964,2025-06-16,57
+cmp_37934,Odense Rensningsanlaeg,odense-rensningsanlaeg.dk,Denmark,Roskilde,UTILITIES,lead,usr_912432,2025-06-17,
+cmp_33753,Roskilde Maskinfabrik,roskilde-maskinfabrik.dk,Denmark,Herning,MACHINERY,lead,usr_491244,2025-06-23,119
+cmp_56072,Werratal Anlagenbau GmbH & Co. KG,werratal-anlagenbau.de,Germany,Münster,MACHINERY,lead,usr_707012,2025-06-25,139
+cmp_66236,Werratal Papier,werratal-papier.de,Germany,Leipzig,PAPER_FOREST_PRODUCTS,lead,usr_722128,2025-07-13,783
+cmp_72095,Skånska Massa AB,skaanska-massa.se,Sweden,Sundsvall,PAPER_FOREST_PRODUCTS,opportunity,usr_149178,2025-07-16,58
+cmp_42478,Lausitz Klartechnik,lausitz-klartechnik.de,Germany,Stuttgart,UTILITIES,lead,usr_348972,2025-07-19,
+cmp_54440,SMÅLANDS RENINGSVERK AB,smaalands-reningsverk.se,Sweden,Västerås,,opportunity,usr_160964,2025-07-29,
+cmp_51601,Klärtechnik Ruhrtal,,Germany,Leipzig,UTILITIES,lead,usr_195557,2025-07-30,65
+cmp_32280,Kalundborg Bryggeri,kalundborg-bryggeri.dk,Denmark,Silkeborg,FOOD_BEVERAGES,customer,usr_912432,2025-08-04,38
+cmp_35168,Lahntal Wasserwerke AG,lahntal-wasserwerke.de,Germany,Hannover,UTILITIES,lead,usr_585289,2025-08-04,35
+cmp_18251,Kyst Emballage,,Denmark,Silkeborg,PAPER_FOREST_PRODUCTS,customer,usr_335144,2025-08-05,102
+cmp_89147,Kältetechnik Kraichgau AG,kaltetechnik-kraichgau.de,Germany,Köln,MACHINERY,lead,usr_348972,2025-08-05,
+cmp_62533,Vogtland Energie,vogtland-energie.de,Germany,Freiburg,UTILITIES,lead,usr_722128,2025-08-09,
+cmp_61697,ODENSE PLAST APS,odense-plast.dk,Denmark,Holstebro,,lead,usr_681988,2025-08-11,
+cmp_41677,Roskilde Spildevand,roskilde-spildevand.dk,Denmark,Horsens,UTILITIES,customer,usr_367478,2025-08-14,
+cmp_75806,Himmerlands Mejeri,,Denmark,Næstved,FOOD_BEVERAGES,customer,usr_491244,2025-08-15,59
+cmp_36042,Isartal Klartechnik,isartal-klartechnik.de,Germany,Würzburg,,lead,usr_109098,2025-08-15,64
+cmp_34412,Aabenraa Mejeri ApS,,Denmark,,,lead,usr_681988,2025-08-22,
+cmp_89456,Fjord Varmeværk A/S,,Denmark,Roskilde,UTILITIES,opportunity,usr_681988,2025-08-23,
+cmp_97436,Smålands Vatten,smaalands-vatten.se,Sweden,Örebro,UTILITIES,customer,usr_160964,2025-08-23,53
+cmp_29898,Fredericia Emballage,fredericia-emballage.dk,Denmark,Odense,PAPER_FOREST_PRODUCTS,opportunity,usr_681988,2025-08-27,64
+cmp_10892,Brauerei Saarland,brauerei-saarland.de,Germany,Magdeburg,FOOD_BEVERAGES,lead,usr_722128,2025-08-27,46
+cmp_71850,Orebro Reningsverk,,Sweden,,UTILITIES,opportunity,usr_160964,2025-08-29,35
+cmp_88155,Uckermark Klärtechnik Group,uckermark-klartechnik.de,Germany,Magdeburg,UTILITIES,lead,usr_250616,2025-08-30,34
+cmp_57685,Klärtechnik Havelland,klartechnik-havelland.de,Germany,,UTILITIES,lead,usr_823192,2025-08-30,
+cmp_30368,Vejle Mejeri A/S,vejle-mejeri.dk,,Kolding,FOOD_BEVERAGES,lead,usr_491244,2025-08-31,
+cmp_38845,Altmark Molkerei,,Germany,Nürnberg,FOOD_BEVERAGES,lead,usr_823192,2025-09-01,43
+cmp_87940,Kraichgau Klärtechnik,kraichgau-klartechnik.de,,Ulm,UTILITIES,customer,usr_195557,2025-09-02,
+cmp_22139,Emsland Brauerei,,Germany,Nürnberg,FOOD_BEVERAGES,lead,usr_722128,2025-09-03,
+cmp_94436,Papier Emsland GmbH,papier-emsland.de,Germany,Freiburg,PAPER_FOREST_PRODUCTS,lead,usr_348972,2025-09-06,39
+cmp_31688,Blekinge Energi,blekinge-energi.se,,,UTILITIES,customer,usr_412007,2025-09-07,
+cmp_32842,Silkeborg Foder ApS,,Denmark,Vejle,FOOD_BEVERAGES,lead,usr_491244,2025-09-08,2579
+cmp_60549,Dalarnas Reningsverk,dalarnas-reningsverk.se,Sweden,Örebro,UTILITIES,customer,usr_412007,2025-09-08,79
+cmp_22531,Donautal Klärtechni,donautal-klartechnik.de,Germany,Regensburg,UTILITIES,customer,usr_585289,2025-09-11,79
+cmp_16103,Køge Plast,koge-plast.dk,Denmark,Horsens,CHEMICALS,customer,usr_912432,2025-09-13,
+cmp_13446,Havelland Stahl AG,havelland-stahl.de,Germany,,MACHINERY,customer,usr_707012,2025-09-13,
+cmp_97577,Vestjysk Kemi,vestjysk-kemi.dk,Denmark,Skive,CHEMICALS,opportunity,usr_491244,2025-09-15,119
+cmp_95272,Odense VVS ApS,odense-vvs.dk,Denmark,Viborg,BUILDING_MATERIALS,opportunity,usr_367478,2025-09-17,
+cmp_70255,Dalarnas Industriservice,dalarnas-industriservice.se,Sweden,Malmö,MACHINERY,customer,usr_231673,2025-09-17,
+cmp_97536,VOGTLAND KLÄRTECHNIK GMBH,,Germany,Magdeburg,UTILITIES,lead,usr_707012,2025-09-19,172
+cmp_42992,Kalundborg Mejeri (HQ),kalundborg-mejeri.dk,,Silkeborg,FOOD_BEVERAGES,opportunity,usr_912432,2025-09-22,
+cmp_56129,Weserland Molkerei,,Germany,Magdeburg,,lead,usr_195557,2025-09-28,49
+cmp_84608,Emsland Gebäudetechnik,emsland-gebaudetechnik.de,Germany,Hannover,BUILDING_MATERIALS,lead,usr_348972,2025-09-28,159
+cmp_64043,Havelland Umwelttechnik,,Germany,Bielefeld,MACHINERY,lead,usr_707012,2025-10-01,108
+cmp_94770,Esbjerg Rensningsanlæg - Hovedkontor,esbjerg-rensningsanlaeg.dk,Denmark,Roskilde,UTILITIES,opportunity,usr_335144,2025-10-04,50
+cmp_66763,Ruhrtal Wasserwerke,,Germany,Essen,UTILITIES,lead,usr_707012,2025-10-05,31
+cmp_66435,Viborg Emballag,,Denmark,Aarhus,PAPER_FOREST_PRODUCTS,lead,usr_491244,2025-10-07,115
+cmp_14726,Eifel Fleischwaren,,Germany,Osnabrück,FOOD_BEVERAGES,opportunity,usr_734861,2025-10-08,
+cmp_61718,Harz Gebäudetechnik GmbH,harz-gebaudetechnik.de,Germany,Stuttgart,BUILDING_MATERIALS,lead,usr_195557,2025-10-10,
+cmp_31073,Vestjysk Stålindustri,vestjysk-staalindustri.dk,Denmark,Næstved,MACHINERY,lead,usr_681988,2025-10-13,124
+cmp_22455,Stahl Nahetal,,Germany,Nürnberg,MACHINERY,lead,usr_722128,2025-10-14,235
+cmp_52972,Eifel Anlagenbau,eifel-anlagenbau.de,,Bremen,,customer,usr_707012,2025-10-22,64
+cmp_35386,Sjællands Vand,,Denmark,Vejle,,lead,usr_335144,2025-10-23,89
+cmp_65158,Vogtland Stahl,,Germany,Regensburg,MACHINERY,customer,usr_734861,2025-10-28,74
+cmp_65197,Oderland Chemie,oderland-chemie.de,Germany,Leipzig,CHEMICALS,lead,usr_823192,2025-11-02,
+cmp_41740,Uckermark Umwelttechnik,uckermark-umwelttechnik.de,Germany,Bielefeld,MACHINERY,customer,usr_707012,2025-11-04,72
+cmp_87050,Kraichgau Wasserwerke,kraichgau-wasserwerke.de,Germany,Nürnberg,UTILITIES,lead,usr_348972,2025-11-05,
+cmp_31703,Kunststoffe Werratal,kunststoffe-werratal.de,Germany,Magdeburg,,customer,usr_250616,2025-11-07,
+cmp_73691,Kältetechnik Neckartal,kaltetechnik-neckartal.de,Germany,Freiburg,,lead,usr_707012,2025-11-11,
+cmp_20004,Kraichgau Kaltetechnik,kraichgau-kaltetechnik.de,Germany,,MACHINERY,opportunity,usr_734861,2025-11-18,
+cmp_70244,ELBTAL MOLKEREI AG,elbtal-molkerei.de,Germany,Essen,,customer,usr_707012,2025-11-21,
+cmp_60780,Esbjerg VVS ApS,,Denmark,,,lead,usr_491244,2025-11-23,
+cmp_98821,Wetterau Molkerei,wetterau-molkerei.de,Germany,,FOOD_BEVERAGES,lead,usr_250616,2025-11-25,
+cmp_80657,Havelland Chemie (HQ),havelland-chemie.de,Germany,Hannover,CHEMICALS,lead,usr_109098,2025-11-29,
+cmp_31154,Fuldatal Klärtechnik GmbH,,Germany,Augsburg,UTILITIES,lead,usr_734861,2025-12-08,753
+cmp_73708,Kältetechnik Mainfranken GmbH & Co. KG,kaltetechnik-mainfranken.de,Germany,Osnabrück,MACHINERY,lead,usr_734861,2025-12-12,
+cmp_97086,Spreewald Molkerei,spreewald-molkerei.de,Germany,Magdeburg,FOOD_BEVERAGES,opportunity,usr_618438,2025-12-15,74
+cmp_91596,Gebäudetechnik Neckartal,,Germany,Freiburg,BUILDING_MATERIALS,lead,usr_823192,2025-12-15,164
+cmp_79130,Neckartal Papier,neckartal-papier.de,Germany,Freiburg,PAPER_FOREST_PRODUCTS,lead,usr_250616,2025-12-16,
+cmp_53042,Nahetal Lebensmittel GmbH,,Germany,Karlsruhe,FOOD_BEVERAGES,opportunity,usr_734861,2025-12-18,
+cmp_45707,Neckartal Kunststoff,,Germany,,CHEMICALS,lead,usr_401629,2025-12-19,
+cmp_84341,WETTERAU WASSERWERKE AG,wetterau-wasserwerke.de,Germany,Karlsruhe,UTILITIES,lead,usr_823192,2025-12-24,57
+cmp_20672,Fuldatal Umwelttechnik,,Germany,Bremen,,lead,usr_618438,2025-12-27,177
+cmp_48132,Gebäudetechnik Westerwald,gebaudetechnik-westerwald.de,Germany,Münster,BUILDING_MATERIALS,lead,usr_195557,2025-12-28,67
+cmp_49397,Wasserwerke Wetterau,wasserwerke-wetterau.de,Germany,Leipzig,UTILITIES,customer,usr_707012,2025-12-28,163
+cmp_80572,Spreewald Galvanik GmbH,spreewald-galvanik.de,Germany,Essen,,opportunity,usr_734861,2025-12-30,59
+cmp_97933,Ruhrtal Lebensmittel GmbH,ruhrtal-lebensmittel.de,Germany,Bremen,FOOD_BEVERAGES,customer,usr_618438,2026-01-01,
+cmp_52443,Donautal Brauere,donautal-brauerei.de,Germany,Münster,FOOD_BEVERAGES,lead,usr_348972,2026-01-02,
+cmp_35475,Eifel Kunststoffe,eifel-kunststoffe.de,Germany,,CHEMICALS,lead,usr_618438,2026-01-03,73
+cmp_35118,Wasserwerke Donautal,,Germany,Karlsruhe,UTILITIES,opportunity,usr_734861,2026-01-05,
+cmp_99197,Kältetechnik Vogtland GmbH & Co. KG,kaltetechnik-vogtland.de,Germany,Essen,MACHINERY,opportunity,usr_734861,2026-01-07,116
+cmp_79545,Hunsrück Gebäudetechnik,hunsrueck-gebaudetechnik.de,Germany,Stuttgart,BUILDING_MATERIALS,opportunity,usr_401629,2026-01-07,45
+cmp_56791,Ostalb Anlagenba,ostalb-anlagenbau.de,Germany,Hannover,MACHINERY,lead,usr_109098,2026-01-15,79
+cmp_37473,Donautal Galvanik,donautal-galvanik.de,Germany,Mannheim,CHEMICALS,lead,usr_734861,2026-01-16,
+cmp_75615,Ruhrtal Klärtechnik,,Germany,Kassel,UTILITIES,opportunity,usr_342003,2026-01-17,
+cmp_27595,Eifel Galvanik,,Germany,Mannheim,CHEMICALS,opportunity,usr_342003,2026-01-21,106
+cmp_75842,Hunsrück Kältetechnik GmbH,hunsrueck-kaltetechnik.de,Germany,Mannheim,MACHINERY,opportunity,usr_401629,2026-01-23,
+cmp_87763,Gebäudetechnik Elbtal,gebaudetechnik-elbtal.de,Germany,Ulm,BUILDING_MATERIALS,opportunity,usr_342003,2026-01-24,
+cmp_38297,Hunsrück Kunststoffe,hunsrueck-kunststoffe.de,Germany,,CHEMICALS,customer,usr_734861,2026-01-24,68
+cmp_14621,Sauerland Wasserwerke,sauerland-wasserwerke.de,Germany,,UTILITIES,customer,usr_195557,2026-01-25,81
+cmp_59245,Elbtal Umwelttechni,elbtal-umwelttechnik.de,Germany,Köln,MACHINERY,opportunity,usr_734861,2026-01-25,401
+cmp_53140,Emsland Energie,,Germany,Leipzig,UTILITIES,lead,usr_342003,2026-01-31,
+cmp_51435,Emsland Klärtechnik,emsland-klartechnik.de,Germany,Dortmund,UTILITIES,lead,usr_401629,2026-02-01,592
+cmp_80626,Klärtechnik Wetterau,klartechnik-wetterau.de,,Osnabrück,UTILITIES,lead,usr_401629,2026-02-04,106
+cmp_97259,Umwelttechnik Hunsrück,,Germany,Bremen,MACHINERY,lead,usr_618438,2026-02-06,
+cmp_12529,Eifel Molkerei,eifel-molkerei.de,Germany,Magdeburg,FOOD_BEVERAGES,lead,usr_250616,2026-02-07,
+cmp_86519,Klärtechnik Harz,,Germany,Paderborn,UTILITIES,customer,usr_823192,2026-02-08,40
+cmp_51929,Westerwald Klärtechnik Werk 1,westerwald-klartechnik.de,Germany,Magdeburg,UTILITIES,lead,usr_401629,2026-02-13,33
+cmp_56659,Havelland Lebensmittel,,Germany,Münster,,lead,usr_618438,2026-02-21,43
+cmp_55512,Gebäudetechnik Lahntal GmbH,gebaudetechnik-lahntal.de,Germany,Münster,BUILDING_MATERIALS,lead,usr_618438,2026-02-22,55
+cmp_21222,Ruhrtal Galvanik,ruhrtal-galvanik.de,Germany,Essen,,lead,usr_618438,2026-02-24,433
+cmp_45362,Donautal Anlagenbau,donautal-anlagenbau.de,Germany,Hannover,MACHINERY,lead,usr_195557,2026-02-28,31
+cmp_25826,Mosel Energie,mosel-energie.de,Germany,Köln,UTILITIES,opportunity,usr_401629,2026-02-28,605
+cmp_53751,Mosel Stahls,,Germany,Dortmund,MACHINERY,opportunity,usr_195557,2026-03-01,102
+cmp_40067,Wetterau Brauerei GmbH,wetterau-brauerei.de,Germany,Hannover,FOOD_BEVERAGES,lead,usr_348972,2026-03-03,
+cmp_85088,Wasserwerke Oderland,,Germany,Regensburg,UTILITIES,opportunity,usr_401629,2026-03-06,390
+cmp_67177,Weserland Kunststoffe,weserland-kunststoffe.de,Germany,Osnabrück,CHEMICALS,lead,usr_401629,2026-03-07,146
+cmp_56133,Mainfranken Anlagenbau GmbH,mainfranken-anlagenbau.de,Germany,Magdeburg,MACHINERY,lead,usr_401629,2026-03-11,136
+cmp_17885,Uckermark Galvanik,uckermark-galvanik.de,Germany,Hannover,CHEMICALS,opportunity,usr_342003,2026-03-12,
+cmp_40931,Uckermark Gebaudetechnik,,Germany,Nürnberg,BUILDING_MATERIALS,opportunity,usr_342003,2026-03-13,159
+cmp_58967,Spreewald Brauerei,,Germany,Augsburg,,lead,usr_585289,2026-03-15,
+cmp_85275,Elbtal Stahl,elbtal-stahl.de,,Kassel,MACHINERY,customer,usr_618438,2026-03-18,61
+cmp_54073,Mainfranken Energie,mainfranken-energie.de,Germany,Freiburg,UTILITIES,lead,usr_722128,2026-03-18,548
+cmp_55985,Vogtland Kaltetechnik,vogtland-kaltetechnik.de,Germany,Bielefeld,MACHINERY,customer,usr_734861,2026-03-23,148
+cmp_75905,Neckartal Umwelttechnik GmbH,neckartal-umwelttechnik.de,Germany,Bielefeld,,opportunity,usr_342003,2026-03-25,32
+cmp_17783,Sauerland Fleischwaren,sauerland-fleischwaren.de,Germany,Freiburg,FOOD_BEVERAGES,customer,usr_401629,2026-03-28,
+cmp_14936,Altmark Umwelttechnik,altmark-umwelttechnik.de,Germany,Nürnberg,MACHINERY,lead,usr_195557,2026-03-31,190
+cmp_55831,Kraichgau Stahl Produktion,,Germany,Köln,MACHINERY,opportunity,usr_342003,2026-04-01,29
+cmp_42922,Harz Stahl,harz-stahl.de,Germany,Hannover,MACHINERY,opportunity,usr_401629,2026-04-04,
+cmp_30107,Gebäudetechnik Weserland,gebaudetechnik-weserland.de,Germany,Münster,BUILDING_MATERIALS,lead,usr_342003,2026-04-10,434
+cmp_11207,Altmark Anlagenbau GmbH,altmark-anlagenbau.de,Germany,Osnabrück,,lead,usr_250616,2026-04-10,
+cmp_14369,Weserland Klärtechnik,weserland-klartechnik.de,Germany,Dortmund,UTILITIES,lead,usr_618438,2026-04-11,209
+cmp_43413,Weserland Wasserwerke GmbH & Co. KG,,Germany,Paderborn,UTILITIES,opportunity,usr_618438,2026-04-13,75
+cmp_28664,Vogtland Wasserwerke,vogtland-wasserwerke.de,Germany,Mannheim,UTILITIES,lead,usr_618438,2026-04-19,70
+cmp_79722,Spreewald Gebäudetechnik GmbH & Co. KG,spreewald-gebaudetechnik.de,Germany,Hamburg,BUILDING_MATERIALS,lead,usr_618438,2026-04-20,617
+cmp_89558,Donautal Papier,donautal-papier.de,Germany,,PAPER_FOREST_PRODUCTS,opportunity,usr_109098,2026-04-20,61
+cmp_83544,Mosel Fleischwaren,,Germany,Essen,FOOD_BEVERAGES,lead,usr_342003,2026-04-25,418
+cmp_66891,Fuldatal Galvanik GmbH,fuldatal-galvanik.de,Germany,Augsburg,,opportunity,usr_109098,2026-04-28,
+cmp_68794,Oderland Papier,,Germany,Essen,PAPER_FOREST_PRODUCTS,opportunity,usr_401629,2026-04-28,52
+cmp_17357,Hunsrück Fleischwaren,hunsrueck-fleischwaren.de,Germany,Hannover,FOOD_BEVERAGES,lead,usr_401629,2026-04-29,45
+cmp_87434,Mosel Chemie,mosel-chemie.de,Germany,Mannheim,CHEMICALS,opportunity,usr_734861,2026-05-02,122
+cmp_17447,Uckermark Fleischwaren,,Germany,Leipzig,FOOD_BEVERAGES,opportunity,usr_342003,2026-05-02,86
+cmp_36409,Stahl Sauerland GmbH,stahl-sauerland.de,Germany,Ulm,MACHINERY,lead,usr_401629,2026-05-03,
+cmp_81232,Klärtechnik Nahetal GmbH,klartechnik-nahetal.de,Germany,Mannheim,UTILITIES,lead,usr_707012,2026-05-04,210
+cmp_87384,Energie Vogtland,energie-vogtland.de,Germany,,UTILITIES,opportunity,usr_342003,2026-05-05,
+cmp_21316,Mainfranken Gebäudetechnik,mainfranken-gebaudetechnik.de,Germany,,,lead,usr_401629,2026-05-06,
+cmp_71102,Ruhrtal Umwelttechnik,ruhrtal-umwelttechnik.de,Germany,,,lead,usr_734861,2026-05-09,53
+cmp_43067,Elbtal Fleischwaren,,Germany,Magdeburg,FOOD_BEVERAGES,opportunity,usr_734861,2026-05-10,41
+cmp_35496,Lausitz Kältetechnik,lausitz-kaltetechnik.de,Germany,Freiburg,MACHINERY,lead,usr_250616,2026-05-11,
+cmp_44382,Allgäu Anlagenbau GmbH,allgau-anlagenbau.de,Germany,Würzburg,MACHINERY,opportunity,usr_734861,2026-05-14,
+cmp_26103,Saarland Lebensmittel,,Germany,,FOOD_BEVERAGES,opportunity,usr_823192,2026-05-15,62
+cmp_78392,Oderland Kunststoffe,oderland-kunststoffe.de,Germany,Bremen,CHEMICALS,lead,usr_250616,2026-05-15,
+cmp_17128,Kunststoffe Spreewald,kunststoffe-spreewald.de,Germany,Leipzig,CHEMICALS,opportunity,usr_618438,2026-05-17,77
+cmp_57784,Elbtal Galvanik,elbtal-galvanik.de,Germany,Leipzig,CHEMICALS,opportunity,usr_342003,2026-05-27,230
+cmp_22650,Ostalb Stahl AG,,Germany,Essen,MACHINERY,lead,usr_401629,2026-06-03,40
+cmp_72344,Lahntal Papier,lahntal-papier.de,Germany,Ulm,PAPER_FOREST_PRODUCTS,opportunity,usr_195557,2026-06-05,60
+cmp_81483,Umwelttechnik Wetterau,,Germany,Köln,,lead,usr_348972,2026-06-08,56
+cmp_70338,Lausitz Stahl,lausitz-stahl.de,Germany,,,opportunity,usr_734861,2026-06-11,41
+cmp_14347,Westerwald Umwelttechnik GmbH,westerwald-umwelttechnik.de,Germany,Dortmund,MACHINERY,opportunity,usr_618438,2026-06-22,140
+cmp_30957,Papier Lausitz,papier-lausitz.de,Germany,Magdeburg,,opportunity,usr_618438,2026-06-28,

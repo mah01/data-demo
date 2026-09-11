@@ -1,0 +1,2 @@
+# Keep generated data byte-exact (CRLF from the csv module) so checksums stay valid.
+data/**/*.csv -text

@@ -1,0 +1,116 @@
+{
+  "company": {
+    "name": "NordFlow A/S",
+    "description": "Danish B2B industrial company selling pumps, spare parts/components and service & maintenance contracts in Denmark, Sweden and Germany.",
+    "currency": "DKK",
+    "data_period": ["2025-01-01", "2026-08-31"],
+    "comparison_periods": {"H1 2025": ["2025-01-01", "2025-06-30"], "H1 2026": ["2026-01-01", "2026-06-30"]},
+    "headcount": {"2025-06-30": 50, "2026-06-30": 54},
+    "annual_revenue_dkk_m": 178
+  },
+  "story": {
+    "headline": "Revenue is up ~3.5% (DKK 86m -> 89m) but operating profit is down ~33% (DKK 12m -> 8m); margin falls from ~14% to ~9%.",
+    "drivers": [
+      {"id": "germany_expansion", "rank": 1,
+       "summary": "German sales headcount grew 8 -> 12. New pipeline +35%, but win rate fell 31% -> 19% (new reps win ~12%, veterans ~23%). Germany costs rose (people + cars, travel, office, trade fair) while German revenue fell ~8% and discounting cut equipment margins.",
+       "systems": ["payroll", "crm", "erp"]},
+      {"id": "german_key_accounts", "rank": 2,
+       "summary": "Rheinmark Chemie and Brandauer Papierwerke were reassigned from a veteran account manager to two newly hired reps in Sep/Oct 2025. Account activity dropped, Rheinmark's service contract renewal and follow-on deals were lost, Brandauer moved spare parts to a local distributor. Their combined H1 revenue fell ~DKK 3.6m, more than Germany's entire net decline.",
+       "systems": ["erp", "mappings", "crm", "payroll"]},
+      {"id": "denmark_mix", "rank": 3,
+       "summary": "Danish revenue grew ~9-10%, but high-margin service fell ~23% (a third of service-contract value was not renewed at end-2025) while lower-margin equipment grew ~30% at bigger discounts. Danish gross profit is DOWN despite revenue growth.",
+       "systems": ["erp", "crm"]},
+      {"id": "salary_inflation_red_herring", "rank": null,
+       "summary": "A company-wide raise of ~3.5-4% in Jan 2026 is visible on every payslip but explains only ~DKK 0.55m (about a third of the personnel increase and ~15% of the profit decline).",
+       "systems": ["payroll"]}
+    ],
+    "sweden": "Stable control market: revenue roughly flat, win rate ~30%, slight margin improvement."
+  },
+  "scenario_invariants": {
+    "description": "Story-critical outcomes enforced by construction (src/config.py, 'Scenario invariants') so they hold for every seed; checks marked \"invariant\": true verify them. src/robustness.py runs all checks across many seeds.",
+    "dk_contract_billing": "Danish service-contract billing H1 2026 is 25% below H1 2025 (band -20% to -30%): end-2025 renewal losses are sized after new contracts and mid-year renewals.",
+    "de_new_rep_win_rate": "German expansion hires win 12% of deals closed in H1 2026 (band 8-16%); veterans take the remainder (band 20-30%) so the overall German rate stays ~19%.",
+    "de_key_accounts_lead": "Rheinmark and Brandauer are the two largest German decliners, each at least DKK 0.3m ahead of the next customer: no other German customer may win more than DKK 0.8m of equipment in any 12-month window.",
+    "de_won_value": "German won value (non-renewal deals closed in the half) falls 25% H1 2026 vs H1 2025 (band -15% to -35%) despite +35% pipeline: winners are swapped within each rep stratum, keeping win counts unchanged."
+  },
+  "metric_definitions": {
+    "revenue": "Sum of invoice_lines.net_amount * invoices.exchange_rate (DKK), including credit notes, by invoice_date.",
+    "cogs": "Sum of invoice_lines.total_cost_dkk.",
+    "personnel_costs": "Payroll employer_cost_dkk by pay_period (equals ERP ledger accounts 2210-2230).",
+    "other_opex": "ERP ledger_entries on accounts of type 'opex' (2710-3510), by date.",
+    "operating_profit": "revenue - cogs - personnel_costs - other_opex. Margin = operating_profit / revenue.",
+    "market": "ERP: customers.country; CRM: deals.market (fallback companies.country, then deals.deal_currency); Payroll: employees.country. Mapped via mappings/value_mappings.csv.",
+    "product_category": "ERP: products.product_group_number; CRM: deals.product_category. Mapped via mappings/value_mappings.csv.",
+    "pipeline_created": "Sum of deals.amount_company_currency (DKK) for non-renewal deals with created_at in the period.",
+    "win_rate": "won / (won + lost) by count, non-renewal deals with closed_at in the period.",
+    "de_sales_headcount": "Payroll employees with country=DE and department=Sales employed on the date.",
+    "salary_inflation_effect": "Base-salary change (June 2026 vs June 2025) for employees paid in both months, applied to their H1 2025 employer cost.",
+    "existing_vs_new_customers": "Existing = invoiced in H1 2025. New = first-ever invoice after 2025-06-30.",
+    "counterfactual": "Extra German wins = (win rate 2025H1 - win rate 2026H1) * deals closed in 2026H1, valued at the average 2026H1 lost-deal amount and the 2026H1 German equipment gross margin. Upper bound (assumes invoicing within the period, ignores commission)."
+  },
+  "checks": [
+    {"id": "revenue_h1_2025", "questions": [1, 2], "systems": ["erp"], "metric": "pnl.2025H1.revenue", "min": 85.0e6, "max": 87.0e6, "unit": "DKK"},
+    {"id": "revenue_h1_2026", "questions": [1, 2], "systems": ["erp"], "metric": "pnl.2026H1.revenue", "min": 88.0e6, "max": 90.0e6, "unit": "DKK"},
+    {"id": "revenue_growth", "questions": [1, 2], "systems": ["erp"], "metric": "derived.revenue_growth", "min": 0.02, "max": 0.05, "unit": "ratio"},
+    {"id": "profit_h1_2025", "questions": [1, 2], "systems": ["erp", "payroll"], "metric": "pnl.2025H1.profit", "min": 11.5e6, "max": 12.5e6, "unit": "DKK"},
+    {"id": "profit_h1_2026", "questions": [1, 2], "systems": ["erp", "payroll"], "metric": "pnl.2026H1.profit", "min": 7.5e6, "max": 8.5e6, "unit": "DKK"},
+    {"id": "margin_h1_2025", "questions": [1, 2], "systems": ["erp", "payroll"], "metric": "pnl.2025H1.margin", "min": 0.133, "max": 0.146, "unit": "ratio"},
+    {"id": "margin_h1_2026", "questions": [1, 2], "systems": ["erp", "payroll"], "metric": "pnl.2026H1.margin", "min": 0.084, "max": 0.096, "unit": "ratio"},
+    {"id": "gross_margin_declines", "questions": [2], "systems": ["erp"], "metric": "derived.gross_margin_change_pp", "max": -2.0, "unit": "pp"},
+    {"id": "ytd_revenue_growth", "questions": [1], "systems": ["erp"], "metric": "derived.ytd_revenue_growth", "min": 0.01, "max": 0.05, "unit": "ratio"},
+    {"id": "ytd_profit_decline", "questions": [1], "systems": ["erp", "payroll"], "metric": "derived.ytd_profit_change", "max": -0.20, "unit": "ratio"},
+
+    {"id": "personnel_h1_2025", "questions": [3], "systems": ["payroll"], "metric": "payroll.total.2025H1", "min": 14.6e6, "max": 15.0e6, "unit": "DKK"},
+    {"id": "personnel_h1_2026", "questions": [3], "systems": ["payroll"], "metric": "payroll.total.2026H1", "min": 16.3e6, "max": 16.9e6, "unit": "DKK"},
+    {"id": "payroll_equals_ledger", "questions": [3], "systems": ["payroll", "erp"], "metric": "derived.personnel_reconciliation_diff", "max": 1000, "unit": "DKK"},
+    {"id": "salary_inflation_pct", "questions": [3], "systems": ["payroll"], "metric": "payroll.salary_inflation_pct", "min": 0.03, "max": 0.045, "unit": "ratio"},
+    {"id": "red_herring_share_of_personnel_increase", "questions": [3], "systems": ["payroll"], "metric": "derived.inflation_share_of_personnel_increase", "min": 0.15, "max": 0.40, "unit": "ratio"},
+    {"id": "red_herring_share_of_profit_decline", "questions": [2, 3], "systems": ["payroll", "erp"], "metric": "derived.inflation_share_of_profit_decline", "max": 0.20, "unit": "ratio"},
+    {"id": "de_sales_share_of_personnel_increase", "questions": [3, 4], "systems": ["payroll"], "metric": "derived.de_sales_share_of_personnel_increase", "min": 0.60, "unit": "ratio"},
+
+    {"id": "de_sales_headcount_2025", "questions": [4], "systems": ["payroll"], "metric": "payroll.de_sales_headcount.2025-06-30", "equals": 8},
+    {"id": "de_sales_headcount_2026", "questions": [4], "systems": ["payroll"], "metric": "payroll.de_sales_headcount.2026-06-30", "equals": 12},
+    {"id": "de_revenue_per_salesperson_drop", "questions": [4], "systems": ["payroll", "erp"], "metric": "derived.de_revenue_per_salesperson_change", "max": -0.30, "unit": "ratio"},
+    {"id": "germany_profit_contribution", "questions": [4, 10], "systems": ["erp", "payroll"], "metric": "bridge.germany_total", "max": -2.5e6, "unit": "DKK"},
+    {"id": "germany_share_of_profit_decline", "questions": [2, 10], "systems": ["erp", "payroll"], "metric": "derived.germany_share_of_profit_decline", "min": 0.6, "unit": "ratio"},
+
+    {"id": "de_pipeline_growth", "questions": [5], "systems": ["crm"], "metric": "germany_sales.pipeline_growth", "min": 0.30, "max": 0.40, "unit": "ratio"},
+    {"id": "de_win_rate_2025", "questions": [5], "systems": ["crm"], "metric": "germany_sales.2025H1.win_rate", "min": 0.28, "max": 0.34, "unit": "ratio"},
+    {"id": "de_win_rate_2026", "questions": [5], "systems": ["crm"], "metric": "germany_sales.2026H1.win_rate", "min": 0.16, "max": 0.22, "unit": "ratio"},
+    {"id": "de_won_value_down", "questions": [5], "systems": ["crm"], "metric": "germany_sales.won_value_change", "max": -0.05, "unit": "ratio"},
+    {"id": "de_new_reps_convert_worse", "questions": [4, 5], "systems": ["crm", "payroll"], "metric": "derived.new_rep_vs_veteran_win_rate_gap", "max": -0.06, "unit": "ratio"},
+    {"id": "de_revenue_change", "questions": [4, 5], "systems": ["erp"], "metric": "markets.change.DE", "min": -0.10, "max": -0.06, "unit": "ratio"},
+    {"id": "dk_win_rate_stable", "questions": [5], "systems": ["crm"], "metric": "germany_sales.DK_win_rate.2026H1", "min": 0.30, "max": 0.40, "unit": "ratio"},
+
+    {"id": "de_existing_customers_decline", "questions": [6], "systems": ["erp"], "metric": "germany_customers.existing_customers_change", "max": -2.0e6, "unit": "DKK"},
+    {"id": "de_new_business_does_not_compensate", "questions": [6], "systems": ["erp", "crm"], "metric": "derived.de_new_customer_revenue_vs_existing_loss", "min": 0.2, "max": 0.9, "unit": "ratio"},
+
+    {"id": "top2_are_key_accounts", "questions": [7], "systems": ["erp"], "metric": "derived.top2_names", "contains_all": ["Rheinmark", "Brandauer"]},
+    {"id": "top2_decline", "questions": [7], "systems": ["erp"], "metric": "germany_customers.top2_change", "min": -4.5e6, "max": -2.8e6, "unit": "DKK"},
+    {"id": "top2_exceed_net_decline", "questions": [7], "systems": ["erp"], "metric": "germany_customers.top2_share_of_net_decline", "min": 1.0, "unit": "ratio"},
+    {"id": "key_account_1_reassigned_to_new_hire", "questions": [7], "systems": ["erp", "mappings", "crm", "payroll"], "metric": "germany_customers.top2_trail.0.new_owner_start", "min_str": "2025-07-01"},
+    {"id": "key_account_2_reassigned_to_new_hire", "questions": [7], "systems": ["erp", "mappings", "crm", "payroll"], "metric": "germany_customers.top2_trail.1.new_owner_start", "min_str": "2025-07-01"},
+    {"id": "key_account_1_activity_drop", "questions": [7], "systems": ["crm"], "metric": "germany_customers.top2_trail.0.activities_per_month_after", "max": 3.5, "unit": "per month"},
+    {"id": "key_account_2_activity_drop", "questions": [7], "systems": ["crm"], "metric": "germany_customers.top2_trail.1.activities_per_month_after", "max": 3.5, "unit": "per month"},
+
+    {"id": "dk_revenue_up", "questions": [8], "systems": ["erp"], "metric": "markets.change.DK", "min": 0.05, "max": 0.13, "unit": "ratio"},
+    {"id": "dk_service_share_down", "questions": [8], "systems": ["erp"], "metric": "derived.dk_service_share_change_pp", "max": -5.0, "unit": "pp"},
+    {"id": "dk_equipment_share_up", "questions": [8], "systems": ["erp"], "metric": "derived.dk_equipment_share_change_pp", "min": 5.0, "unit": "pp"},
+    {"id": "dk_gross_margin_down", "questions": [8], "systems": ["erp"], "metric": "derived.dk_gross_margin_change_pp", "max": -2.0, "unit": "pp"},
+    {"id": "dk_gross_profit_not_up", "questions": [8], "systems": ["erp"], "metric": "derived.dk_gross_profit_change", "max": 0.0, "unit": "DKK"},
+    {"id": "dk_contract_revenue_down", "questions": [8], "systems": ["erp"], "metric": "derived.dk_contract_revenue_change", "max": -0.15, "unit": "ratio"},
+    {"id": "dk_renewals_lost", "questions": [8], "systems": ["crm"], "metric": "denmark.renewals_2025H2.lost_value_share", "min": 0.2, "unit": "ratio"},
+
+    {"id": "counterfactual_uplift", "questions": [9], "systems": ["crm", "erp"], "metric": "counterfactual.extra_gross_profit", "min": 0.4e6, "max": 1.5e6, "unit": "DKK"},
+    {"id": "counterfactual_does_not_restore_margin", "questions": [9], "systems": ["crm", "erp"], "metric": "derived.counterfactual_margin_gap_pp", "min": 2.5, "unit": "pp"},
+
+    {"id": "bridge_reconciles", "questions": [10], "systems": ["erp", "payroll"], "metric": "derived.bridge_residual", "min": -1000, "max": 1000, "unit": "DKK"},
+    {"id": "dk_gross_profit_driver", "questions": [10], "systems": ["erp"], "metric": "bridge.gross_profit_DK", "max": -0.2e6, "unit": "DKK"},
+
+    {"id": "inv_dk_contract_billing_change", "invariant": true, "questions": [8], "systems": ["erp"], "metric": "derived.dk_contract_revenue_change", "min": -0.30, "max": -0.20, "unit": "ratio"},
+    {"id": "inv_de_new_rep_win_rate", "invariant": true, "questions": [4, 5], "systems": ["crm", "mappings", "payroll"], "metric": "germany_sales.2026H1_new_reps.win_rate", "min": 0.08, "max": 0.16, "unit": "ratio"},
+    {"id": "inv_de_veteran_win_rate", "invariant": true, "questions": [4, 5], "systems": ["crm", "mappings", "payroll"], "metric": "germany_sales.2026H1_veterans.win_rate", "min": 0.20, "max": 0.30, "unit": "ratio"},
+    {"id": "inv_de_won_value_change", "invariant": true, "questions": [5], "systems": ["crm"], "metric": "germany_sales.won_value_change", "min": -0.35, "max": -0.15, "unit": "ratio"},
+    {"id": "inv_de_key_accounts_lead_next_decliner", "invariant": true, "questions": [7], "systems": ["erp"], "metric": "derived.top2_lead_over_next_decliner", "min": 0.3e6, "unit": "DKK"}
+  ]
+}

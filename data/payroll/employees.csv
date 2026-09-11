@@ -1,0 +1,57 @@
+employee_id,first_name,last_name,work_email,country,department,job_title,employment_type,weekly_hours,employment_start,employment_end,status,cost_center,manager_employee_id,current_base_salary,currency
+DK0047,Henrik,Vestergaard,,DK,Management,CEO,full-time,37,2016-03-01,,active,DK-100,,105000.00,DKK
+DK0112,Camilla,Frost,camilla.frost@nordflow.dk,DK,Management,CFO,full-time,37,2019-08-01,,active,DK-100,DK0047,82400.00,DKK
+DK0083,Jesper,Holm,,DK,Management,COO,full-time,37,2018-01-15,,active,DK-100,DK0047,76800.00,DKK
+DK0131,Louise,Dam,louise.dam@nordflow.dk,DK,Finance & Admin,Financial Controller,full-time,37,2021-02-01,,active,DK-110,DK0112,50700.00,DKK
+DK0154,Anders,Kjær,anders.kjaer@nordflow.dk,DK,Finance & Admin,Accountant,full-time,37,2022-09-01,,active,DK-110,DK0112,37400.00,DKK
+DK0142,Mette,Bruun,mette.bruun@nordflow.dk,DK,Finance & Admin,HR & Payroll Specialist,full-time,37,2021-11-01,,active,DK-110,DK0112,38500.00,DKK
+DK0061,Pia,Lund,,DK,Finance & Admin,Office Manager,part-time,32,2014-05-01,,active,DK-110,DK0112,32800.00,DKK
+DK0095,Søren,Mikkelsen,soeren.mikkelsen@nordflow.dk,DK,Sales,Sales Director Nordics,full-time,37,2018-10-01,,active,DK-200,DK0047,65600.00,DKK
+DK0102,Rasmus,Winther,rasmus.winther@nordflow.dk,DK,Sales,Key Account Manager,full-time,37,2019-03-01,,active,DK-200,DK0095,46800.00,DKK
+DK0120,Jens Peter,Hansen,jens.hansen@nordflow.dk,DK,Sales,Sales Engineer,full-time,37,2020-01-06,,active,DK-200,DK0095,44000.00,DKK
+DK0137,Katrine,Møller,katrine.moeller@nordflow.dk,DK,Sales,Sales Engineer,full-time,37,2021-04-01,,active,DK-200,DK0095,43100.00,DKK
+DK0158,Thomas,Bech,,DK,Sales,Sales Engineer,full-time,37,2023-02-01,,active,DK-200,DK0095,41700.00,DKK
+DK0109,Line,Østergaard,,DK,Sales,Service Sales Manager,full-time,37,2019-06-01,,active,DK-200,DK0095,45000.00,DKK
+DK0126,Maria,Nielsen,,DK,Customer Service,Inside Sales Coordinator,full-time,37,2020-08-01,,active,DK-210,DK0095,33300.00,DKK
+DK0149,Kasper,Toft,kasper.toft@nordflow.dk,DK,Customer Service,Inside Sales,full-time,37,2022-03-01,,active,DK-210,DK0095,31800.00,DKK
+DK0071,Signe,Poulsen,signe.poulsen@nordflow.dk,DK,Customer Service,Order Handler,part-time,30,2015-09-01,,active,DK-210,DK0095,27200.00,DKK
+DK0034,Brian,Jensen,brian.jensen@nordflow.dk,DK,Service,Lead Service Technician,full-time,37,2012-04-01,,active,DK-300,DK0083,42200.00,DKK
+DK0058,Michael,Larsen,michael.larsen@nordflow.dk,DK,Service,Service Technician,full-time,37,2014-01-01,,active,DK-300,DK0034,38900.00,DKK
+DK0066,Kim,Andersen,,DK,Service,Service Technician,full-time,37,2015-03-01,,active,DK-300,DK0034,38500.00,DKK
+DK0118,Nikolaj,Friis,nikolaj.friis@nordflow.dk,DK,Service,Service Technician,full-time,37,2020-05-01,2025-09-30,terminated,DK-300,DK0034,35800.00,DKK
+DK0089,Martin,Skov,martin.skov@nordflow.dk,DK,Service,Service Technician,full-time,37,2018-08-01,,active,DK-300,DK0034,37900.00,DKK
+DK0077,Peter,Dalgaard,peter.dalgaard@nordflow.dk,DK,Service,Service Technician,full-time,37,2016-09-01,,active,DK-300,DK0034,38500.00,DKK
+DK0145,Lars,Iversen,lars.iversen@nordflow.dk,DK,Service,Service Technician,full-time,37,2022-01-03,,active,DK-300,DK0034,36500.00,DKK
+DK0161,Jonas,Krogh,jonas.krogh@nordflow.dk,DK,Service,Service Technician,full-time,37,2023-06-01,,active,DK-300,DK0034,36100.00,DKK
+DK0172,Emil,Thorsen,emil.thorsen@nordflow.dk,DK,Service,Service Technician,full-time,37,2025-11-03,,active,DK-300,DK0034,35800.00,DKK
+DK0052,Carsten,Munk,carsten.munk@nordflow.dk,DK,Operations,Operations Manager,full-time,37,2013-02-01,,active,DK-400,DK0083,50600.00,DKK
+DK0063,Ole,Svendsen,ole.svendsen@nordflow.dk,DK,Operations,Warehouse Lead,full-time,37,2014-06-01,,active,DK-400,DK0052,34600.00,DKK
+DK0098,Dennis,Kristensen,dennis.kristensen@nordflow.dk,DK,Operations,Warehouse Operator,full-time,37,2018-11-01,,active,DK-400,DK0052,30900.00,DKK
+DK0151,Ahmad,Rahimi,,DK,Operations,Warehouse Operator,full-time,37,2022-05-01,,active,DK-400,DK0052,30500.00,DKK
+DK0115,Tina,Mortensen,,DK,Operations,Purchaser,full-time,37,2020-03-01,,active,DK-400,DK0052,37400.00,DKK
+DK0133,Frederik,Laursen,frederik.laursen@nordflow.dk,DK,Operations,Logistics Coordinator,full-time,37,2021-03-01,,active,DK-400,DK0052,35600.00,DKK
+DK0124,Julie,Sand,julie.sand@nordflow.dk,DK,Marketing,Marketing Manager,full-time,37,2020-06-01,,active,DK-220,DK0047,45900.00,DKK
+DK0166,Oliver,Berg,,DK,Marketing,Marketing Coordinator,full-time,37,2024-02-01,,active,DK-220,DK0124,34600.00,DKK
+DK0107,Mads,Eskildsen,mads.eskildsen@nordflow.dk,DK,IT,IT Manager,full-time,37,2019-05-01,,active,DK-120,DK0112,49600.00,DKK
+SE0012,Erik,Lindqvist,erik.lindqvist@nordflow.se,SE,Sales,Country Manager Sweden,full-time,40,2017-09-01,,active,SE-200,DK0095,61700.00,SEK
+SE0019,Anna,Bergström,,SE,Sales,Sales Engineer,full-time,40,2019-02-01,,active,SE-200,SE0012,47100.00,SEK
+SE0023,Johan,Nyberg,johan.nyberg@nordflow.se,SE,Sales,Sales Engineer,full-time,40,2020-04-01,2025-03-31,terminated,SE-200,SE0012,43500.00,SEK
+SE0031,Oskar,Wallin,,SE,Sales,Sales Engineer,full-time,40,2022-08-15,,active,SE-200,SE0012,43900.00,SEK
+SE0036,Sara,Holmgren,sara.holmgren@nordflow.se,SE,Sales,Sales Engineer,full-time,40,2025-05-12,,active,SE-200,SE0012,46700.00,SEK
+SE0015,Mikael,Sandberg,mikael.sandberg@nordflow.se,SE,Service,Service Technician,full-time,40,2018-03-01,,active,SE-300,SE0012,35500.00,SEK
+SE0027,Fredrik,Åkesson,,SE,Service,Service Technician,full-time,40,2021-10-01,,active,SE-300,SE0012,34500.00,SEK
+DE0204,Andreas M.,Keller,,DE,Sales,Country Manager Germany,full-time,40,2017-01-01,,active,DE-200,DK0047,8470.00,EUR
+DE0211,Stefan,Brenner,stefan.brenner@nordflow.de,DE,Sales,Business Development Manager Süd,full-time,40,2016-05-01,,active,DE-200,DE0204,7110.00,EUR
+DE0217,Monika,Schulz,,DE,Sales,Sales Engineer,full-time,40,2018-04-01,,active,DE-200,DE0204,5740.00,EUR
+DE0223,Tobias,Wagner,tobias.wagner@nordflow.de,DE,Sales,Sales Engineer,full-time,40,2019-07-01,,active,DE-200,DE0204,5550.00,EUR
+DE0229,Julia,Fischer,,DE,Sales,Sales Engineer,full-time,40,2020-09-01,,active,DE-200,DE0204,5460.00,EUR
+DE0236,Markus,Becker,,DE,Sales,Sales Engineer,full-time,40,2021-02-01,,active,DE-200,DE0204,5370.00,EUR
+DE0241,Sabine,Koch,sabine.koch@nordflow.de,DE,Sales,Inside Sales,full-time,40,2021-11-01,,active,DE-200,DE0204,4240.00,EUR
+DE0247,Florian,Braun,florian.braun@nordflow.de,DE,Sales,Sales Engineer,full-time,40,2023-03-01,,active,DE-200,DE0204,5260.00,EUR
+DE0258,Lukas,Hoffmann,lukas.hoffmann@nordflow.de,DE,Sales,Key Account Manager,full-time,40,2025-09-01,,active,DE-200,DE0204,5830.00,EUR
+DE0261,Jana,Richter,jana.richter@nordflow.de,DE,Sales,Key Account Manager,full-time,40,2025-10-01,,active,DE-200,DE0204,5530.00,EUR
+DE0264,Timo,Neumann,,DE,Sales,Sales Engineer,full-time,40,2025-11-03,,active,DE-200,DE0204,5170.00,EUR
+DE0270,Deniz,Yılmaz,,DE,Sales,Sales Engineer,full-time,40,2026-01-05,,active,DE-200,DE0204,5260.00,EUR
+DE0213,Uwe,Schmitt,uwe.schmitt@nordflow.de,DE,Service,Servicetechniker,full-time,40,2015-06-01,,active,DE-300,DE0204,4050.00,EUR
+DE0226,Dirk,Lehmann,,DE,Service,Servicetechniker,full-time,40,2019-01-01,,active,DE-300,DE0204,3950.00,EUR
+DE0233,Patrick,Zimmermann,patrick.zimmermann@nordflow.de,DE,Service,Servicetechniker,full-time,40,2020-11-01,,active,DE-300,DE0204,3860.00,EUR

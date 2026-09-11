@@ -1,0 +1,19 @@
+account_number,name,type
+1010,Salg af varer og ydelser,revenue (from invoices)
+1310,Vareforbrug,cost of sales (from invoice lines)
+2210,Lønninger,personnel
+2220,"Pension, arbejdsgiver",personnel
+2230,Sociale omkostninger,personnel
+2710,Husleje,opex
+2720,"El, vand og varme",opex
+2810,Autodrift,opex
+2820,Rejseomkostninger,opex
+2830,Fragt og emballage,opex
+2910,Markedsføring og messer,opex
+2920,IT og software,opex
+2930,Rekruttering og konsulenter,opex
+2940,Forsikringer,opex
+2950,Kontorhold og administration,opex
+2960,Garantiomkostninger,opex
+2990,Øvrige driftsomkostninger,opex
+3510,Afskrivninger,opex

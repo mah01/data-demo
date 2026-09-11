@@ -1,0 +1,95 @@
+{
+  "release": "phase1-v1.0",
+  "created": "2026-09-11",
+  "seed": 4217,
+  "python": "3.11.12",
+  "generator_command": "python3 src/generate.py",
+  "dataset_sha256": "d3a6beaf6319a2bdc155207cfa9781286ef81d3a664259ea36555f849f3506aa",
+  "files": {
+    "crm/activities.csv": {
+      "sha256": "563eea4ad1bd8407e1330f71905fc2e2a312f1ff3d5af7f83c2d648c607933ad",
+      "bytes": 585628,
+      "rows": 6203
+    },
+    "crm/companies.csv": {
+      "sha256": "56ea17d74543b5ecfe4fbf76d7389b9e7a245f53f81469f580cc20f5cb3ace92",
+      "bytes": 55503,
+      "rows": 523
+    },
+    "crm/deals.csv": {
+      "sha256": "e133df454e03e4a395933003fabda32eb4799260d5e9dd9dfe7254c2fc32eeb8",
+      "bytes": 258378,
+      "rows": 1137
+    },
+    "crm/owners.csv": {
+      "sha256": "23e977d8c8ddfa1f2ee560a80515e22937d61f7e74f742bb2104d5c310f61067",
+      "bytes": 2387,
+      "rows": 31
+    },
+    "crm/property_history.csv": {
+      "sha256": "c972f1bd34b4bc30fb397609a107b7273db9583f99075808365f5e8c352ef69e",
+      "bytes": 10920,
+      "rows": 112
+    },
+    "erp/accounts.csv": {
+      "sha256": "18df1d0e0339a4e27e5392e03110758170c656970aa70522fe49ad1d74a7b167",
+      "bytes": 627,
+      "rows": 18
+    },
+    "erp/customers.csv": {
+      "sha256": "53efd1709233d635854763703aceac195f65055aaa79ecb6648dde32eac211c8",
+      "bytes": 36175,
+      "rows": 323
+    },
+    "erp/exchange_rates.csv": {
+      "sha256": "e6d1f9a810b58942adb6a025df91361e352e1dcc0a0a570b98952c0b254aa835",
+      "bytes": 748,
+      "rows": 40
+    },
+    "erp/invoice_lines.csv": {
+      "sha256": "359cdb366229d51dc73dc3daec8438a993fa5c9f73ddc67fc5c6bceb4131349e",
+      "bytes": 1540018,
+      "rows": 19510
+    },
+    "erp/invoices.csv": {
+      "sha256": "d6ce0faebbff4fe4c9fa2de786ddfaf5c86bd01b4ed26f2256a9c6f359e6cc7c",
+      "bytes": 926221,
+      "rows": 7939
+    },
+    "erp/ledger_entries.csv": {
+      "sha256": "a04c04168afed6a5a76ca559a5f2d75c091c9868e11e1fb610931f404e18e140",
+      "bytes": 38867,
+      "rows": 589
+    },
+    "erp/products.csv": {
+      "sha256": "16feb7f1f808b94cba5847ec723628080d1b5ad2b008d98831a6c0760e76f3d8",
+      "bytes": 3784,
+      "rows": 49
+    },
+    "mappings/crm_company_erp_customer.csv": {
+      "sha256": "9278bb597bdb45b089a2ccf003d8bfddbb2c78a73cde08098801ae603864953e",
+      "bytes": 9153,
+      "rows": 301
+    },
+    "mappings/employee_crm_user.csv": {
+      "sha256": "248f189f724c921431267936ab7d0051439f8e29655e9b14280cab172c282f00",
+      "bytes": 1378,
+      "rows": 31
+    },
+    "mappings/value_mappings.csv": {
+      "sha256": "65bd9098dc8ac599e4c8845921d2aa9e06e16f82e0510ad1482dcea0fb46b687",
+      "bytes": 1024,
+      "rows": 18
+    },
+    "payroll/employees.csv": {
+      "sha256": "c133eae2b96f97ffd689d540a2cf8afb412a2cb39a9eed5a981a6d3cf6a140a5",
+      "bytes": 7326,
+      "rows": 56
+    },
+    "payroll/payroll_entries.csv": {
+      "sha256": "9e19c8e7596e040486c32a5ffc73782df7da9344dcafa80d3ee77132fdc89dbd",
+      "bytes": 106328,
+      "rows": 1039
+    }
+  }
+}

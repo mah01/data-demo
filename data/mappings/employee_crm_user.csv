@@ -1,0 +1,32 @@
+payroll_employee_id,crm_user_id,match_basis,note
+DK0047,usr_704372,name + start date,
+DK0112,usr_642698,name + start date,
+DK0095,usr_367478,name + start date,
+DK0102,usr_912432,name + start date,
+DK0120,usr_491244,manual (HR),CRM display name 'JP Hansen'
+DK0137,usr_681988,manual (HR),CRM name without ø
+DK0158,usr_335144,name + start date,
+DK0109,usr_313798,name + start date,
+DK0126,usr_805076,name + start date,
+DK0149,usr_246141,name + start date,
+DK0124,usr_318363,name + start date,
+DK0166,usr_891031,name + start date,
+SE0012,usr_149178,name + start date,
+SE0019,usr_231673,manual (HR),CRM name without ö
+SE0023,usr_462710,name + start date,
+SE0031,usr_160964,name + start date,
+SE0036,usr_412007,name + start date,
+DE0204,usr_585289,manual (HR),Payroll lists middle initial
+DE0211,usr_348972,name + start date,
+DE0217,usr_195557,name + start date,
+DE0223,usr_707012,name + start date,
+DE0229,usr_823192,manual (HR),CRM uses married name Fischer-Lang
+DE0236,usr_250616,name + start date,
+DE0241,usr_109098,name + start date,
+DE0247,usr_722128,name + start date,
+DE0258,usr_734861,name + start date,
+DE0261,usr_618438,name + start date,
+DE0264,usr_401629,name + start date,
+DE0270,usr_342003,manual (HR),Spelling differs (Yılmaz / Yilmaz)
+,usr_294106,none,Left Oct 2024 - not in payroll extract
+,usr_353112,none,System/integration user

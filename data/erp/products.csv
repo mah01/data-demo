@@ -1,0 +1,50 @@
+product_number,name,product_group_number,product_group_name,sales_price_dkk,cost_price_dkk,unit
+NF-C32,Centrifugalpumpe NF-C 32/160,10,Pumper og anlæg,28000.00,18393.00,stk
+NF-C40,Centrifugalpumpe NF-C 40/200,10,Pumper og anlæg,39000.00,27104.00,stk
+NF-C50,Centrifugalpumpe NF-C 50/250,10,Pumper og anlæg,56000.00,35943.00,stk
+NF-C65,Centrifugalpumpe NF-C 65/315,10,Pumper og anlæg,84000.00,54028.00,stk
+NF-C80,Centrifugalpumpe NF-C 80/400,10,Pumper og anlæg,128000.00,83416.00,stk
+NF-M10,Flertrinspumpe NF-M 10,10,Pumper og anlæg,46000.00,31287.00,stk
+NF-M20,Flertrinspumpe NF-M 20,10,Pumper og anlæg,68000.00,44657.00,stk
+NF-M45,Flertrinspumpe NF-M 45,10,Pumper og anlæg,115000.00,79050.00,stk
+NF-S7,Dykpumpe NF-S 7.5 kW,10,Pumper og anlæg,32000.00,21178.00,stk
+NF-S15,Dykpumpe NF-S 15 kW,10,Pumper og anlæg,52000.00,33598.00,stk
+NF-S30,Dykpumpe NF-S 30 kW,10,Pumper og anlæg,95000.00,62217.00,stk
+NF-D01,Doseringspumpe NF-D mini,10,Pumper og anlæg,14000.00,9672.00,stk
+NF-D60,Doseringspumpe NF-D 60,10,Pumper og anlæg,22000.00,14572.00,stk
+NF-D200,Doseringspumpe NF-D 200,10,Pumper og anlæg,36000.00,23862.00,stk
+BS-2,Trykforøgeranlæg BS-2,10,Pumper og anlæg,145000.00,94117.00,stk
+BS-3,Trykforøgeranlæg BS-3,10,Pumper og anlæg,210000.00,139539.00,stk
+BS-4,Trykforøgeranlæg BS-4,10,Pumper og anlæg,320000.00,221221.00,stk
+LS-2,Pumpestation spildevand LS-2,10,Pumper og anlæg,260000.00,182030.00,stk
+HX-500,Pumpeskid HX-500,10,Pumper og anlæg,420000.00,276110.00,stk
+CP-PRO,Styretavle CP-PRO,10,Pumper og anlæg,48000.00,33522.00,stk
+VFD-22,Frekvensomformerpakke 22 kW,10,Pumper og anlæg,38000.00,24335.00,stk
+VFD-55,Frekvensomformerpakke 55 kW,10,Pumper og anlæg,72000.00,45899.00,stk
+NF-ACC,Tilbehør og montagemateriel iht. tilbud,10,Pumper og anlæg,0.00,0.00,stk
+RS-SEAL-S,Akseltætningssæt S,20,Reservedele og komponenter,1200.00,621.00,stk
+RS-SEAL-M,Akseltætningssæt M,20,Reservedele og komponenter,2900.00,1728.00,stk
+RS-SEAL-L,Akseltætningssæt L,20,Reservedele og komponenter,6500.00,3541.00,stk
+RS-IMP-S,Løbehjul S,20,Reservedele og komponenter,3100.00,1762.00,stk
+RS-IMP-M,Løbehjul M,20,Reservedele og komponenter,7800.00,4029.00,stk
+RS-IMP-L,Løbehjul L,20,Reservedele og komponenter,17500.00,10086.00,stk
+RS-BRG-S,Lejesæt S,20,Reservedele og komponenter,1500.00,767.00,stk
+RS-BRG-L,Lejesæt L,20,Reservedele og komponenter,3900.00,2089.00,stk
+RS-MOT-7,Motor 7.5 kW IE3,20,Reservedele og komponenter,14000.00,8166.00,stk
+RS-MOT-15,Motor 15 kW IE3,20,Reservedele og komponenter,24000.00,13823.00,stk
+RS-MOT-30,Motor 30 kW IE3,20,Reservedele og komponenter,41000.00,21509.00,stk
+RS-PT,Tryktransmitter,20,Reservedele og komponenter,4200.00,2476.00,stk
+RS-FLOW,Flowmåler DN80,20,Reservedele og komponenter,11000.00,6379.00,stk
+RS-GSK,Pakningssæt,20,Reservedele og komponenter,650.00,326.00,stk
+RS-WEAR,Slidringssæt,20,Reservedele og komponenter,2200.00,1285.00,stk
+RS-SLV,Akselbøsning,20,Reservedele og komponenter,3100.00,1608.00,stk
+RS-CTRL,Styreprint CP-PRO,20,Reservedele og komponenter,6800.00,3931.00,stk
+RS-CPL,Kobling,20,Reservedele og komponenter,2900.00,1704.00,stk
+RS-CHK,Kontraventil DN80,20,Reservedele og komponenter,5400.00,2915.00,stk
+RS-FLT,Filterindsats,20,Reservedele og komponenter,890.00,522.00,stk
+SVC-HOUR,Servicetime tekniker,30,Service og vedligehold,1050.00,435.00,time
+SVC-CALL,Udkørselsgebyr,30,Service og vedligehold,1450.00,590.00,stk
+SVC-COMM,Idriftsættelse,30,Service og vedligehold,12500.00,5100.00,stk
+SVC-INSP,Inspektion og tilstandsrapport,30,Service og vedligehold,4800.00,1785.00,stk
+SVC-WS,Værkstedsreparation,30,Service og vedligehold,6500.00,2695.00,stk
+SA-STD,Serviceaftale - kvartalsvis fakturering,30,Service og vedligehold,0.00,0.00,stk
