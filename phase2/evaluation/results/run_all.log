@@ -1,0 +1,22 @@
+Protocol 2B-baseline-1, model claude-opus-5: 19 runs, 4 in parallel
+Q01-t1: completed in 101.3s, 22 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+Q03-t1: completed in 110.7s, 20 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+Q02-t1: completed in 163.4s, 36 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+Q04-t1: completed in 281.7s, 42 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+Q07-t1: completed in 234.4s, 36 tool calls, systems ['crm', 'erp', 'identity', 'meta'], isolation_ok=True
+Q05-t1: completed in 339.6s, 40 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+Q08-t1: completed in 192.6s, 34 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+Q09-t1: completed in 179.2s, 25 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+Q06-t1: completed in 549.1s, 38 tool calls, systems ['crm', 'erp', 'identity', 'meta'], isolation_ok=True
+Q10-t1: completed in 234.3s, 32 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+BA-t1: completed in 228.8s, 33 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+BA-t2: completed in 158.5s, 35 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+BB-t1: completed in 291.7s, 33 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+BA-t3: completed in 337.5s, 54 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+BB-t2: completed in 336.6s, 58 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+BB-t3: completed in 344.0s, 51 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+BC-t1: completed in 157.1s, 28 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+BC-t2: completed in 134.0s, 26 tool calls, systems ['crm', 'erp', 'meta', 'payroll'], isolation_ok=True
+BC-t3: completed in 160.3s, 31 tool calls, systems ['crm', 'erp', 'identity', 'meta', 'payroll'], isolation_ok=True
+
+19/19 runs completed.

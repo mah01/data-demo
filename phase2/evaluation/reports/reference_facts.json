@@ -1,0 +1,286 @@
+{
+  "company": {
+    "revenue_h1": [
+      85768325.12870002,
+      88822394.14789991
+    ],
+    "operating_profit_h1": [
+      11972623.018699989,
+      7998003.527899914
+    ],
+    "operating_margin_h1": [
+      0.13959259436084848,
+      0.09004489920168422
+    ],
+    "gross_margin_h1": [
+      0.3989306023798135,
+      0.3681792361219879
+    ],
+    "revenue_ytd_jan_aug": [
+      113161032.74010037,
+      115715765.35209963
+    ],
+    "profit_ytd_jan_aug": [
+      16039297.330100324,
+      10646514.692099612
+    ],
+    "other_opex_h1": [
+      7431372.110000003,
+      8091205.260000001
+    ]
+  },
+  "markets_h1_revenue": {
+    "DK": [
+      46807324.89,
+      51263644.39999999,
+      0.09520560127015604
+    ],
+    "SE": [
+      16950196.533900004,
+      17316455.120700013,
+      0.021607925670212746
+    ],
+    "DE": [
+      22010803.704800006,
+      20242294.627200004,
+      -0.08034731949448691
+    ]
+  },
+  "markets_h1_gross_profit": {
+    "DK": [
+      19066969.099999994,
+      18588326.91
+    ],
+    "SE": [
+      6641014.813900004,
+      7030455.650700001
+    ],
+    "DE": [
+      8507625.694799999,
+      7083778.667200005
+    ]
+  },
+  "personnel": {
+    "total_h1": [
+      14811614.48000001,
+      16613352.459999999
+    ],
+    "increase": 1801737.9799999893,
+    "de_sales_increase": 1363361.38,
+    "de_sales_share": 0.756692368776068,
+    "salary_inflation_pct": 0.03870607906066725,
+    "salary_inflation_effect": 559490.2599708795,
+    "inflation_share_of_profit_decline": 0.14076574154228194,
+    "headcount": {
+      "2025-06-30": 50,
+      "2026-06-30": 54
+    },
+    "de_sales_headcount": {
+      "2025-06-30": 8,
+      "2026-06-30": 12
+    },
+    "de_expansion_hires": "4 German sales hires Sep 2025 - Jan 2026 (DE0258, DE0261, DE0264, DE0270)"
+  },
+  "germany_sales": {
+    "pipeline_h1": [
+      25999137.959999997,
+      35099237.99999999
+    ],
+    "pipeline_growth": 0.3500154525892595,
+    "win_rate_h1": [
+      0.3076923076923077,
+      0.18584070796460178
+    ],
+    "won_value_change": -0.24991983317136232,
+    "new_rep_win_rate_2026H1": 0.125,
+    "veteran_win_rate_2026H1": 0.23076923076923078,
+    "revenue_per_salesperson": {
+      "2025H1": 2751350.4631000008,
+      "2026H1": 1686857.8856000004
+    },
+    "loss_reasons_2026H1": {
+      "(blank)": 25,
+      "Lost to competitor": 17,
+      "Price too high": 14,
+      "No decision / project postponed": 12,
+      "Not qualified": 12,
+      "No response": 9,
+      "Technical fit": 3
+    }
+  },
+  "germany_customers": {
+    "existing_change": -4815236.338399999,
+    "new_customers_revenue": 3046727.2608000003,
+    "new_customers_count": 15,
+    "top_decliners": [
+      {
+        "customer_number": "52902",
+        "name": "Rheinmark Chemie GmbH & Co. KG",
+        "h1_2025": 3085355.4392,
+        "h1_2026": 1180437.3521999996,
+        "change": -1904918.0870000003
+      },
+      {
+        "customer_number": "14959",
+        "name": "Brandauer Papierwerke AG",
+        "h1_2025": 2627532.1805999996,
+        "h1_2026": 944334.544,
+        "change": -1683197.6365999996
+      },
+      {
+        "customer_number": "70015",
+        "name": "Uckermark Lebensmittel GmbH & Co. KG",
+        "h1_2025": 771202.491,
+        "h1_2026": 10517.481,
+        "change": -760685.01
+      },
+      {
+        "customer_number": "70017",
+        "name": "Ruhrtal Papier GmbH",
+        "h1_2025": 628716.4164000002,
+        "h1_2026": 0,
+        "change": -628716.4164000002
+      },
+      {
+        "customer_number": "44633",
+        "name": "Westerwald Chemie GmbH & Co. KG",
+        "h1_2025": 577677.5581999999,
+        "h1_2026": 100537.59939999999,
+        "change": -477139.95879999985
+      }
+    ],
+    "top2_change": -3588115.7236,
+    "top2_trail": [
+      {
+        "customer_number": "52902",
+        "crm_company_ids": [
+          "cmp_71526"
+        ],
+        "owner_changed_on": "2025-09-15",
+        "new_owner_employee_id": "DE0258",
+        "new_owner_start": "2025-09-01",
+        "activities_per_month_before": 5.875,
+        "activities_per_month_after": 1.0,
+        "lost_deals_since_reassignment": [
+          "Rheinmark Chemie - Servicevertrag Verlängerung 2026",
+          "Rheinmark Chemie - Pumpentausch Tanklager Nord",
+          "Rheinmark Chemie - Ersatzteil-Rahmenvertrag 2026"
+        ]
+      },
+      {
+        "customer_number": "14959",
+        "crm_company_ids": [
+          "cmp_82561"
+        ],
+        "owner_changed_on": "2025-10-06",
+        "new_owner_employee_id": "DE0261",
+        "new_owner_start": "2025-10-01",
+        "activities_per_month_before": 5.625,
+        "activities_per_month_after": 1.5,
+        "lost_deals_since_reassignment": [
+          "Brandauer Papier - Ersatzteile Rahmen 2026"
+        ]
+      }
+    ]
+  },
+  "denmark": {
+    "revenue": {
+      "2025H1": 46807324.89,
+      "2026H1": 51263644.39999999
+    },
+    "revenue_change": 0.09520560127015604,
+    "gross_profit": {
+      "2025H1": 19066969.099999994,
+      "2026H1": 18588326.91
+    },
+    "gross_margin": {
+      "2025H1": 0.40735011335957577,
+      "2026H1": 0.36260252519229796
+    },
+    "service_share": {
+      "2025H1": 0.2993079964070555,
+      "2026H1": 0.21042143562465884
+    },
+    "equipment_share": {
+      "2025H1": 0.467454861208583,
+      "2026H1": 0.5676420309282575
+    },
+    "service_revenue_change": -0.23004150343508348,
+    "equipment_revenue_change": 0.3299353229136553,
+    "contract_revenue": {
+      "2025H1": 6083000.0,
+      "2026H1": 4561750.0
+    },
+    "renewals_2025H2": {
+      "closed": 39,
+      "lost": 16,
+      "lost_value": 3705000.0,
+      "lost_value_share": 0.39360458939764154
+    }
+  },
+  "counterfactual": {
+    "extra_wins": 13.76923076923077,
+    "extra_bookings": 3094819.158996656,
+    "de_equipment_gross_margin_2026H1": 0.21718352747992797,
+    "extra_gross_profit": 672143.7418633578,
+    "profit": 8670147.269763272,
+    "margin": 0.09432561059934515,
+    "note": "Upper bound: assumes all extra bookings invoiced within H1 2026; excludes commission."
+  },
+  "bridge": {
+    "gross_profit_DK": -478642.1899999939,
+    "gross_profit_SE": 389440.8367999969,
+    "gross_profit_DE": -1423847.027599994,
+    "personnel_de_sales": -1363361.38,
+    "personnel_other": -438376.5999999894,
+    "opex_de": -576150.7,
+    "opex_other": -83682.45000000135,
+    "total": -3974619.5107999817,
+    "profit_change": -3974619.4908000743,
+    "germany_total": -3363359.107599994
+  },
+  "story": {
+    "headline": "Revenue is up ~3.5% (DKK 86m -> 89m) but operating profit is down ~33% (DKK 12m -> 8m); margin falls from ~14% to ~9%.",
+    "drivers": [
+      {
+        "id": "germany_expansion",
+        "rank": 1,
+        "summary": "German sales headcount grew 8 -> 12. New pipeline +35%, but win rate fell 31% -> 19% (new reps win ~12%, veterans ~23%). Germany costs rose (people + cars, travel, office, trade fair) while German revenue fell ~8% and discounting cut equipment margins.",
+        "systems": [
+          "payroll",
+          "crm",
+          "erp"
+        ]
+      },
+      {
+        "id": "german_key_accounts",
+        "rank": 2,
+        "summary": "Rheinmark Chemie and Brandauer Papierwerke were reassigned from a veteran account manager to two newly hired reps in Sep/Oct 2025. Account activity dropped, Rheinmark's service contract renewal and follow-on deals were lost, Brandauer moved spare parts to a local distributor. Their combined H1 revenue fell ~DKK 3.6m, more than Germany's entire net decline.",
+        "systems": [
+          "erp",
+          "mappings",
+          "crm",
+          "payroll"
+        ]
+      },
+      {
+        "id": "denmark_mix",
+        "rank": 3,
+        "summary": "Danish revenue grew ~9-10%, but high-margin service fell ~23% (a third of service-contract value was not renewed at end-2025) while lower-margin equipment grew ~30% at bigger discounts. Danish gross profit is DOWN despite revenue growth.",
+        "systems": [
+          "erp",
+          "crm"
+        ]
+      },
+      {
+        "id": "salary_inflation_red_herring",
+        "rank": null,
+        "summary": "A company-wide raise of ~3.5-4% in Jan 2026 is visible on every payslip but explains only ~DKK 0.55m (about a third of the personnel increase and ~15% of the profit decline).",
+        "systems": [
+          "payroll"
+        ]
+      }
+    ],
+    "sweden": "Stable control market: revenue roughly flat, win rate ~30%, slight margin improvement."
+  }
+}

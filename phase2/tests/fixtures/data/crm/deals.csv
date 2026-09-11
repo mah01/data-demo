@@ -1,0 +1,8 @@
+deal_id,deal_name,pipeline,stage,deal_type,company_id,owner_id,market,product_category,amount,deal_currency,amount_company_currency,discount_pct,created_at,expected_close_date,closed_at,outcome,loss_reason
+1000000001,Alpha - Pumps,Nordics Sales,Closed Won,New Business,cmp_00001,usr_000001,Denmark,Pumps & Systems,100000.00,DKK,100000.00,5.0,2025-01-10T09:00:00,2025-06-30,2025-06-30T16:00:00,won,
+1000000002,Beta - Seals,DACH Sales,Closed Lost,Existing Business,cmp_00002,usr_000002,,Spare Parts Agreement,10000.00,EUR,74600.00,,2025-06-30T09:00:00,2026-01-15,2026-01-15T10:00:00,lost,Price too high
+1000000003,Delta - Anlage,DACH Sales,Closed Won,New Business,cmp_00004,usr_000002,,,20000.00,EUR,149200.00,15.0,2026-01-01T08:00:00,2026-06-30,2026-06-30T23:00:00,won,
+1000000004,Beta - Pumpen,DACH Sales,Proposal Sent,Existing Business,cmp_00002,usr_000002,Germany,Pumps & Systems,5000.00,EUR,37300.00,,2026-02-01T11:00:00,2026-05-31,,open,
+1000000005,Alpha - Serviceaftale 2026,Service Renewals,Closed Lost,Renewal,cmp_00001,usr_000001,Denmark,Service Contract,50000.00,DKK,50000.00,,2025-10-01T09:00:00,2025-12-15,2025-12-15T12:00:00,lost,
+1000000006,Delta - Dosier,DACH Sales,Closed Lost,New Business,cmp_00004,usr_000003,Germany,Pumps & Systems,1000.00,EUR,7460.00,,2026-03-01T09:00:00,2026-05-01,2026-05-01T09:00:00,lost,
+1000000007,Beta - Servicevertrag 2026,Service Renewals,Closed Won,Renewal,cmp_00002,usr_000002,Germany,Service Contract,8000.00,EUR,59680.00,,2026-05-01T09:00:00,2026-06-30,2026-06-30T10:00:00,won,

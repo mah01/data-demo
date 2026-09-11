@@ -1,0 +1,7 @@
+entry_number,date,voucher,account_number,department,amount_dkk,text
+1,2025-06-30,LØN-2025-06,2210,,1000.00,Lønkørsel 2025-06 - Løn
+2,2026-01-01,K2026-00001,2710,DK,500.00,Husleje Kolding
+3,2026-01-31,LØN-2026-01,2210,,1200.00,Lønkørsel 2026-01 - Løn
+4,2026-03-01,K2026-00002,2710,,-50.00,Refusion
+5,2026-06-30,K2026-00003,2820,DE,300.00,Reise Frankfurt
+6,2026-07-01,K2026-00004,2820,DE,999.00,Reise Hamburg

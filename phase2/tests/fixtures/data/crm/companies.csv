@@ -1,0 +1,5 @@
+company_id,name,domain,country,city,industry,lifecycle_stage,owner_id,created_at,num_employees
+cmp_00001,Alpha Vand,alpha.dk,Denmark,Aarhus,UTILITIES,customer,usr_000001,2020-01-01,50
+cmp_00002,Beta Chemie,,Germany,,CHEMICALS,customer,usr_000002,2020-01-01,
+cmp_00003,BETA CHEMIE GMBH,,,,,lead,usr_000002,2025-03-01,
+cmp_00004,Delta Prospekt,,,,,opportunity,usr_000001,2025-02-01,

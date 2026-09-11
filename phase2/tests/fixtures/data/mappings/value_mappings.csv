@@ -1,0 +1,19 @@
+domain,system,field,source_value,canonical_value
+market,payroll,employees.country,DK,DK
+market,crm,companies.country / deals.market,Denmark,DK
+market,crm,deals.deal_currency (fallback),DKK,DK
+market,erp,customers.country,Danmark,DK
+market,payroll,employees.country,SE,SE
+market,crm,companies.country / deals.market,Sweden,SE
+market,crm,deals.deal_currency (fallback),SEK,SE
+market,erp,customers.country,Sverige,SE
+market,payroll,employees.country,DE,DE
+market,crm,companies.country / deals.market,Germany,DE
+market,crm,deals.deal_currency (fallback),EUR,DE
+market,erp,customers.country,Tyskland,DE
+product_category,erp,products.product_group_number,10,Equipment
+product_category,crm,deals.product_category,Pumps & Systems,Equipment
+product_category,erp,products.product_group_number,20,Components
+product_category,crm,deals.product_category,Spare Parts Agreement,Components
+product_category,erp,products.product_group_number,30,Service
+product_category,crm,deals.product_category,Service Contract,Service

@@ -1,0 +1,4 @@
+payroll_employee_id,crm_user_id,match_basis,note
+DK0001,usr_000001,name + start date,
+DE0002,usr_000002,manual (HR),CRM display name differs
+,usr_000003,none,Left before payroll extract

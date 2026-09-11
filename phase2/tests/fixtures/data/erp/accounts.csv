@@ -1,0 +1,6 @@
+account_number,name,type
+1010,Salg af varer og ydelser,revenue (from invoices)
+1310,Vareforbrug,cost of sales (from invoice lines)
+2210,Lønninger,personnel
+2710,Husleje,opex
+2820,Rejseomkostninger,opex

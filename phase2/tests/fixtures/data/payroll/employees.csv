@@ -1,0 +1,5 @@
+employee_id,first_name,last_name,work_email,country,department,job_title,employment_type,weekly_hours,employment_start,employment_end,status,cost_center,manager_employee_id,current_base_salary,currency
+DK0001,Anna,Dahl,anna.dahl@nordflow.dk,DK,Sales,Sales Engineer,full-time,37,2020-01-01,,active,DK-200,,41200.00,DKK
+DE0002,Bernhard,Schulz,,DE,Sales,Sales Engineer,full-time,40,2026-01-15,,active,DE-200,,6000.00,EUR
+SE0003,Cecilia,Berg,,SE,Service,Service Technician,part-time,30,2019-01-01,2026-03-31,terminated,SE-300,,31000.00,SEK
+DK0004,Dora,Lund,,DK,Finance & Admin,Accountant,full-time,37,2025-07-01,,active,DK-110,DK0001,36000.00,DKK

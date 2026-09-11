@@ -1,0 +1,1513 @@
+[
+  {
+    "run_id": "BA-t1",
+    "question_id": "BA",
+    "kind": "blind",
+    "question": "How is the business doing? Is there anything I should be concerned about?",
+    "classification": "PASS",
+    "tool_calls": 33,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 228.8,
+    "output_tokens": 12075,
+    "cost_usd": 2.4293415,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Revenue is up slightly, but profit is falling fast.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- German invoiced revenue is down about 8%.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "Every rep's won Equipment deals moved up, from 4–9% in late 2025 to 8–14% in Denmark and 14–20% in Germany.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- But win rate fell from 30% to 18%, and won value dropped 24%.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Lost service contracts in Denmark (the biggest concern)",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Figures verified.",
+      "coverage": "Good breadth. Missing the German key-account attrition, the largest single German revenue driver.",
+      "causal_reasoning": "Good. Discount cause 'couldn't find'; ramp-up caveat for new hires.",
+      "cross_system_reasoning": "Good. ERP service decline <-> CRM renewals <-> ERP invoice lines; payroll hires <-> CRM win rates.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Good. 33 calls, systematic; stopped at market/rep level for Germany."
+    },
+    "summary": "Unprompted, it established revenue +2.3% vs operating profit -34% and a clean bridge, then surfaced three concerns: lost Danish service contracts (biggest; December 2025 renewal round, 16 of 39 lost, insourcing reason), equipment discounting in DK and DE, and the German sales expansion not paying off (8 -> 12, pipeline +35%, win rate 30% -> 18%, new hires 8 of 67). It did not drill to German customers, so the key-account attrition is missing, and it did not address pay rises."
+  },
+  {
+    "run_id": "BA-t2",
+    "question_id": "BA",
+    "kind": "blind",
+    "question": "How is the business doing? Is there anything I should be concerned about?",
+    "classification": "PASS",
+    "tool_calls": 35,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 158.5,
+    "output_tokens": 11471,
+    "cost_usd": 1.7182074999999997,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "~",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "**In short:** Revenue is flat (+2%), but operating profit is down 34% and the drop got worse in Q2.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "Over the same period, German revenue fell 8% and gross profit fell 16% (−1.8M).",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- **Facts:** The German sales team grew from 8 to 12 people (four hires between Sept 2025 and Jan 2026).",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- **Win rate (CRM):** Germany's new-deal win rate fell from 30% to 18%.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- **Not just the new hires:** Most long-standing reps are also winning only 13–23% of deals.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "There are three causes: bigger discounts on Equipment, lost Danish service contracts, and a German sales team that has grown without bringing in more sales.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Spot-checked claims correct (Q2 figures, best-performing rep at 47%).",
+      "coverage": "Good breadth. Missing German key-account attrition and explicit treatment of salary inflation.",
+      "causal_reasoning": "Good. 'Decision or drift' left open; capacity ruled out as the cause of the service drop.",
+      "cross_system_reasoning": "Good. Same pattern as BA-t1.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Good. 35 calls."
+    },
+    "summary": "Very similar to BA-t1: revenue +2.3% vs operating profit -33.6%, with a Q2 deterioration (revenue -3.4%, operating profit -41%, verified). Concerns: equipment discounting (all 23 products; unit costs unchanged), Germany costing more and selling less (8 -> 12, +1.77M payroll, win rate 30% -> 18%, not just new hires), and Danish service revenue -23% from the December 2025 renewal round. No customer-level German analysis; pay rises not addressed."
+  },
+  {
+    "run_id": "BA-t3",
+    "question_id": "BA",
+    "kind": "blind",
+    "question": "How is the business doing? Is there anything I should be concerned about?",
+    "classification": "PASS",
+    "tool_calls": 54,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 337.5,
+    "output_tokens": 17153,
+    "cost_usd": 3.002653,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "**Bottom line:** Revenue is flat (+2%), but operating profit is down about a third, from 16.0M to 10.6M DKK, and the operating margin fell from 14.2% to 9.2%.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- Over the same period, German revenue fell 8% (−2.3M).",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "German sales headcount went from 8 to 12, and the team's employer cost rose 1.77M (+49%).",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "The win rate dropped from 30% to 18%, even though new pipeline was up 35%.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- In Germany, discounts on won deals went from about 5–10% to 14–19% from late 2025, for experienced and new reps alike.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "Two of them, Rheinmark Chemie (−2.6M) and Brandauer Papierwerke (−2.2M), are the company's two largest customer declines.",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Danish service contracts are being lost.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "Mostly high. Two slips: the new hires' 8 wins are said to be worth 3.4M (actual 2.64M), and 'the other 11 reassigned accounts actually grew' generalises a net +1.71M where 8 of 11 grew.",
+      "coverage": "Very good. All major encoded drivers except explicit salary-inflation treatment.",
+      "causal_reasoning": "Strong. Causes described as 'well supported but not proven'; considers that some Danish equipment growth may have been bought with discounts.",
+      "cross_system_reasoning": "Excellent. ERP -> CRM renewals/notes; payroll hires -> CRM owner history -> identity -> ERP customer revenue -> CRM activities.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None beyond the two numeric slips.",
+      "investigation_quality": "Excellent. 54 calls; followed the German decline to customers and cross-checked loss reasons against note text."
+    },
+    "summary": "The deepest open-ended run. Beyond revenue vs profit, the Danish renewal round, discounting and the German expansion, it drilled to customer level unprompted: it found the bulk reassignment of 13 accounts to the new hires, identified Rheinmark (-2.6M) and Brandauer (-2.2M) as the company's two largest customer declines, and quoted the handover notes. It also noticed that the CRM loss-reason field contradicts the reps' notes on several lost Danish renewals ('insourced maintenance' vs 'found cheaper service partner') and flagged the field as unreliable. That is a genuine inconsistency in the dataset. Two minor factual slips."
+  },
+  {
+    "run_id": "BB-t1",
+    "question_id": "BB",
+    "kind": "blind",
+    "question": "What deserves management attention right now?",
+    "classification": "PASS",
+    "tool_calls": 33,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 291.7,
+    "output_tokens": 12610,
+    "cost_usd": 2.0033515,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Revenue is up 2% on last year, but operating profit is down 34%.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- **Cost:** At last year's discount levels, gross profit would have been roughly **2.9M higher** (1.6M in Denmark, 1.3M in Germany).",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "The German sales expansion isn't paying off yet",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "Denmark's win rate is flat at about 35%, and Germany's fell.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- The four new hires have won 8 of 67 closed deals (12%).",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Three things drive it: service contracts lost in Denmark, heavier Equipment discounting, and a bigger German sales team that isn't bringing in more business yet.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High.",
+      "coverage": "Good. Missing the German key-account attrition (flagged as uninvestigated) and salary inflation.",
+      "causal_reasoning": "Good. Pipeline-quality hypothesis labelled 'isn't proven'.",
+      "cross_system_reasoning": "Good, with one self-reported shortcut (name matching instead of identity tools).",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Good. 33 calls; stopped before customer-level analysis of Germany."
+    },
+    "summary": "Revenue +2% vs operating profit -34% (continuing in Jul-Aug). Three priorities: lost Danish service contracts (16 lost in H2 2025, all with one owner, zero open renewal deals ahead of the next round), equipment discounting (about 2.9M gross profit), and the German expansion (8 -> 12, about 75% of the personnel increase, win rate 31% -> 19%, new hires 12%, veterans 23%). It noticed German Components -16% but explicitly did not investigate it: that is where the key-account attrition sits. It admits matching lost renewals to ERP by name rather than via the identity mapping."
+  },
+  {
+    "run_id": "BB-t2",
+    "question_id": "BB",
+    "kind": "blind",
+    "question": "What deserves management attention right now?",
+    "classification": "PASS",
+    "tool_calls": 58,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 336.6,
+    "output_tokens": 15813,
+    "cost_usd": 2.9880864999999996,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Revenue is up 2% on last year (Jan–Aug), but operating profit is down 34%, and those three explain most of it.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "I'd put three things in front of management: Danish service contract losses, rising Equipment discounts, and a bigger German sales team whose sales have fallen.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "Germany has four more salespeople but lower sales",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- The four new hires have won 8 of 67 closed deals (12%).",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "- **Rheinmark Chemie:** revenue −2.6m.",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "I'd put three things in front of management: Danish service contract losses, rising Equipment discounts, and a bigger German sales team whose sales have fallen.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High.",
+      "coverage": "Very good. All major drivers except explicit salary-inflation treatment.",
+      "causal_reasoning": "Strong. 'The data doesn't prove that the reassignment caused the losses'; the qualification weakness is labelled an inference.",
+      "cross_system_reasoning": "Excellent. ERP -> identity -> CRM owner history and deals; payroll hires -> CRM owner win rates.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Excellent. 58 calls (the most of any run); two date-format errors recovered."
+    },
+    "summary": "Three priorities: Danish service renewals (renewal rate 83% -> 64%, 18 losses worth 4.26M, next round imminent with no open deals), equipment discounting (team-wide in DK and DE, about 2.9M), and Germany (8 -> 12, win rate 30% -> 18%, new hires 12% vs veterans 22.6%). Unprompted, it reached customer level: the 13-account bulk reassignment and the two largest losses, Rheinmark (-2.6M) and Brandauer (-2.2M), together more than Germany's net decline. It notes the mixed picture across reassigned accounts."
+  },
+  {
+    "run_id": "BB-t3",
+    "question_id": "BB",
+    "kind": "blind",
+    "question": "What deserves management attention right now?",
+    "classification": "PASS",
+    "tool_calls": 51,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 344.0,
+    "output_tokens": 19098,
+    "cost_usd": 2.4825329999999997,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "~"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "**Operating profit is down 34% so far this year, even though revenue is up 2%.** January–August 2026 operating profit was 10.6M DKK against 16.0M in the same months of 2025.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- **Margins:** German Equipment gross margin fell from 28.4% to 21.7%, and Danish from 28.4% to 25.5%.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- **It is not a few salespeople.** Won deals in 2026 show 14–20% discounts across all German reps, experienced ones included, and 8–14% across all five Danish reps (CRM).",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- **Results:** new German pipeline is up 35%, but the win rate fell from 29.9% to 18.1%.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- Denmark's win rate on new sales is steady at 35%, and its Equipment volume is growing.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "- **Rheinmark Chemie (−2.6M DKK):**",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "- **Revenue impact:** Danish Service revenue is down 4.3M DKK (−23%) and gross profit down 2.55M DKK (ERP).",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": true,
+        "snippet": "Outside German Sales, payroll grew about 3–4%, which is in line with salary increases.",
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High, with one overgeneralisation about veteran win rates.",
+      "coverage": "Very good. Includes key accounts and places pay rises as normal growth.",
+      "causal_reasoning": "Strong. Handover causation 'not proven, but well documented' for Rheinmark.",
+      "cross_system_reasoning": "Excellent.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None beyond the overgeneralisation.",
+      "investigation_quality": "Very good. 51 calls."
+    },
+    "summary": "Four issues: the renewal season (64% vs 85%, 16 of 39 Danish contracts lost, time-critical), equipment discounting (quarterly table; about 2.9M upper bound), the German expansion (8 -> 12, +1.77M, win rate 29.9% -> 18.1%, new hires 8 of 69) including the account handovers with Rheinmark and Brandauer documented from CRM notes, and normal cost growth ('outside German Sales, payroll grew about 3-4%, in line with salary increases'). One overgeneralisation: 'experienced reps are also winning only 13-14%' describes some veterans; their average is about 23%."
+  },
+  {
+    "run_id": "BC-t1",
+    "question_id": "BC",
+    "kind": "blind",
+    "question": "Where would you investigate first if you were the CEO?",
+    "classification": "PASS",
+    "tool_calls": 28,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 157.1,
+    "output_tokens": 11821,
+    "cost_usd": 1.9751544999999997,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "~",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Operating profit for Jan–Aug 2026 is down **5.4M DKK (−34%)** on the same period last year, even though revenue grew 2.3% (ERP).",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "| Germany: gross profit down | −1.79M | ERP |",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "| Germany: sales team grew from 8 to 12 | −1.77M extra personnel cost | Payroll |",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- The low win rates aren't just new hires ramping up.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "I'd start with **service-contract renewals in Denmark**.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High.",
+      "coverage": "Adequate for the question. Missing key accounts and quantified new-rep performance.",
+      "causal_reasoning": "Good. 'My reading (not proven)'.",
+      "cross_system_reasoning": "Good. ERP + CRM + payroll; no identity usage.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Good but comparatively shallow (28 calls)."
+    },
+    "summary": "Answers the 'where first' question with a clear priority: Danish renewals first (timing: the next round is imminent with no deals in the CRM), Germany a close second (+1.77M cost, win rate 30% -> 18%, discounts 7% -> 15.3%, 'not just new hires'). It gives a driver table that reconciles the -5.4M, and points out that the year-to-date renewal rate (84%) hides the December round. Least deep of the CEO runs: no customer-level analysis and no new-rep quantification."
+  },
+  {
+    "run_id": "BC-t2",
+    "question_id": "BC",
+    "kind": "blind",
+    "question": "Where would you investigate first if you were the CEO?",
+    "classification": "PASS",
+    "tool_calls": 26,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 134.0,
+    "output_tokens": 9964,
+    "cost_usd": 1.5723260000000001,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "~",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "It explains about two-thirds of this year's drop in operating profit, and the trend is still getting worse.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- **Gross profit in Germany is down 1.8m DKK** (ERP).",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- **Sales costs up sharply.** German sales headcount went from 8 to 12 with four hires between Sep 2025 and Jan 2026.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- **Winning less despite the discounts.** The German win rate went from 31% (H1 2025) to 26% (H2 2025), 19% (H1 2026) and 17% so far in H2 2026 (CRM).",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "In parallel I'd look at **Danish service-contract renewals**, because there's a deadline: the next renewal round starts in about a month.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High.",
+      "coverage": "Good for the question. Missing key accounts (flagged as not investigated) and salary inflation.",
+      "causal_reasoning": "Good. Lists possible explanations without choosing one.",
+      "cross_system_reasoning": "Good. ERP + CRM + payroll.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Good but shallow (26 calls)."
+    },
+    "summary": "Prioritises Germany (about two-thirds of the profit decline: -1.8M gross profit plus +1.77M sales payroll; win rate 31% -> 26% -> 19% -> 17%; discounts doubled; best rep 47% worth studying), then Danish renewals (16 of 39 lost, confirmed in both CRM and ERP; imminent round). It explicitly did not investigate German spare parts -16%, which is where the key-account attrition is."
+  },
+  {
+    "run_id": "BC-t3",
+    "question_id": "BC",
+    "kind": "blind",
+    "question": "Where would you investigate first if you were the CEO?",
+    "classification": "PASS",
+    "tool_calls": 31,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 160.3,
+    "output_tokens": 11914,
+    "cost_usd": 1.6554160000000002,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "~"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Year-to-date (Jan–Aug), revenue is up 2.3% but operating profit fell from 16.0m to 10.6m DKK (−34%).",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "| Germany: lower gross profit (Equipment −1.11, Components −0.54, Service −0.14) | −1.79 |",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- **More staff, less revenue:** Germany hired 4 salespeople between Sep 2025 and Jan 2026, taking the team from 8 to 12.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "Germany: bigger sales team, lower win rate, bigger discounts",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- **The new hires closed 8 of 67 deals (12%).** Win rates for experienced reps dropped too: Stefan Brenner 47%→23%, Julia Fischer-Lang 38%→15%, Florian Braun 30%→13%.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "I'd start with **Germany**, but set up a parallel check on **Danish service-contract renewals** straight away, because the next renewal round is only weeks away.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": true,
+        "snippet": "| Other payroll (mostly normal ~3% raises) and other operating costs | −1.22 |",
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High.",
+      "coverage": "Good. Missing key accounts.",
+      "causal_reasoning": "Strong. Tested the 'neglect' hypothesis for the renewal owner against activity data before rejecting it.",
+      "cross_system_reasoning": "Good. ERP + CRM + payroll + identity (person lookup).",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None; the pay-plan idea is explicitly 'I haven't checked that'.",
+      "investigation_quality": "Good. 31 calls."
+    },
+    "summary": "Germany first (two-thirds of the decline; new hires 8 of 67; named veteran win-rate drops; discounts doubled), Danish renewals in parallel (time-critical; key-person dependency without implying neglect, checked via her activity volume), then Danish discounting. Its driver table reconciles the -5.4M. It treats the roughly 3% pay rises as normal, and is the second run to catch the loss-reason field contradicting a rep's note (Herning Foder). No customer-level German analysis. It floats an unchecked pay-plan hypothesis for the Danish discount jump, clearly labelled."
+  },
+  {
+    "run_id": "Q01-t1",
+    "question_id": "Q01",
+    "kind": "benchmark",
+    "question": "How are we performing this year compared with last year?",
+    "classification": "PASS",
+    "tool_calls": 22,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 101.3,
+    "output_tokens": 7897,
+    "cost_usd": 0.9826309999999998,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "~",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "~"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Sales are up slightly, but profit is well down: gross profit fell and costs grew faster than revenue.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "Bigger discounts, mainly on Equipment in Germany and Denmark** (ERP invoice lines)",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- The German sales team grew from 8 to 12 people (4 hires between Sep 2025 and Jan 2026).",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Bigger discounts, mainly on Equipment in Germany and Denmark** (ERP invoice lines)",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. All headline figures correct (revenue 113.2 -> 115.7M, operating profit 16.0 -> 10.6M, German sales payroll +1.77M, German win rate 29.9% -> 18.1%). The renewal counts it quotes are read correctly but come from an inappropriate window.",
+      "coverage": "Good for the question: YoY performance plus the main drivers. Missing: German key-account attrition and the lost Danish service renewals.",
+      "causal_reasoning": "Good. Separates observed facts from interpretation; explicitly says the cause of rising discounts and falling German win rates is not shown in the data.",
+      "cross_system_reasoning": "Good. ERP P&L combined with payroll (German hires) and CRM (pipeline, win rate, loss reasons, renewals).",
+      "evidence": "Every figure traces to a tool call (financial summary, sales summary by market/category/product, payroll by department, CRM win rate by quarter/owner).",
+      "unsupported_claims": "None invented. The one wrong conclusion (Danish service decline 'doesn't match the CRM') comes from a mis-scoped query, not fabrication, and is labelled as unexplained.",
+      "investigation_quality": "Good. 22 calls, broad first then drilling into the anomalies (Danish service by month and product, German win rate by quarter and owner). The renewal check used the wrong window and no market filter."
+    },
+    "summary": "Chose Jan-Aug 2026 vs Jan-Aug 2025 because the data ends 31 Aug 2026, which is legitimate. Revenue, gross profit, cost and operating-profit figures match the reference exactly. It found revenue up and profit down, higher equipment discounts, the Danish service decline, and the German sales expansion with falling win rates. One significant misinterpretation: it checked service renewals for Jan-Aug of each year across all markets and concluded that 'renewals look healthy' and 'this doesn't match the CRM', missing the Danish renewals lost in Nov-Dec 2025. It did not reach the German key accounts."
+  },
+  {
+    "run_id": "Q02-t1",
+    "question_id": "Q02",
+    "kind": "benchmark",
+    "question": "Revenue increased, so why is profitability down?",
+    "classification": "PASS",
+    "tool_calls": 36,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 163.4,
+    "output_tokens": 12181,
+    "cost_usd": 2.0655775,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "~",
+      "new_rep_underperformance": "✗",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "~"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Revenue rose 2.6m DKK (+2.3%) in January–August 2026 versus the same months of 2025, but operating profit fell 5.4m DKK (−34%), from 16.0m to 10.6m.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "Three things did it: we sold less high-margin Service and more low-margin Equipment, Equipment discounts went up, and the German sales team grew without bringing in more revenue.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "**German sales team:** what are the targets and the timeline for the expanded team to cover its cost?",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Almost all of the fall is in Denmark (−4.3m, −23%), where service agreements, technician hours and call-out fees each dropped about 24.5%.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": true,
+        "snippet": "- **Other departments:** ordinary pay rises of about 3–4%.",
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Bridge and components correct; Danish renewal losses (18 losses, 4.3M) and loss reasons correct for the chosen window.",
+      "coverage": "Very good. Mix shift, discounting, personnel and opex all covered. Missing: German key-account decline (about -3.6M revenue H1), which contributes to the German gross-profit drop it attributes to discounting.",
+      "causal_reasoning": "Strong. Each driver labelled 'what the data shows' vs 'interpretation'. Notes that discount causes are unexplained and that it may be too early to judge the new hires.",
+      "cross_system_reasoning": "Strong. CRM renewals -> identity mapping -> ERP service invoices for the same customers; payroll matched to the ERP journal.",
+      "evidence": "Traceable. Loss-reason counts, discount levels and payroll deltas all come from tool results.",
+      "unsupported_claims": "None material. The observation that technician cost doesn't shrink with lost service revenue is offered as interpretation and is correct by design.",
+      "investigation_quality": "Very good. 36 calls. It noticed its first renewal query was inconclusive and re-ran it with a better window and market filter."
+    },
+    "summary": "Excellent answer. Its profit bridge for Jan-Aug reconciles exactly (revenue +1.02M at 2025 margin, mix -1.75M, within-category margin -1.68M, personnel -2.35M, other opex -0.64M). It identified the three structural drivers: lost Danish service renewals (found in the correct Sep-Aug window and matched to the same customers' missing ERP invoices), higher equipment discounts, and the German sales team growing without revenue. It did not investigate German customers, so the key-account attrition is missing."
+  },
+  {
+    "run_id": "Q03-t1",
+    "question_id": "Q03",
+    "kind": "benchmark",
+    "question": "What is driving the increase in personnel costs?",
+    "classification": "PASS",
+    "tool_calls": 20,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 110.7,
+    "output_tokens": 7873,
+    "cost_usd": 1.0649425,
+    "discoveries": {
+      "revenue_up_profit_down": "–",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "–",
+      "denmark_mix_margin": "–",
+      "salary_inflation_insufficient": "✓"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "The increase is mainly headcount: four sales people hired in Germany between September 2025 and January 2026 explain about 74% of it.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "The increase is mainly headcount: four sales people hired in Germany between September 2025 and January 2026 explain about 74% of it.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- Win rate dropped from 29.9% to 18.1%.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "That is why social contributions rose 28% (+370k), and 311k of that came from the four new hires.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "The only other hire was a like-for-like replacement of a Danish service technician on the same salary.",
+        "investigated": false
+      },
+      "salary_inflation_insufficient": {
+        "stated": true,
+        "snippet": "The only other hire was a like-for-like replacement of a Danish service technician on the same salary.",
+        "investigated": true
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. +2.35M, German hires +1.74M, raise 3.6%, bonus 529k vs 637k, headcount 51 -> 54 all consistent with the data.",
+      "coverage": "Complete for the question, including the red herring, FX and bonus effects.",
+      "causal_reasoning": "Good. The link between the investment and German results is labelled as correlation.",
+      "cross_system_reasoning": "Strong. Payroll hires -> identity -> CRM owner ids -> win rate and pipeline of the new hires; ERP journal reconciled with payroll.",
+      "evidence": "Traceable to payroll_personnel_costs by employee, base_salary_change, entries, identity and crm_win_rate.",
+      "unsupported_claims": "The full-year 2026 projection (+3.5M) is an extrapolation, clearly labelled.",
+      "investigation_quality": "Efficient (20 calls) and targeted."
+    },
+    "summary": "Correct and well-quantified decomposition: the four German sales hires explain about 74% of the +2.35M (Jan-Aug); the like-for-like base-salary rise (3.6%) and small Swedish effects explain the rest; bonuses fell and FX is negligible. It avoided the salary-inflation red herring and went across systems to show the new hires' weak conversion (8 of 69, 11.6%)."
+  },
+  {
+    "run_id": "Q04-t1",
+    "question_id": "Q04",
+    "kind": "benchmark",
+    "question": "We hired more salespeople in Germany. Did that investment pay off?",
+    "classification": "PASS",
+    "tool_calls": 42,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 281.7,
+    "output_tokens": 17568,
+    "cost_usd": 2.0329155,
+    "discoveries": {
+      "revenue_up_profit_down": "–",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "~",
+      "salary_inflation_insufficient": "–"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "| Germany gross profit | 11.1M | 9.4M | **−16%** (−1.79M) | ERP |",
+        "investigated": false
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "**Not yet.** Twelve months in, Germany is spending more on sales and making less gross profit.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- German sales payroll for Jan–Aug 2026 was **+1.77M DKK (+49%)** on the same months of 2025, as the team grew from 8 to 12.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- The German win rate fell from **30% to 20%**.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- **New hires:** 8 wins out of 69 closed deals (12%), worth 2.65M DKK.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "- **Rheinmark Chemie: −2.6M.** CRM notes say the customer asked why Stefan no longer covered them.",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Denmark did also see higher discounts and a lower margin, so some of the margin pressure may be company-wide.",
+        "investigated": false
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Figures for its Jan-Aug and 12-month windows are consistent with the data (Rheinmark -2.6M, Brandauer -2.2M Jan-Aug).",
+      "coverage": "Complete: investment, conversion, account handover, new-customer revenue at lower margin, discounting, ramp-up caveat.",
+      "causal_reasoning": "Strong. It flags that the Rheinmark notes also mention slow response before the handover, and that some reassigned accounts grew.",
+      "cross_system_reasoning": "Excellent. Payroll hire dates -> CRM users and owner history -> identity -> ERP customer revenue -> CRM activities and notes.",
+      "evidence": "Every claim traceable, including direct quotes from CRM activity notes.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Excellent. 42 calls. It recovered from one invalid-period error by retrying with a valid format."
+    },
+    "summary": "Outstanding. Answers 'not yet' with investment cost (2.23M for the four hires; German sales payroll +1.77M) against returns: German gross profit -1.79M, win rate 30% -> 20%, new hires 8 of 69, and existing reps also down. Without being led, it found the bulk reassignment of 13 accounts to the new hires, identified Rheinmark and Brandauer as the dominant losses, and quoted the CRM notes. It treats the handover as a contributing, not sole, factor."
+  },
+  {
+    "run_id": "Q05-t1",
+    "question_id": "Q05",
+    "kind": "benchmark",
+    "question": "Why is the German pipeline growing while German revenue is falling?",
+    "classification": "PASS",
+    "tool_calls": 40,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 339.6,
+    "output_tokens": 14477,
+    "cost_usd": 1.9636929999999997,
+    "discoveries": {
+      "revenue_up_profit_down": "–",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "–",
+      "salary_inflation_insufficient": "–"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "| German gross profit | 11.14M DKK | 9.35M DKK | −16% | ERP |",
+        "investigated": false
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "| German gross profit | 11.14M DKK | 9.35M DKK | −16% | ERP |",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "The pipeline growth comes from new-customer deals opened by four new German sales reps, and few of those deals are being won.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "| Win rate (share of closed deals won) | 29.9% | 18.1% | −12 pts | CRM |",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- The new reps won 8 of 67 closed deals (12%).",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "- **Rheinmark Chemie: −2.60M DKK (−63%).** Service fell 0.89M, spare parts 1.04M and equipment 0.67M.",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Pipeline +35%, win rate 29.9% -> 18.1%, won value -24%, account-level changes all consistent.",
+      "coverage": "Complete: both sides of the paradox, account handover, new-customer margin, discounting.",
+      "causal_reasoning": "Strong. Distinguishes documented causation (CRM notes for the two accounts) from correlation for the other 11 reassigned accounts, and labels the structural explanation as interpretation.",
+      "cross_system_reasoning": "Excellent. CRM pipeline/owners -> payroll hires -> identity -> ERP customer revenue by category -> CRM activities.",
+      "evidence": "Traceable, including the bridge components.",
+      "unsupported_claims": "Describing 'other existing customers -2.40M' as mostly one-off 2025 equipment orders is a reasonable reading, and it notes it did not investigate further.",
+      "investigation_quality": "Excellent. 40 calls with deliberate hypothesis testing."
+    },
+    "summary": "Excellent. It shows the pipeline growth comes from new-customer deals opened by the four new reps (about 53% of 2026 pipeline, 12% win rate), while existing-customer pipeline fell. The revenue decline sits in existing accounts, dominated by Rheinmark and Brandauer after the territory re-cut. It gives a German revenue bridge (re-cut accounts -3.05M, other existing -2.40M, new customers +3.16M) and explains why gross profit falls faster (recurring high-margin revenue replaced by discounted equipment). It ruled out two alternative explanations (market mis-tagging, stale deals)."
+  },
+  {
+    "run_id": "Q06-t1",
+    "question_id": "Q06",
+    "kind": "benchmark",
+    "question": "Are we losing new business or existing customers in Germany?",
+    "classification": "PASS",
+    "tool_calls": 38,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta"
+    ],
+    "elapsed_s": 549.1,
+    "output_tokens": 18500,
+    "cost_usd": 2.125496,
+    "discoveries": {
+      "revenue_up_profit_down": "–",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "~",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "~",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "–",
+      "salary_inflation_insufficient": "–"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "New business still has a problem: the German sales pipeline roughly doubled, but the win rate fell and new customers rarely buy again.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "|   – Rheinmark Chemie | 4.11M | 1.51M | −2.60M |",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Bridge components and CRM deal-type metrics consistent with the data.",
+      "coverage": "Complete: both dimensions of the question, cohort retention, handover context, margin pressure.",
+      "causal_reasoning": "Strong. Explicit 'Interpretation, not proven', with counter-evidence.",
+      "cross_system_reasoning": "Excellent. ERP customer cohorts (first-invoice filter) -> identity -> CRM activities and owner history; CRM deal-type win rates.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Very good. 38 calls; recovered from two invalid date-format errors in first_invoice filters."
+    },
+    "summary": "Precise answer: the German decline is mostly existing customers, specifically Rheinmark and Brandauer (-4.76M Jan-Aug), while other established customers grew (+2.27M). New-customer revenue held level (3.18M -> 3.02M), but new business has its own problem: twice the new-business pipeline produced the same wins (win rate 24% -> 14%), and last year's new customers retained only 11% of revenue. It adds the account-handover context from CRM notes and shows the reassignment alone does not explain the drop (8 of 13 moved accounts grew)."
+  },
+  {
+    "run_id": "Q07-t1",
+    "question_id": "Q07",
+    "kind": "benchmark",
+    "question": "Which customers contributed most to the German decline?",
+    "classification": "PASS",
+    "tool_calls": 36,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta"
+    ],
+    "elapsed_s": 234.4,
+    "output_tokens": 10872,
+    "cost_usd": 1.380758,
+    "discoveries": {
+      "revenue_up_profit_down": "–",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✗",
+      "pipeline_up_conversion_down": "–",
+      "new_rep_underperformance": "–",
+      "key_accounts_named": "✓",
+      "denmark_mix_margin": "–",
+      "salary_inflation_insufficient": "–"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "Two customers account for all of the German decline: **Rheinmark Chemie** and **Brandauer Papierwerke**.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "key_accounts_named": {
+        "stated": true,
+        "snippet": "Two customers account for all of the German decline: **Rheinmark Chemie** and **Brandauer Papierwerke**.",
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Customer figures, lost-deal values and dates correct.",
+      "coverage": "Complete for the question; adds the discounting context and a full-year projection (labelled).",
+      "causal_reasoning": "Strong and appropriately cautious: the handover 'coincides' with the losses together with a competitor's bundled offer; other reassigned accounts grew.",
+      "cross_system_reasoning": "Good. ERP -> identity -> CRM deals, activities and owner history. No payroll link for the new owners' tenure.",
+      "evidence": "Traceable, with quoted CRM notes and deal dates.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Very good. 36 calls. It checked the category mix of each decliner to separate project churn from account loss."
+    },
+    "summary": "Correctly identifies Rheinmark Chemie (-2.60M) and Brandauer Papierwerke (-2.16M, Jan-Aug) as the customers behind the decline, about twice the German net drop. It gives a clean bridge (other existing -0.66M, new 2026 customers +3.13M) and shows customers 3-7 are one-off 2025 projects. It traced the lost CRM deals and the handover notes. It did not check payroll to establish that the new owners were recent hires, and says 'a sales manager moved both accounts'."
+  },
+  {
+    "run_id": "Q08-t1",
+    "question_id": "Q08",
+    "kind": "benchmark",
+    "question": "Is Denmark actually performing well?",
+    "classification": "PASS",
+    "tool_calls": 34,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 192.6,
+    "output_tokens": 10310,
+    "cost_usd": 1.4868124999999999,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "~",
+      "pipeline_up_conversion_down": "–",
+      "new_rep_underperformance": "–",
+      "key_accounts_named": "–",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "–"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Denmark's revenue is growing, but its gross profit is falling.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- The group's operating profit fell 34% (from 16.0M to 10.6M), mostly because of Germany.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- **The sales pipeline is healthy (CRM, renewals excluded).** The win rate held at 35% (vs.",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "Denmark's revenue is growing, but its gross profit is falling.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Renewal counts, lost value share and category changes match the reference.",
+      "coverage": "Complete: mix, margin, discounting, renewals, pipeline health, cost control.",
+      "causal_reasoning": "Good. Discount cause flagged as unconfirmed; the renewal-owner observation is explicitly 'not evidence about why'.",
+      "cross_system_reasoning": "Good. ERP category and customer analysis combined with CRM renewals and loss reasons, plus payroll headcount.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Very good. 34 calls, compared Danish renewals with the other markets as a baseline."
+    },
+    "summary": "Clear answer: Danish revenue +7% (Jan-Aug) but gross profit -4.3% and margin -4.3pp. It traces this to equipment discounting (about 1.6M gross profit at 2025 discount levels) and the December 2025 service-renewal round (23 of 39 renewed, 39% of value lost, reasons quantified), with matching ERP customer declines. It correctly places Denmark in group context (the main group decline is Germany) and notes that Danish operating profit cannot be computed reliably."
+  },
+  {
+    "run_id": "Q09-t1",
+    "question_id": "Q09",
+    "kind": "benchmark",
+    "question": "What would profitability have looked like if German conversion had remained at the 2025 level?",
+    "classification": "PASS",
+    "tool_calls": 25,
+    "systems": [
+      "crm",
+      "erp",
+      "identity",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 179.2,
+    "output_tokens": 12601,
+    "cost_usd": 1.1122775,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "✗",
+      "denmark_mix_margin": "~",
+      "salary_inflation_insufficient": "–"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "That recovers only about a fifth of the DKK 5.4M year-on-year profit decline, so German conversion is a real factor but not the main one.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "If German conversion had stayed at its 2025 level, Jan–Aug 2026 operating profit would have been about **DKK 1.0M higher (range 0.75–1.3M)**.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- **German sales payroll is up DKK 1.8M (+49%)** after four hires between September 2025 and January 2026 (payroll).",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- **The new hires pull the rate down,** at 8 wins from 67 closed deals (12%).",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "- **Denmark's gross margin fell from 40.8% to 36.5%,** with average discount up from 4.6% to 7.4%.",
+        "investigated": false
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High. Inputs correct; method documented with sensitivity range.",
+      "coverage": "Complete, plus the other drivers for context.",
+      "causal_reasoning": "Good. Explains that the scenario ignores timing and follow-on effects and why they roughly offset.",
+      "cross_system_reasoning": "Good. CRM win rates and deal values, ERP invoicing of won deals (traced samples), ERP margins, payroll commission rate.",
+      "evidence": "Traceable, including the deal-to-invoice sample check.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Very good. 25 calls; validated the deal-to-invoice assumption empirically."
+    },
+    "summary": "Sound counterfactual. It applies the 2025 German win rate to the 2026 closed deals (about 16 extra wins, about 4.1M bookings; alternative methods 3.0-5.3M), converts at category-weighted German gross margin net of commission, and arrives at about +1.0M operating profit for Jan-Aug (range 0.75-1.3M): margin about 9.7% vs 9.2%. This is consistent with the reference method (+0.67M for H1 at the 21.7% equipment margin, an upper bound) given the longer window. It reaches the key conclusion: restoring conversion alone would not restore profitability; discounting and the added German sales cost matter at least as much."
+  },
+  {
+    "run_id": "Q10-t1",
+    "question_id": "Q10",
+    "kind": "benchmark",
+    "question": "What are the three issues management should investigate first?",
+    "classification": "PASS",
+    "tool_calls": 32,
+    "systems": [
+      "crm",
+      "erp",
+      "meta",
+      "payroll"
+    ],
+    "elapsed_s": 234.3,
+    "output_tokens": 13257,
+    "cost_usd": 1.946158,
+    "discoveries": {
+      "revenue_up_profit_down": "✓",
+      "germany_major_contributor": "✓",
+      "german_sales_headcount_expansion": "✓",
+      "pipeline_up_conversion_down": "✓",
+      "new_rep_underperformance": "✓",
+      "key_accounts_named": "~",
+      "denmark_mix_margin": "✓",
+      "salary_inflation_insufficient": "✗"
+    },
+    "auto_signals": {
+      "revenue_up_profit_down": {
+        "stated": true,
+        "snippet": "Together they explain most of the fall in operating profit, which dropped 5.4M DKK (−34%) from Jan–Aug 2025 to Jan–Aug 2026 while revenue grew 2.3%.",
+        "investigated": true
+      },
+      "germany_major_contributor": {
+        "stated": true,
+        "snippet": "- **Revenue:** German revenue fell 2.3M DKK (−8.6%): Components −16%, Equipment −5%.",
+        "investigated": true
+      },
+      "german_sales_headcount_expansion": {
+        "stated": true,
+        "snippet": "- **Hires:** four German sales staff were hired between Sep 2025 and Jan 2026.",
+        "investigated": true
+      },
+      "pipeline_up_conversion_down": {
+        "stated": true,
+        "snippet": "- **Win rate:** new deals created in Germany rose 35% (+12.1M DKK), but the share of deals won fell from about 30–33% in 2025 to about 17% in Q2–Q3 2026 (CRM).",
+        "investigated": true
+      },
+      "new_rep_underperformance": {
+        "stated": true,
+        "snippet": "- The four new hires won 0–20% of their deals.",
+        "investigated": true
+      },
+      "key_accounts_named": {
+        "stated": false,
+        "snippet": null,
+        "investigated": true
+      },
+      "denmark_mix_margin": {
+        "stated": true,
+        "snippet": "I recommend management look first at Germany's sales performance, lost Danish service contracts, and discounting on Equipment.",
+        "investigated": true
+      },
+      "salary_inflation_insufficient": {
+        "stated": false,
+        "snippet": null,
+        "investigated": false
+      }
+    },
+    "dimensions": {
+      "factual_correctness": "High, with one minor error (German revenue change -8.6% vs actual -8.0%). Other figures correct (Germany about 3.6M of the 5.4M decline, Danish Q4 2025 renewal rate 59%).",
+      "coverage": "Very good. All three encoded issues represented; the key-account issue appears only as 'moving existing accounts may have disrupted relationships' without the customer-level evidence.",
+      "causal_reasoning": "Good. Facts and interpretation separated; notes that discounts are not winning deals.",
+      "cross_system_reasoning": "Good. ERP, CRM renewals/win rates/owner history/activities, payroll.",
+      "evidence": "Traceable.",
+      "unsupported_claims": "None.",
+      "investigation_quality": "Very good. 32 calls, including checking open renewal deals for the upcoming round."
+    },
+    "summary": "Recommends three issues: (1) German sales performance, including the bulk move of 13 existing accounts to the new hires; (2) lost Danish service contracts; (3) equipment discounting. These map onto the encoded story (German expansion ROI, German key-account attrition via the handover, Danish service erosion), with discounting as a real, quantified additional driver. Each issue is sized and evidenced. It did not name Rheinmark/Brandauer, and it quotes German revenue as -8.6% where the figure is -8.0%."
+  }
+]

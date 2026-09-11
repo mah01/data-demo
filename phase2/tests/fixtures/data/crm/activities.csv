@@ -1,0 +1,5 @@
+activity_id,timestamp,type,owner_id,company_id,deal_id,subject,body
+51000000001,2025-06-30T10:00:00,CALL,usr_000001,cmp_00001,1000000001,Call,
+51000000002,2025-07-01T09:00:00,MEETING,usr_000002,cmp_00002,1000000002,Vor-Ort-Termin,Kunde möchte mehr Rabatt
+51000000003,2026-01-05T12:00:00,NOTE,usr_000002,cmp_00004,1000000003,Note,Budget confirmed
+51000000004,2026-01-20T12:00:00,EMAIL,usr_000002,cmp_00002,,Follow-up,

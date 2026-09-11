@@ -1,0 +1,4 @@
+crm_company_id,erp_customer_number,match_method,note
+cmp_00001,10001,exact_name,
+cmp_00002,20002,manual,
+cmp_00003,20002,manual,Duplicate CRM record

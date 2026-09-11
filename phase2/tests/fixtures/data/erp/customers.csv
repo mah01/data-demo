@@ -1,0 +1,4 @@
+customer_number,name,customer_group_number,customer_group_name,country,city,currency,vat_number,payment_terms,created_date,barred
+10001,Alpha Vand A/S,1,Kunder Danmark,Danmark,Aarhus,DKK,DK11111111,Netto 30 dage,2020-01-01,false
+20002,Beta Chemie GmbH,3,Kunder Tyskland,Tyskland,Köln,EUR,,Netto 30 dage,2019-05-01,false
+30003,Gamma Kyl AB,2,Kunder Sverige,Sverige,Malmö,SEK,SE5500000001,Netto 30 dage,2025-07-15,false

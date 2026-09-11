@@ -1,0 +1,4 @@
+user_id,first_name,last_name,email,team,active,created_at,archived_at
+usr_000001,Anna,Dahl,ad@nordflow.dk,Sales DK,true,2021-01-01,
+usr_000002,Bernd,Schulz,b.schulz@nordflow.de,Sales DACH,true,2026-01-16,
+usr_000003,Carl,Alt,c.alt@nordflow.de,Sales DACH,false,2019-01-01,2024-10-31

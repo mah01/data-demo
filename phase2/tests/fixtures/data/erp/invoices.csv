@@ -1,0 +1,7 @@
+invoice_number,invoice_date,due_date,customer_number,customer_name,currency,exchange_rate,net_amount,vat_amount,gross_amount,net_amount_dkk,document_type,your_reference,credited_invoice_number
+1,2025-06-30,2025-07-30,10001,Alpha Vand A/S,DKK,1.00,11000.00,2750.00,13750.00,11000.00,invoice,Rekv. 77,
+2,2025-07-01,2025-07-31,20002,Beta Chemie GmbH,EUR,7.50,1000.00,0.00,1000.00,7500.00,invoice,PO-4500000001,
+3,2026-01-01,2026-01-31,20002,Beta Chemie GmbH,EUR,7.40,1400.00,0.00,1400.00,10360.00,invoice,,
+4,2026-02-15,2026-03-17,30003,Gamma Kyl AB,SEK,0.70,15000.00,0.00,15000.00,10500.00,invoice,,
+5,2026-03-10,2026-04-09,10001,Alpha Vand A/S,DKK,1.00,-2000.00,-500.00,-2500.00,-2000.00,credit_note,,1
+6,2026-06-30,2026-07-30,10001,Alpha Vand A/S,DKK,1.00,4000.00,1000.00,5000.00,4000.00,invoice,,

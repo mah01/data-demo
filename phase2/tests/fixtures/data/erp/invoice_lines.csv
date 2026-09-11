@@ -1,0 +1,8 @@
+invoice_number,line_number,product_number,description,quantity,unit,unit_price,discount_pct,net_amount,unit_cost_dkk,total_cost_dkk
+1,1,P-EQ,Pump,1,stk,10000.00,10.0,9000.00,7000.00,7000.00
+1,2,P-SV,Service hour,2,time,1000.00,0.0,2000.00,400.00,800.00
+2,1,P-CO,Seal,10,stk,100.00,0.0,1000.00,550.00,5500.00
+3,1,P-EQ,Pump,1,stk,1400.00,0.0,1400.00,7000.00,7000.00
+4,1,P-SV,Service hour,10,time,1500.00,0.0,15000.00,400.00,4000.00
+5,1,P-CO,Retur: Seal,-2,stk,1000.00,0.0,-2000.00,550.00,-1100.00
+6,1,P-CO,Seal,5,stk,1000.00,20.0,4000.00,550.00,2750.00

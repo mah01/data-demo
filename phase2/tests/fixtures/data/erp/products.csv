@@ -1,0 +1,4 @@
+product_number,name,product_group_number,product_group_name,sales_price_dkk,cost_price_dkk,unit
+P-EQ,Pump,10,Pumper og anlæg,10000.00,7000.00,stk
+P-CO,Seal,20,Reservedele og komponenter,1000.00,550.00,stk
+P-SV,Service hour,30,Service og vedligehold,1000.00,400.00,time

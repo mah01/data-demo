@@ -1,0 +1,4 @@
+object_type,object_id,property,value_before,value_after,changed_at,source,changed_by_user_id
+company,cmp_00002,hubspot_owner_id,usr_000003,usr_000002,2026-01-20T07:00:00,BULK_ASSIGN,usr_000001
+company,cmp_00001,lifecyclestage,opportunity,customer,2025-01-01T00:00:00,WORKFLOW,
+company,cmp_00004,hubspot_owner_id,usr_000002,usr_000001,2026-02-01T10:00:00,CRM_UI,usr_000002
