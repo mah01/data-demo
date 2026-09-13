@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NordFlow A/S · Executive Intelligence Demo</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">N</div>
+    <div>
+      <div class="company">NordFlow A/S</div>
+      <div class="product">Executive Intelligence Demo</div>
+    </div>
+  </div>
+  <div class="meta" id="meta">Read-only · synthetic company data</div>
+</header>
+
+<section class="sources" aria-label="Connected data sources">
+  <div class="sources-grid" id="sources"></div>
+  <p class="sources-note">Fictional company. Sources are synthetic exports shaped like each system; nothing is connected to a real account.</p>
+</section>
+
+<main class="chat">
+  <div id="thread" class="thread">
+    <div id="empty" class="empty">
+      <h1>Ask about the business</h1>
+      <p>Questions are investigated live across finance, CRM and payroll data.</p>
+      <div class="chips" id="starters"></div>
+    </div>
+  </div>
+</main>
+
+<footer class="composer">
+  <form id="form" autocomplete="off">
+    <input id="input" type="text" placeholder="Ask a management question, e.g. “How is Germany performing?”" aria-label="Question">
+    <button id="send" type="submit">Ask</button>
+  </form>
+  <button id="reset" class="link" type="button">New conversation</button>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

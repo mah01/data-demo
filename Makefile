@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: data validate robustness verify verify-regen all
+.PHONY: data validate robustness verify verify-regen all demo demo-test
 
 all: data validate
 
@@ -19,3 +19,10 @@ verify:
 
 verify-regen:
 	$(PY) src/manifest.py --regenerate
+
+# Phase 3 demo (see phase3/README.md)
+demo:
+	phase2/.venv/bin/python -m phase3.server
+
+demo-test:
+	phase2/.venv/bin/python -m pytest phase2/tests phase3/tests -q -p no:warnings
