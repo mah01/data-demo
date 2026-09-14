@@ -42,7 +42,7 @@ Commits on `phase3-demo` (newest first):
 
 | Commit | Contents |
 |---|---|
-| `708766a` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
+| `5a9d34b` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
 | `d543902` | This handoff document |
 | `46884aa` | Phase 3 interactive demo |
 | `df08a6f` | Phase 2A defect fixes + regression tests, on v1.1 data |
@@ -160,7 +160,7 @@ presentation rules. It contains no scenario hints. Keep it that way.
 ## 7. How to run things
 
 ```bash
-python3 -m venv phase2/.venv && phase2/.venv/bin/pip install -r phase2/requirements.txt   # once
+python3 -m venv phase2/.venv && phase2/.venv/bin/pip install -r phase3/requirements.txt   # once (superset)
 
 # Phase 1
 python3 src/generate.py        # or make data      — regenerate dataset (deterministic, seed 4217)
