@@ -14,6 +14,7 @@ from mcp.client.stdio import StdioServerParameters
 
 from phase2.runtime.sources import REPO_ROOT
 
+from ..config import redact
 from .prompt import system_of
 
 LOG_DIR = Path(__file__).resolve().parents[1] / "logs"
@@ -24,11 +25,16 @@ def now():
     return datetime.now(timezone.utc).isoformat()
 
 
+SECRET_ENV = ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "NORDFLOW_AUTH_USER", "NORDFLOW_AUTH_PASSWORD")
+
+
 def server_params(extra_env=None):
     import os
-    env = {**os.environ, "PYTHONPATH": str(REPO_ROOT),
-           "NORDFLOW_DATA_DIR": os.environ.get("NORDFLOW_DATA_DIR", str(REPO_ROOT / "data")),
-           "PYTHONDONTWRITEBYTECODE": "1", **(extra_env or {})}
+    # the MCP server only reads CSV files: it is started without the credentials this process holds
+    env = {k: v for k, v in os.environ.items() if k not in SECRET_ENV}
+    env |= {"PYTHONPATH": str(REPO_ROOT),
+            "NORDFLOW_DATA_DIR": os.environ.get("NORDFLOW_DATA_DIR", str(REPO_ROOT / "data")),
+            "PYTHONDONTWRITEBYTECODE": "1", **(extra_env or {})}
     return StdioServerParameters(command=sys.executable, args=["-m", "phase3.mcp_server"], cwd=str(REPO_ROOT), env=env)
 
 
@@ -111,6 +117,10 @@ class Conversation:
 
 def finish_turn(conv, turn, agent_info):
     """Assemble the UI answer, check evidence against the systems actually queried, and log the turn."""
+    turn.errors = [redact(e) for e in turn.errors]          # provider messages never reach the UI or the log raw
+    for call in turn.calls:
+        if call.error:
+            call.error = redact(call.error)
     data_calls = [c for c in turn.calls if c.tool != "present_answer"]
     turn_systems = {c.system for c in data_calls if c.ok and c.system not in ("Metadata", "Other")}
     conv.systems_seen |= turn_systems

@@ -1,6 +1,6 @@
 PY ?= python3
 
-.PHONY: data validate robustness verify verify-regen all demo demo-test
+.PHONY: data validate robustness verify verify-regen all demo demo-check demo-test
 
 all: data validate
 
@@ -23,6 +23,10 @@ verify-regen:
 # Phase 3 demo (see phase3/README.md)
 demo:
 	phase2/.venv/bin/python -m phase3.server
+
+# configuration/secret and data check; opens no port and calls no model (phase3/DEPLOY.md)
+demo-check:
+	phase2/.venv/bin/python -m phase3.server --check
 
 demo-test:
 	phase2/.venv/bin/python -m pytest phase2/tests phase3/tests -q -p no:warnings

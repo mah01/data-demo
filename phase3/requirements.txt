@@ -1,0 +1,6 @@
+# Phase 3 demo server. Phase 2 brings mcp + anthropic; the web stack is listed
+# explicitly here rather than relied on as a transitive dependency of mcp.
+-r ../phase2/requirements.txt
+starlette>=1.6,<2
+uvicorn>=0.52,<1
+sse-starlette>=3.4,<4

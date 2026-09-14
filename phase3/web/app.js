@@ -139,6 +139,12 @@ async function ask(question) {
     const res = await fetch(`/api/conversations/${conversationId}/ask`, {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question }),
     });
+    if (!res.ok) {
+      const msg = res.status === 401 ? "Not signed in any more. Reload the page and enter the demo credentials."
+        : `The server rejected the question (HTTP ${res.status}).`;
+      done(`<div class="a"><p class="headline error">${esc(msg)}</p></div>`);
+      return;
+    }
     const reader = res.body.getReader();
     const decoder = new TextDecoder();
     let buf = "";

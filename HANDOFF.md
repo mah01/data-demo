@@ -1,7 +1,7 @@
 # NordFlow demo — project handoff
 
 State of the repository, for picking the work up in a fresh session.
-Last updated: 2026-09-13. Current branch: `phase3-demo`, working tree clean.
+Last updated: 2026-09-14. Current branch: `phase3-demo`, working tree clean.
 
 ---
 
@@ -26,6 +26,7 @@ Four phases, all complete:
 | 2A | Read-only runtime + MCP server over that data | done |
 | 2B | Blind agent evaluation (can an LLM find the story?) | done, tagged `phase2b-baseline-v1.0` |
 | 3 | Interactive browser demo | done, committed |
+| 3b | Deployment hardening (auth, secrets, run guide) | done, committed; **not deployed** |
 
 ---
 
@@ -41,6 +42,8 @@ Commits on `phase3-demo` (newest first):
 
 | Commit | Contents |
 |---|---|
+| `708766a` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
+| `d543902` | This handoff document |
 | `46884aa` | Phase 3 interactive demo |
 | `df08a6f` | Phase 2A defect fixes + regression tests, on v1.1 data |
 | `be399ac` | Merge of the Phase 1 v1.1 patch into the Phase 2/3 line |
@@ -72,10 +75,14 @@ phase2/evaluation/     Phase 2B runner, results, evaluator, baseline report     
 phase2/TOOLS.md        Generated tool reference; phase2/README.md = architecture
 
 phase3/server.py       Demo backend (Starlette + SSE)
+phase3/config.py       Settings, secret validation, redaction (environment-only)
+phase3/auth.py         Shared HTTP Basic middleware
 phase3/agent/          prompt.py, base.py, api_agent.py (Anthropic SDK), cli_agent.py (Claude Code)
 phase3/mcp_server.py   Phase 2A tools + present_answer
 phase3/web/            index.html, app.js, style.css (no build step)
-phase3/tests/          5 tests (no LLM calls); phase3/README.md = demo docs
+phase3/tests/          17 tests (no LLM calls); phase3/README.md = demo docs
+phase3/DEPLOY.md       Private 1 vCPU / 2 GB VM deployment guide (nothing deployed yet)
+phase3/requirements.txt  Phase 2 requirements + the web stack (starlette, uvicorn, sse-starlette)
 HANDOFF.md             this file
 ```
 
@@ -101,7 +108,10 @@ Sweden is a stable control market. Full detail: `ground_truth.json` and README �
 ## 5. Architecture
 
 ```
-Browser (phase3/web) ──SSE── Demo backend (phase3/server.py)
+Browser (phase3/web) ──SSE── HTTP Basic auth (phase3/auth.py, every route but /healthz)
+                                   │
+                                   ▼
+                      Demo backend (phase3/server.py) · config+secrets (phase3/config.py)
                                    │
                                    ▼
                       Agent: Anthropic SDK loop  or  Claude Code headless
@@ -166,13 +176,18 @@ phase2/.venv/bin/python -m phase2.evaluation.runner.run_all      # re-run 2B (ne
 
 # Phase 3 demo
 make demo          # http://127.0.0.1:8765
-make demo-test     # Phase 2 + Phase 3 tests (102), no LLM calls
+make demo-check    # validate configuration + secrets + data, then exit (no port, no model call)
+make demo-test     # Phase 2 + Phase 3 tests (114), no LLM calls
 ```
 
-Demo environment: `NORDFLOW_AGENT` (`api` | `cli` | `auto`), `ANTHROPIC_API_KEY` (api mode),
-`NORDFLOW_MODEL` (default `claude-opus-5`), `NORDFLOW_EFFORT` (default `medium`), `NORDFLOW_PORT`.
+Demo environment: `NORDFLOW_MODE` (`local` | `deploy`), `NORDFLOW_AGENT` (`api` | `cli` | `auto`),
+`ANTHROPIC_API_KEY` (api mode), `NORDFLOW_AUTH_USER`/`NORDFLOW_AUTH_PASSWORD` (Basic auth),
+`NORDFLOW_MODEL`, `NORDFLOW_EFFORT`, `NORDFLOW_HOST`/`NORDFLOW_PORT`,
+`NORDFLOW_MAX_CONVERSATIONS`/`NORDFLOW_MAX_QUESTION_CHARS`. Full table and deployment steps:
+`phase3/DEPLOY.md`. Configuration is environment-only and validated at startup; a missing
+secret prints every problem at once and exits 2.
 
-Expected state today: validation 106/106, robustness 100/100 seeds, tests 102 passed,
+Expected state today: validation 106/106, robustness 100/100 seeds, tests 114 passed,
 manifest `ae8eeb8d…8bba`.
 
 ---
@@ -190,6 +205,10 @@ manifest `ae8eeb8d…8bba`.
   view (different IDs, names, currencies, gaps). It is never exported.
 - **Phase 2B protocol is frozen** (`2B-baseline-1`). Re-running with changes = a new experiment;
   bump `PROTOCOL_VERSION` and keep the baseline results.
+- **Deployment mode is a switch, not a fork.** `NORDFLOW_MODE=deploy` keeps the same code
+  path but makes the loose local defaults strict: API agent only, API key required, Basic
+  auth required with a 12-character minimum, loopback bind unless TLS is declared in front.
+  Local `make demo` is unchanged, so the demo stays easy to run on a laptop.
 - **Demo answer contract**: the agent must finish by calling `present_answer` (headline,
   key points, evidence with source system, follow-ups). The tool just echoes; the UI renders
   conclusion and evidence separately.
@@ -225,7 +244,13 @@ Demo:
 - **API mode has never run live** (no API key on this machine). It is covered only by tests
   with a scripted model against the real MCP server. CLI mode is what was demonstrated.
 - Conversations live in server memory; a server restart loses them (`?c=<id>` re-renders
-  while the process lives). Single user, no auth.
+  while the process lives), and only the newest `NORDFLOW_MAX_CONVERSATIONS` (50) are kept.
+- Access control is one shared Basic-auth credential: no accounts, no rate limiting, no
+  brute-force lockout, no audit trail, and no protection of API spend beyond keeping the
+  password private. Basic credentials are clear text, so a deployment must sit behind TLS.
+- The deployment path itself is untested end to end: `phase3/DEPLOY.md` has been written and
+  the server verified locally in `deploy` mode (401/200 behaviour, health check), but no VM,
+  systemd unit or Caddy configuration has been run anywhere.
 - CLI mode depends on a local Claude Code login and writes sessions under `~/.claude/projects/`.
 - Evidence verification is coarse (see the next section).
 
@@ -264,7 +289,10 @@ partial-coverage note (it already warns when a period is only partly covered by 
 
 Out of scope until explicitly requested:
 - Real e-conomic / HubSpot / Danløn integrations, or any external/public data.
-- Authentication, user management, permissions, billing, production hosting, multi-tenancy.
+- User management, permissions, roles, billing, multi-tenancy, rate limiting or SSO. The
+  shared Basic-auth credential in `phase3/auth.py` is all the access control this demo gets.
+- Deploying anywhere: `phase3/DEPLOY.md` is a guide to follow by hand when asked, not a
+  pipeline to automate.
 - A vector database or RAG layer (the MCP query tools are the access path).
 - Dashboards, charts, or recreations of the real SaaS UIs.
 - Mobile optimisation beyond basic responsiveness.

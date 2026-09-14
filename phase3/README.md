@@ -14,17 +14,27 @@ systems are synthetic.
 ## Run it
 
 ```bash
-python3 -m venv phase2/.venv && phase2/.venv/bin/pip install -r phase2/requirements.txt   # once
+python3 -m venv phase2/.venv && phase2/.venv/bin/pip install -r phase3/requirements.txt   # once
 make demo                        # -> http://127.0.0.1:8765
+make demo-check                  # validate configuration + data, then exit (no port, no model call)
 ```
 
 | Variable | Default | Meaning |
 |---|---|---|
+| `NORDFLOW_MODE` | `local` | `deploy` turns on the remote-deployment rules: API agent, API key and Basic auth all required. See [DEPLOY.md](DEPLOY.md). |
 | `NORDFLOW_AGENT` | `auto` | `api`: Anthropic API. `cli`: Claude Code headless. `auto`: `api` if an API key is set, otherwise `cli` if `claude` is installed. |
-| `ANTHROPIC_API_KEY` | – | Required for `api` mode. Never hardcoded. |
+| `ANTHROPIC_API_KEY` | – | Required for `api` mode. Server-side only; never hardcoded, never sent to the browser, never logged. |
+| `NORDFLOW_AUTH_USER` / `NORDFLOW_AUTH_PASSWORD` | – | Shared HTTP Basic credentials. Optional locally (setting either one turns auth on), required in `deploy` mode. |
 | `NORDFLOW_MODEL` | `claude-opus-5` | Model for either mode |
 | `NORDFLOW_EFFORT` | `medium` | Thinking effort: `low` / `medium` / `high` / `xhigh` / `max`. Medium keeps answers at about 30–50 s. |
-| `NORDFLOW_PORT` | `8765` | Local port |
+| `NORDFLOW_HOST` / `NORDFLOW_PORT` | `127.0.0.1` / `8765` | Bind address. In `deploy` mode a non-loopback bind is refused unless TLS is terminated in front (`NORDFLOW_ALLOW_PUBLIC_BIND=1`). |
+| `NORDFLOW_MAX_CONVERSATIONS` / `NORDFLOW_MAX_QUESTION_CHARS` | `50` / `2000` | Memory and request-size limits |
+
+Configuration is environment-only and is validated before the server starts:
+missing secrets, a bad effort value or a CLI agent in deploy mode are reported
+together with exit code 2, and `--check` also starts the MCP server and reads the
+dataset. `phase3/config.py` holds the rules, `phase3/auth.py` the Basic auth
+middleware.
 
 **CLI mode** uses a logged-in `claude` CLI instead of an API key. It runs with
 the same isolation as the Phase 2B runs: no built-in tools, only the NordFlow
@@ -32,13 +42,20 @@ MCP server, and no user or project settings. Its sessions are stored by Claude
 Code under `~/.claude/projects/` (one per demo conversation, in a temporary
 working directory).
 
-Tests: `make demo-test` runs the Phase 2 and Phase 3 tests (102). They make no LLM calls.
+Tests: `make demo-test` runs the Phase 2 and Phase 3 tests (114). They make no LLM calls.
+
+**Deployment.** [DEPLOY.md](DEPLOY.md) is a step-by-step guide for a private
+1 vCPU / 2 GB Linux VM: systemd unit, Caddy for TLS, an environment file for the
+secrets, and what the hardening does and does not cover. Nothing is deployed yet.
 
 ## Architecture
 
 ```
 Browser (web/index.html, app.js, style.css — static, no build step)
    │  POST /api/conversations/{id}/ask  → server-sent events: tool_call, tool_result, answer
+   ▼
+Shared HTTP Basic auth (auth.py) on every route except /healthz · config + secrets (config.py)
+   │
    ▼
 Demo backend (server.py — Starlette/uvicorn, in-memory conversations, JSONL logs)
    │
@@ -115,5 +132,5 @@ Evidence: Germany revenue −8%, gross profit −16% · two accounts 7.4M → 2.
 - **Nondeterminism.** Answers and depth vary between runs (see the Phase 2B baseline). The agent can still stop early or pick a different comparison window.
 - **Evidence check.** The check is coarse: it confirms the stated source system was queried, not that each number matches a tool result. Figures in the example were spot-checked, not automatically verified.
 - **API mode not run live here.** It is covered by tests with a scripted model and the real MCP server. The live runs above used CLI mode, because this machine has no API key.
-- **Local only.** Single user, in-memory conversations, no auth. CLI mode depends on a local Claude Code login.
+- **Small and shared.** One shared Basic-auth credential for everyone, no accounts, no rate limiting, no audit trail; conversations live in memory and are lost on restart. Enough for a private demo, not for anything else. CLI mode depends on a local Claude Code login and is not usable for a deployment.
 - **Data.** Synthetic data ends on 31 Aug 2026. No external data, no real integrations.
