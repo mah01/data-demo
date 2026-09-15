@@ -14,11 +14,17 @@ limiting. Do not put real company data behind it, and keep the URL private.
 
 - A VM with Ubuntu 24.04 (1 vCPU, 2 GB RAM, ~5 GB disk), ports 80 and 443 reachable.
 - A DNS name pointing at it, e.g. `demo.example.com` (needed for a TLS certificate).
-- An Anthropic API key. The demo's `api` agent mode is required for deployment;
-  `cli` mode depends on an interactive Claude Code login and is refused at startup.
+- An API key for one model provider: **OpenAI** (`NORDFLOW_AGENT=openai`, default model
+  `gpt-5.6-sol`) or **Anthropic** (`NORDFLOW_AGENT=api`, default `claude-opus-5`). A Claude
+  Pro/Max or ChatGPT subscription does not include API usage; keys and prepaid credits come
+  from the provider's developer console. `cli` mode depends on an interactive Claude Code
+  login and is refused at startup. Put the key in a separate project/workspace with a spend
+  limit, so a leaked demo password cannot run up an unbounded bill.
 
-Rough cost drivers: the VM, plus one Anthropic API call chain per question
-(typically 20–40 tool calls, 30–60 s at `medium` effort).
+Rough cost drivers: the VM, plus one model call chain per question (typically 5–40 tool
+calls, 30–60 s at `medium` effort). Measured with Claude Opus 5: $0.25–0.55 for a typical
+demo question, $1–3 for a deep one. OpenAI costs have not been measured yet; the JSONL logs
+record token usage per question, including cached input tokens.
 
 ## 2. Install
 
@@ -38,6 +44,9 @@ Optionally confirm it is the released Phase 1 dataset:
 sudo -u nordflow .venv/bin/python src/manifest.py      # checksums of data/
 ```
 
+If you copied a trimmed tree without `src/` (so the answer key stays off the server), compare
+`data/` against `data_manifest.json` with `sha256sum` or a short Python snippet instead.
+
 ## 3. Configuration and secrets
 
 All configuration is environment variables; nothing is read from the repository.
@@ -51,15 +60,19 @@ sudo -e /etc/nordflow/demo.env
 
 ```ini
 NORDFLOW_MODE=deploy
-NORDFLOW_AGENT=api
-ANTHROPIC_API_KEY=sk-ant-...
+NORDFLOW_AGENT=openai
+OPENAI_API_KEY=sk-proj-...
 NORDFLOW_AUTH_USER=nordflow
 NORDFLOW_AUTH_PASSWORD=<long random password>
 # optional
-NORDFLOW_MODEL=claude-opus-5
+NORDFLOW_MODEL=gpt-5.6-sol
 NORDFLOW_EFFORT=medium
 NORDFLOW_PORT=8765
 ```
+
+For Anthropic instead, use `NORDFLOW_AGENT=api`, `ANTHROPIC_API_KEY=...` and
+`NORDFLOW_MODEL=claude-opus-5`. Keep comments on their own lines: systemd's
+`EnvironmentFile` would treat an inline `# comment` as part of the value.
 
 Generate the password on the VM, never by hand:
 
@@ -70,11 +83,12 @@ python3 -c "import secrets; print(secrets.token_urlsafe(24))"
 | Variable | Required | Default | Meaning |
 |---|---|---|---|
 | `NORDFLOW_MODE` | – | `local` | `deploy` enforces API mode, an API key and Basic auth |
-| `NORDFLOW_AGENT` | – | `auto` | `api` \| `cli` \| `auto`; `cli` is rejected in deploy mode |
-| `ANTHROPIC_API_KEY` | deploy | – | Server-side only. Never sent to the browser, never logged |
+| `NORDFLOW_AGENT` | deploy | `auto` | `openai` \| `api` \| `cli` \| `auto`; `cli` is rejected in deploy mode, and `openai` is only used when set explicitly |
+| `OPENAI_API_KEY` | with `openai` | – | Server-side only. Never sent to the browser, never logged |
+| `ANTHROPIC_API_KEY` | with `api` | – | Server-side only. Never sent to the browser, never logged |
 | `NORDFLOW_AUTH_USER` | deploy | – | Shared HTTP Basic user |
 | `NORDFLOW_AUTH_PASSWORD` | deploy | – | Shared HTTP Basic password, at least 12 characters |
-| `NORDFLOW_MODEL` | – | `claude-opus-5` | Model for the agent |
+| `NORDFLOW_MODEL` | – | `gpt-5.6-sol` / `claude-opus-5` | Model for the selected agent |
 | `NORDFLOW_EFFORT` | – | `medium` | `low` … `max`; higher means slower and dearer |
 | `NORDFLOW_HOST` | – | `127.0.0.1` | Keep the loopback default and let the proxy terminate TLS |
 | `NORDFLOW_PORT` | – | `8765` | Port the app listens on |
@@ -88,15 +102,17 @@ Check the configuration before starting anything. It validates secrets, starts t
 MCP server, reads the dataset, and exits — no port is opened and no model is called:
 
 ```bash
-sudo -u nordflow env $(sudo cat /etc/nordflow/demo.env | grep -v '^#' | xargs) \
-  /opt/nordflow/app/.venv/bin/python -m phase3.server --check
+cd /opt/nordflow/app
+sudo -u nordflow bash -c 'set -a; . /etc/nordflow/demo.env; set +a; exec .venv/bin/python -m phase3.server --check'
 ```
+
+The file is loaded inside the shell, so the secrets never appear on a command line.
 
 Missing or unusable settings are reported in one block with exit code 2, for example:
 
 ```
 Cannot start the NordFlow demo - configuration problems:
-  * ANTHROPIC_API_KEY is not set. The API agent needs it; keep it in the server's environment file only ...
+  * OPENAI_API_KEY is not set. NORDFLOW_AGENT=openai needs it; keep it in the server's environment file only ...
   * NORDFLOW_AUTH_PASSWORD is not set. Browser access requires HTTP Basic credentials.
 ```
 
@@ -173,6 +189,27 @@ sudo ufw allow 22,80,443/tcp && sudo ufw enable
 
 `flush_interval -1` matters: without it the progress events are buffered and the
 page looks frozen until the answer is complete.
+
+### Variant: no domain, plain HTTP on the public IP
+
+For an internal demo you may skip the domain, Caddy and TLS, and let the app listen on the
+VM's public IP directly. Accept the trade-off first: **the shared password then travels in
+clear text** on every request, and anyone who can observe the traffic can reuse it and spend
+on the API key. Mitigate with a spend limit on the key and, ideally, a firewall rule that
+only admits your own networks.
+
+```ini
+# add to /etc/nordflow/demo.env (the second line is the deliberate override)
+NORDFLOW_HOST=0.0.0.0
+NORDFLOW_ALLOW_PUBLIC_BIND=1
+```
+
+```bash
+sudo ufw allow from <your-office-ip> to any port 8765 proto tcp   # or: sudo ufw allow 8765/tcp for everyone
+```
+
+The systemd unit is unchanged. The site is then `http://<vm-ip>:8765/`, and the checks in
+step 6 use that address.
 
 ## 6. Verify
 

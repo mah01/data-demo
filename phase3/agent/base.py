@@ -25,7 +25,8 @@ def now():
     return datetime.now(timezone.utc).isoformat()
 
 
-SECRET_ENV = ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "NORDFLOW_AUTH_USER", "NORDFLOW_AUTH_PASSWORD")
+SECRET_ENV = ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN", "OPENAI_API_KEY", "NORDFLOW_AUTH_USER",
+              "NORDFLOW_AUTH_PASSWORD")
 
 
 def server_params(extra_env=None):

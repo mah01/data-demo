@@ -4,3 +4,4 @@
 starlette>=1.6,<2
 uvicorn>=0.52,<1
 sse-starlette>=3.4,<4
+openai>=3.14,<4          # NORDFLOW_AGENT=openai

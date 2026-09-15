@@ -21,11 +21,12 @@ make demo-check                  # validate configuration + data, then exit (no 
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `NORDFLOW_MODE` | `local` | `deploy` turns on the remote-deployment rules: API agent, API key and Basic auth all required. See [DEPLOY.md](DEPLOY.md). |
-| `NORDFLOW_AGENT` | `auto` | `api`: Anthropic API. `cli`: Claude Code headless. `auto`: `api` if an API key is set, otherwise `cli` if `claude` is installed. |
+| `NORDFLOW_MODE` | `local` | `deploy` turns on the remote-deployment rules: an API agent (`api` or `openai`), its key and Basic auth all required. See [DEPLOY.md](DEPLOY.md). |
+| `NORDFLOW_AGENT` | `auto` | `api`: Anthropic API. `openai`: OpenAI Responses API. `cli`: Claude Code headless. `auto`: `api` if `ANTHROPIC_API_KEY` is set, otherwise `cli` if `claude` is installed. `openai` is never chosen automatically, so an `OPENAI_API_KEY` left in a shell cannot start paid calls. |
 | `ANTHROPIC_API_KEY` | – | Required for `api` mode. Server-side only; never hardcoded, never sent to the browser, never logged. |
+| `OPENAI_API_KEY` | – | Required for `openai` mode. Same handling as the Anthropic key. |
 | `NORDFLOW_AUTH_USER` / `NORDFLOW_AUTH_PASSWORD` | – | Shared HTTP Basic credentials. Optional locally (setting either one turns auth on), required in `deploy` mode. |
-| `NORDFLOW_MODEL` | `claude-opus-5` | Model for either mode |
+| `NORDFLOW_MODEL` | `claude-opus-5` (`gpt-5.6-sol` for `openai`) | Model for the selected agent |
 | `NORDFLOW_EFFORT` | `medium` | Thinking effort: `low` / `medium` / `high` / `xhigh` / `max`. Medium keeps answers at about 30–50 s. |
 | `NORDFLOW_HOST` / `NORDFLOW_PORT` | `127.0.0.1` / `8765` | Bind address. In `deploy` mode a non-loopback bind is refused unless TLS is terminated in front (`NORDFLOW_ALLOW_PUBLIC_BIND=1`). |
 | `NORDFLOW_MAX_CONVERSATIONS` / `NORDFLOW_MAX_QUESTION_CHARS` | `50` / `2000` | Memory and request-size limits |
@@ -42,7 +43,7 @@ MCP server, and no user or project settings. Its sessions are stored by Claude
 Code under `~/.claude/projects/` (one per demo conversation, in a temporary
 working directory).
 
-Tests: `make demo-test` runs the Phase 2 and Phase 3 tests (114). They make no LLM calls.
+Tests: `make demo-test` runs the Phase 2 and Phase 3 tests (119). They make no LLM calls.
 
 **Deployment.** [DEPLOY.md](DEPLOY.md) is a step-by-step guide for a private
 1 vCPU / 2 GB Linux VM: systemd unit, Caddy for TLS, an environment file for the
@@ -60,7 +61,8 @@ Shared HTTP Basic auth (auth.py) on every route except /healthz · config + secr
 Demo backend (server.py — Starlette/uvicorn, in-memory conversations, JSONL logs)
    │
    ▼
-Agent (agent/api_agent.py — Anthropic SDK tool loop   |   agent/cli_agent.py — Claude Code headless, resumed session)
+Agent (agent/api_agent.py — Anthropic SDK tool loop | agent/openai_agent.py — OpenAI Responses tool loop
+       | agent/cli_agent.py — Claude Code headless, resumed session)
    │  MCP over stdio
    ▼
 Demo MCP server (mcp_server.py) = Phase 2A tools, unchanged (33) + present_answer
@@ -86,7 +88,7 @@ shows its source chip with a "?". The trace is available under **How this was
 investigated** in each answer.
 
 **Context.**
-- API mode keeps the full message history per conversation, with prompt caching.
+- API and OpenAI modes keep the full message history per conversation in the server, with prompt caching. OpenAI runs with `store=False`; its reasoning items are passed back encrypted and never shown or logged.
 - CLI mode resumes the same Claude Code session.
 - Conversations live in server memory. `?c=<id>` or a page reload re-renders one; a server restart loses them.
 
@@ -127,6 +129,8 @@ Evidence: Germany revenue −8%, gross profit −16% · two accounts 7.4M → 2.
 ![Germany answer with evidence](docs/screenshots/3-germany-evidence.jpg)
 
 ## Limitations
+
+- **OpenAI mode is unmeasured.** The Phase 2B evaluation and the example conversation used Claude Opus 5. `openai` mode gets the same neutral instruction and tools, and is covered by tests with a scripted model, but its answer quality and cost per question have not been measured.
 
 - **Latency.** Answers take roughly 30–50 s at medium effort, and deep questions can take longer. Progress streams live, but it is not instant.
 - **Nondeterminism.** Answers and depth vary between runs (see the Phase 2B baseline). The agent can still stop early or pick a different comparison window.

@@ -8,8 +8,9 @@ NordFlow Executive Intelligence Demo: web server.
 Configuration is environment-only (see phase3/config.py and phase3/DEPLOY.md):
 
     NORDFLOW_MODE          local (default) | deploy
-    NORDFLOW_AGENT         api | cli | auto        (deploy requires api)
-    ANTHROPIC_API_KEY      required for the api agent; server-side only
+    NORDFLOW_AGENT         api | openai | cli | auto   (deploy requires api or openai)
+    ANTHROPIC_API_KEY      required for the api agent (Anthropic); server-side only
+    OPENAI_API_KEY         required for the openai agent; server-side only
     NORDFLOW_AUTH_USER     shared HTTP Basic user      (required in deploy)
     NORDFLOW_AUTH_PASSWORD shared HTTP Basic password  (required in deploy)
     NORDFLOW_MODEL / NORDFLOW_EFFORT / NORDFLOW_HOST / NORDFLOW_PORT
@@ -49,6 +50,9 @@ def choose_agent(mcp, settings):
     if settings.agent == "api":
         from .agent.api_agent import ApiAgent
         return ApiAgent(mcp, settings.model, settings.effort)
+    if settings.agent == "openai":
+        from .agent.openai_agent import OpenAIAgent
+        return OpenAIAgent(mcp, settings.model, settings.effort)
     from .agent.cli_agent import CliAgent
     return CliAgent(settings.model, settings.effort)
 

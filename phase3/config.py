@@ -5,8 +5,9 @@ Everything comes from environment variables; no secret is ever read from the
 repository, written to a log, or returned in a response.
 
     NORDFLOW_MODE=local    single user on a laptop (default). Auth optional, CLI agent allowed.
-    NORDFLOW_MODE=deploy   small private remote deployment: API agent, API key and HTTP Basic
-                           auth are all required, and the checks below refuse to start without them.
+    NORDFLOW_MODE=deploy   small private remote deployment: an API agent (Anthropic `api` or
+                           `openai`), its key and HTTP Basic auth are all required, and the
+                           checks below refuse to start without them.
 """
 import os
 import re
@@ -15,10 +16,13 @@ from dataclasses import dataclass, field, replace
 
 EFFORTS = ("low", "medium", "high", "xhigh", "max")
 MODES = ("local", "deploy")
-AGENTS = ("auto", "api", "cli")
+AGENTS = ("auto", "api", "openai", "cli")
+DEFAULT_MODELS = {"api": "claude-opus-5", "cli": "claude-opus-5", "openai": "gpt-5.6-sol"}
+KEY_VARS = {"api": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY"}
 MIN_PASSWORD_CHARS = 12
 LOOPBACK = ("127.0.0.1", "::1", "localhost")
-SECRET_PATTERN = re.compile(r"sk-ant-[A-Za-z0-9_\-]{6,}")
+# Anthropic (sk-ant-...) and OpenAI (sk-proj-..., sk-svcacct-..., sk-...) key shapes
+SECRET_PATTERN = re.compile(r"(?<![A-Za-z0-9])sk-(?:ant-|proj-|svcacct-|admin-)?[A-Za-z0-9_\-]{16,}")
 MASK = "[redacted]"
 
 
@@ -51,7 +55,9 @@ class Settings:
     data_dir: str | None = None
     auth_user: str | None = field(default=None, repr=False)
     auth_password: str | None = field(default=None, repr=False)
-    api_key: str | None = field(default=None, repr=False)
+    api_key: str | None = field(default=None, repr=False)          # key of the selected provider
+    other_secrets: tuple = field(default=(), repr=False)           # every provider key found, for redaction
+    openai_key_seen: bool = False
     parse_problems: tuple = ()
 
     # -- construction ----------------------------------------------------
@@ -77,14 +83,15 @@ class Settings:
 
         mode = (env.get("NORDFLOW_MODE") or "local").strip().lower()
         requested = (env.get("NORDFLOW_AGENT") or "auto").strip().lower()
-        api_key = (env.get("ANTHROPIC_API_KEY") or env.get("ANTHROPIC_AUTH_TOKEN") or "").strip() or None
+        anthropic_key = (env.get("ANTHROPIC_API_KEY") or env.get("ANTHROPIC_AUTH_TOKEN") or "").strip() or None
+        openai_key = (env.get("OPENAI_API_KEY") or "").strip() or None
         agent = requested
-        if agent == "auto":  # deployment always means the API agent; locally, fall back to the CLI login
-            agent = "api" if (api_key or mode == "deploy" or not shutil.which("claude")) else "cli"
+        if agent == "auto":  # openai is never picked implicitly: a stray OPENAI_API_KEY must not start paid calls
+            agent = "api" if (anthropic_key or mode == "deploy" or not shutil.which("claude")) else "cli"
         password = env.get("NORDFLOW_AUTH_PASSWORD") or None
         return cls(
             mode=mode, requested_agent=requested, agent=agent,
-            model=(env.get("NORDFLOW_MODEL") or "claude-opus-5").strip(),
+            model=(env.get("NORDFLOW_MODEL") or DEFAULT_MODELS.get(agent, DEFAULT_MODELS["api"])).strip(),
             effort=(env.get("NORDFLOW_EFFORT") or "medium").strip().lower(),
             host=(env.get("NORDFLOW_HOST") or "127.0.0.1").strip(),
             port=integer("NORDFLOW_PORT", 8765, 1, 65535),
@@ -94,7 +101,9 @@ class Settings:
             data_dir=(env.get("NORDFLOW_DATA_DIR") or "").strip() or None,
             auth_user=(env.get("NORDFLOW_AUTH_USER") or "").strip() or None,
             auth_password=password,
-            api_key=api_key,
+            api_key=openai_key if agent == "openai" else anthropic_key,
+            other_secrets=tuple(k for k in (anthropic_key, openai_key) if k),
+            openai_key_seen=openai_key is not None,
             parse_problems=tuple(problems),
         )
 
@@ -117,10 +126,17 @@ class Settings:
         deploy = self.mode == "deploy"
         if deploy and self.requested_agent == "cli":
             out.append("NORDFLOW_AGENT=cli is not supported for a deployment: the CLI agent depends on an "
-                       "interactive Claude Code login on the machine. Use NORDFLOW_AGENT=api.")
-        if check_agent_credentials and self.agent == "api" and not self.api_key:
-            out.append("ANTHROPIC_API_KEY is not set. The API agent needs it; keep it in the server's environment "
-                       "file only (never in the repository, the browser or a log).")
+                       "interactive Claude Code login on the machine. Use NORDFLOW_AGENT=openai or api.")
+        if check_agent_credentials and self.agent in KEY_VARS and not self.api_key:
+            where = ("keep it in the server's environment file only (never in the repository, the browser "
+                     "or a log).")
+            if self.requested_agent == "auto":
+                hint = (" OPENAI_API_KEY is set, but the OpenAI agent is only used when chosen explicitly."
+                        if self.openai_key_seen else "")
+                out.append("No model provider is configured. Set NORDFLOW_AGENT=openai with OPENAI_API_KEY, or "
+                           f"NORDFLOW_AGENT=api with ANTHROPIC_API_KEY; {where}{hint}")
+            else:
+                out.append(f"{KEY_VARS[self.agent]} is not set. NORDFLOW_AGENT={self.agent} needs it; {where}")
 
         if self.auth_required:
             if not self.auth_user:
@@ -147,7 +163,7 @@ class Settings:
     # -- safe output -----------------------------------------------------
 
     def secret_values(self):
-        return tuple(v for v in (self.api_key, self.auth_password) if v)
+        return tuple(v for v in (self.api_key, *self.other_secrets, self.auth_password) if v)
 
     def summary(self):
         """Redacted view, safe to print at startup. Secrets appear only as present/missing."""
@@ -156,13 +172,14 @@ class Settings:
             "bind": f"{self.host}:{self.port}",
             "auth": "basic" if self.auth_required else "none",
             "auth_user": self.auth_user or "-",
-            "api_key": "set" if self.api_key else "missing",
+            "api_key": (f"{KEY_VARS[self.agent]} set" if self.api_key else f"{KEY_VARS[self.agent]} missing")
+            if self.agent in KEY_VARS else "-",
             "data_dir": self.data_dir or "data/ (default)",
             "max_conversations": self.max_conversations,
         }
 
     def without_secrets(self):
-        return replace(self, auth_password=None, api_key=None)
+        return replace(self, auth_password=None, api_key=None, other_secrets=())
 
     def redact(self, text):
         return redact(text, self.secret_values())
@@ -171,7 +188,7 @@ class Settings:
 def env_secrets(env=None):
     env = os.environ if env is None else env
     return tuple(v for v in (env.get("ANTHROPIC_API_KEY"), env.get("ANTHROPIC_AUTH_TOKEN"),
-                             env.get("NORDFLOW_AUTH_PASSWORD")) if v)
+                             env.get("OPENAI_API_KEY"), env.get("NORDFLOW_AUTH_PASSWORD")) if v)
 
 
 def redact(text, extra=()):

@@ -1,7 +1,7 @@
 # NordFlow demo — project handoff
 
 State of the repository, for picking the work up in a fresh session.
-Last updated: 2026-09-14. Current branch: `phase3-demo`, working tree clean.
+Last updated: 2026-09-15. Current branch: `phase3-demo`, working tree clean.
 
 ---
 
@@ -42,6 +42,8 @@ Commits on `phase3-demo` (newest first):
 
 | Commit | Contents |
 |---|---|
+| newest | OpenAI agent option (`NORDFLOW_AGENT=openai`, default `gpt-5.6-sol`) for the deployment |
+| `a19ee0b` | Handoff: record the hardening commit |
 | `5a9d34b` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
 | `d543902` | This handoff document |
 | `46884aa` | Phase 3 interactive demo |
@@ -77,12 +79,12 @@ phase2/TOOLS.md        Generated tool reference; phase2/README.md = architecture
 phase3/server.py       Demo backend (Starlette + SSE)
 phase3/config.py       Settings, secret validation, redaction (environment-only)
 phase3/auth.py         Shared HTTP Basic middleware
-phase3/agent/          prompt.py, base.py, api_agent.py (Anthropic SDK), cli_agent.py (Claude Code)
+phase3/agent/          prompt.py, base.py, api_agent.py (Anthropic SDK), openai_agent.py (OpenAI Responses), cli_agent.py (Claude Code)
 phase3/mcp_server.py   Phase 2A tools + present_answer
 phase3/web/            index.html, app.js, style.css (no build step)
-phase3/tests/          17 tests (no LLM calls); phase3/README.md = demo docs
+phase3/tests/          22 tests (no LLM calls); phase3/README.md = demo docs
 phase3/DEPLOY.md       Private 1 vCPU / 2 GB VM deployment guide (nothing deployed yet)
-phase3/requirements.txt  Phase 2 requirements + the web stack (starlette, uvicorn, sse-starlette)
+phase3/requirements.txt  Phase 2 requirements + the web stack (starlette, uvicorn, sse-starlette) + openai
 HANDOFF.md             this file
 ```
 
@@ -114,7 +116,7 @@ Browser (phase3/web) ──SSE── HTTP Basic auth (phase3/auth.py, every rout
                       Demo backend (phase3/server.py) · config+secrets (phase3/config.py)
                                    │
                                    ▼
-                      Agent: Anthropic SDK loop  or  Claude Code headless
+          Agent: Anthropic SDK loop  |  OpenAI Responses loop  |  Claude Code headless
                                    │ MCP (stdio)
                                    ▼
                  phase3/mcp_server.py = Phase 2A tools (33) + present_answer
@@ -177,17 +179,17 @@ phase2/.venv/bin/python -m phase2.evaluation.runner.run_all      # re-run 2B (ne
 # Phase 3 demo
 make demo          # http://127.0.0.1:8765
 make demo-check    # validate configuration + secrets + data, then exit (no port, no model call)
-make demo-test     # Phase 2 + Phase 3 tests (114), no LLM calls
+make demo-test     # Phase 2 + Phase 3 tests (119), no LLM calls
 ```
 
-Demo environment: `NORDFLOW_MODE` (`local` | `deploy`), `NORDFLOW_AGENT` (`api` | `cli` | `auto`),
-`ANTHROPIC_API_KEY` (api mode), `NORDFLOW_AUTH_USER`/`NORDFLOW_AUTH_PASSWORD` (Basic auth),
+Demo environment: `NORDFLOW_MODE` (`local` | `deploy`), `NORDFLOW_AGENT` (`api` | `openai` | `cli` | `auto`;
+`openai` is never picked by `auto`), `ANTHROPIC_API_KEY` (api mode), `OPENAI_API_KEY` (openai mode), `NORDFLOW_AUTH_USER`/`NORDFLOW_AUTH_PASSWORD` (Basic auth),
 `NORDFLOW_MODEL`, `NORDFLOW_EFFORT`, `NORDFLOW_HOST`/`NORDFLOW_PORT`,
 `NORDFLOW_MAX_CONVERSATIONS`/`NORDFLOW_MAX_QUESTION_CHARS`. Full table and deployment steps:
 `phase3/DEPLOY.md`. Configuration is environment-only and validated at startup; a missing
 secret prints every problem at once and exits 2.
 
-Expected state today: validation 106/106, robustness 100/100 seeds, tests 114 passed,
+Expected state today: validation 106/106, robustness 100/100 seeds, tests 119 passed,
 manifest `ae8eeb8d…8bba`.
 
 ---
@@ -209,6 +211,10 @@ manifest `ae8eeb8d…8bba`.
   path but makes the loose local defaults strict: API agent only, API key required, Basic
   auth required with a 12-character minimum, loopback bind unless TLS is declared in front.
   Local `make demo` is unchanged, so the demo stays easy to run on a laptop.
+- **Provider is swappable at the agent layer only.** `api_agent.py` (Anthropic) and
+  `openai_agent.py` (OpenAI Responses, `store=False`, encrypted reasoning passed back) run the
+  same loop over the same MCP tools, prompt, `present_answer` contract, evidence check and logs.
+  OpenAI was added because the deployment uses existing OpenAI credits; default `gpt-5.6-sol`.
 - **Demo answer contract**: the agent must finish by calling `present_answer` (headline,
   key points, evidence with source system, follow-ups). The tool just echoes; the UI renders
   conclusion and evidence separately.
@@ -241,6 +247,10 @@ Runtime:
 
 Demo:
 - Answers take ~30–50 s at medium effort; deep questions longer.
+- **OpenAI mode is unmeasured.** All quality evidence (Phase 2B, example conversation) is for
+  Claude Opus 5. `openai` mode is covered only by tests with a scripted model; its answer
+  quality and real cost per question are unknown until it runs. Estimated from Claude token
+  counts at list prices: ~$0.15–0.30 per typical demo question with `gpt-5.6-sol`.
 - **API mode has never run live** (no API key on this machine). It is covered only by tests
   with a scripted model against the real MCP server. CLI mode is what was demonstrated.
 - Conversations live in server memory; a server restart loses them (`?c=<id>` re-renders

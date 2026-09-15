@@ -32,6 +32,7 @@ def isolated(monkeypatch, tmp_path):
     monkeypatch.setenv("NORDFLOW_DATA_DIR", str(FIXTURE_DATA))
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
     monkeypatch.delenv("ANTHROPIC_AUTH_TOKEN", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     monkeypatch.delenv("NORDFLOW_AUTH_PASSWORD", raising=False)
     monkeypatch.setattr(base, "LOG_DIR", tmp_path / "logs")
 
@@ -58,7 +59,9 @@ def app_with(env, agent=None):
 
 def test_deploy_mode_requires_api_mode_key_and_credentials():
     problems = " ".join(Settings.from_env({"NORDFLOW_MODE": "deploy"}).problems())
-    assert "ANTHROPIC_API_KEY is not set" in problems
+    assert "No model provider is configured" in problems and "OPENAI_API_KEY" in problems
+    assert any(p.startswith("ANTHROPIC_API_KEY is not set")
+               for p in Settings.from_env({"NORDFLOW_MODE": "deploy", "NORDFLOW_AGENT": "api"}).problems())
     assert "NORDFLOW_AUTH_USER is not set" in problems and "NORDFLOW_AUTH_PASSWORD is not set" in problems
 
     cli = Settings.from_env({**DEPLOY_ENV, "NORDFLOW_AGENT": "cli"})
@@ -82,7 +85,7 @@ def test_deploy_mode_refuses_weak_password_public_bind_and_bad_values():
 
     with pytest.raises(ConfigError) as exc:
         Settings.from_env({"NORDFLOW_MODE": "deploy"}).check()
-    assert "ANTHROPIC_API_KEY" in exc.value.report() and "phase3/DEPLOY.md" in exc.value.report()
+    assert "OPENAI_API_KEY" in exc.value.report() and "phase3/DEPLOY.md" in exc.value.report()
 
 
 def test_local_mode_still_runs_without_secrets_but_half_credentials_are_rejected():
@@ -96,7 +99,7 @@ def test_secrets_never_appear_in_summary_repr_or_messages(monkeypatch):
     s = Settings.from_env(DEPLOY_ENV)
     assert KEY not in repr(s) and PASSWORD not in repr(s)
     assert json.dumps(s.summary()) == json.dumps(s.summary()).replace(KEY, "!").replace(PASSWORD, "!")
-    assert s.summary()["api_key"] == "set" and s.summary()["auth"] == "basic"
+    assert s.summary()["api_key"] == "ANTHROPIC_API_KEY set" and s.summary()["auth"] == "basic"
     assert s.without_secrets().api_key is None and s.without_secrets().auth_password is None
     assert s.redact(f"401 from api: key {KEY} rejected") == "401 from api: key [redacted] rejected"
 
@@ -107,8 +110,9 @@ def test_secrets_never_appear_in_summary_repr_or_messages(monkeypatch):
 def test_mcp_subprocess_does_not_inherit_credentials(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", KEY)
     monkeypatch.setenv("NORDFLOW_AUTH_PASSWORD", PASSWORD)
+    monkeypatch.setenv("OPENAI_API_KEY", "sk-proj-EXAMPLEexample0123456789")
     env = server_params().env
-    assert "ANTHROPIC_API_KEY" not in env and "NORDFLOW_AUTH_PASSWORD" not in env
+    assert not {"ANTHROPIC_API_KEY", "OPENAI_API_KEY", "NORDFLOW_AUTH_PASSWORD"} & env.keys()
     assert KEY not in json.dumps(env) and env["NORDFLOW_DATA_DIR"] == str(FIXTURE_DATA)
 
 
@@ -183,5 +187,5 @@ def test_runtime_limits_keep_a_small_vm_bounded():
 def test_create_app_refuses_to_start_without_the_api_key():
     with pytest.raises(ConfigError) as exc:
         create_app(settings=Settings.from_env({k: v for k, v in DEPLOY_ENV.items() if k != "ANTHROPIC_API_KEY"}))
-    assert "ANTHROPIC_API_KEY is not set" in str(exc.value)
+    assert "No model provider is configured" in str(exc.value)
     assert cfg.MIN_PASSWORD_CHARS == 12
