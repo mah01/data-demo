@@ -44,20 +44,22 @@ Commits on `main` (newest first):
 
 | Commit | Contents |
 |---|---|
-| `722b9c8` | OpenAI agent option (`NORDFLOW_AGENT=openai`, default `gpt-5.6-sol`) for the deployment |
-| `a19ee0b` | Handoff: record the hardening commit |
-| `5a9d34b` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
-| `d543902` | This handoff document |
-| `46884aa` | Phase 3 interactive demo |
-| `df08a6f` | Phase 2A defect fixes + regression tests, on v1.1 data |
-| `be399ac` | Merge of the Phase 1 v1.1 patch into the Phase 2/3 line |
-| `8391920` | Phase 1 v1.1 patch release (tagged `phase1-v1.1`) |
-| `9849ecb` | Phase 2 baseline: runtime, MCP server, 2B evaluation (tagged `phase2b-baseline-v1.0`) |
-| `867de08` | Phase 1 v1.0 (tagged `phase1-v1.0`) |
+| `0d43f70` | OpenAI agent option (`NORDFLOW_AGENT=openai`, default `gpt-5.6-sol`) for the deployment |
+| `30a18fd` | Handoff: record the hardening commit |
+| `8915817` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
+| `0a734fd` | This handoff document |
+| `cc23a16` | Phase 3 interactive demo |
+| `9a9f581` | Phase 2A defect fixes + regression tests, on v1.1 data |
+| `2335477` | Merge of the Phase 1 v1.1 patch into the Phase 2/3 line |
+| `3af7cf5` | Phase 1 v1.1 patch release (tagged `phase1-v1.1`) |
+| `6d6ce2d` | Phase 2 baseline: runtime, MCP server, 2B evaluation (tagged `phase2b-baseline-v1.0`) |
+| `1d4dddb` | Phase 1 v1.0 (tagged `phase1-v1.0`) |
 
 Tags: `phase1-v1.0`, `phase1-v1.1`, `phase2b-baseline-v1.0`.
 
-**Everything is committed.** Nothing is pushed; there is no remote. Not in git by design:
+**Everything is committed.** On 2026-09-28 every commit and tag was rewritten to the author
+`Maksim Sorokin <946443+mah01@users.noreply.github.com>` for GitHub's email privacy, so all
+hashes changed; the hashes above are the current ones. Nothing is pushed; there is no remote. Not in git by design:
 `phase2/.venv/` (local virtualenv), `phase3/logs/` (runtime logs; one example run is
 committed at `phase3/docs/example-conversation.jsonl`), `__pycache__`, `.pytest_cache`.
 
