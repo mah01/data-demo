@@ -1,7 +1,7 @@
 # NordFlow demo — project handoff
 
 State of the repository, for picking the work up in a fresh session.
-Last updated: 2026-09-15. Current branch: `phase3-demo`, working tree clean.
+Last updated: 2026-09-28. Current branch: `main`, working tree clean.
 
 ---
 
@@ -33,16 +33,18 @@ Four phases, all complete:
 ## 2. Git state
 
 Branches:
-- `main` — Phase 1 v1.0 only (historical).
+- **`main` — everything.** On 2026-09-28 `phase3-demo` was merged into `main` as a fast-forward
+  (the branches were identical), so `main` now holds Phase 1 v1.1, Phase 2A + 2B, Phase 3 and the
+  deployment work. Continue here.
+- `phase3-demo` — same commit as `main`; kept as a label, safe to delete.
 - `phase1-maintenance` — Phase 1 patch line; holds the v1.1 commit.
 - `phase2-agent-prototype` — Phase 2A + 2B baseline (frozen at the baseline tag).
-- **`phase3-demo` — current working branch.** Contains everything: Phase 1 v1.1, Phase 2A fixes, Phase 2B results, Phase 3 demo.
 
-Commits on `phase3-demo` (newest first):
+Commits on `main` (newest first):
 
 | Commit | Contents |
 |---|---|
-| newest | OpenAI agent option (`NORDFLOW_AGENT=openai`, default `gpt-5.6-sol`) for the deployment |
+| `722b9c8` | OpenAI agent option (`NORDFLOW_AGENT=openai`, default `gpt-5.6-sol`) for the deployment |
 | `a19ee0b` | Handoff: record the hardening commit |
 | `5a9d34b` | Phase 3b deployment hardening (auth, secret validation, DEPLOY.md) |
 | `d543902` | This handoff document |
